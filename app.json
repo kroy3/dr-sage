@@ -18,6 +18,8 @@
       "bundleIdentifier": "com.drsage.app",
       "infoPlist": {
         "NSUserNotificationsUsageDescription": "Dr. Sage sends gentle reminders to check in on your wellbeing.",
+        "NSMicrophoneUsageDescription": "Dr. Sage uses the microphone so you can speak your thoughts instead of typing.",
+        "NSSpeechRecognitionUsageDescription": "Dr. Sage transcribes your voice so it can understand what you're saying.",
         "ITSAppUsesNonExemptEncryption": false
       }
     },
@@ -29,7 +31,8 @@
       "package": "com.drsage.app",
       "permissions": [
         "NOTIFICATIONS",
-        "SCHEDULE_EXACT_ALARM"
+        "SCHEDULE_EXACT_ALARM",
+        "RECORD_AUDIO"
       ]
     },
     "web": {
@@ -42,7 +45,8 @@
       "expo-secure-store",
       "expo-notifications",
       "expo-sqlite",
-      "expo-font"
+      "expo-font",
+      "expo-av"
     ],
     "experiments": {
       "typedRoutes": true
