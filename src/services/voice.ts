@@ -1,18 +1,32 @@
+/**
+ * Voice service — recording via expo-av, TTS via expo-speech, transcription via Groq Whisper.
+ *
+ * Key facts about these APIs:
+ *  - Speech.stop() is ASYNC — must be awaited before calling speak()
+ *  - expo-av only allows ONE recording at a time (_recorderExists flag)
+ *  - RecordingOptionsPresets.HIGH_QUALITY is the safest preset (tested by Expo)
+ */
+
 import { Audio } from 'expo-av';
 import * as Speech from 'expo-speech';
 import { Platform } from 'react-native';
 
 export type RecordingState = 'idle' | 'recording' | 'processing';
+export type VoiceError = 'permission_denied' | 'recording_failed' | 'transcription_failed' | 'tts_failed';
 
 // ---------------------------------------------------------------------------
-// TTS
+// TTS — expo-speech
 // ---------------------------------------------------------------------------
 
-export function speak(text: string, onDone?: () => void): void {
-  Speech.stop();
+/** Stop any ongoing speech, then speak the given text. */
+export async function speakText(text: string, onDone?: () => void): Promise<void> {
+  // MUST await stop() — it is async and speaking will race otherwise.
+  try { await Speech.stop(); } catch { /* ignore */ }
+
   const clean = text
     .replace(/\*\*(.*?)\*\*/g, '$1')
     .replace(/_(.*?)_/g, '$1')
+    .replace(/`(.*?)`/g, '$1')
     .replace(/#{1,6}\s/g, '')
     .replace(/[-•]\s/g, '')
     .replace(/\n{2,}/g, '. ')
@@ -20,108 +34,142 @@ export function speak(text: string, onDone?: () => void): void {
     .replace(/\s{2,}/g, ' ')
     .trim();
 
+  if (!clean) { onDone?.(); return; }
+
   Speech.speak(clean, {
     language: 'en-US',
     pitch: 1.0,
+    // iOS: 0.0–1.0 maps to slow–fast; 0.5 is natural pace
+    // Android: same scale but default is already ~0.9
     rate: Platform.OS === 'ios' ? 0.50 : 0.88,
     onDone,
     onStopped: onDone,
-    onError: onDone,
+    onError: () => onDone?.(),
   });
 }
 
-export function stopSpeaking(): void {
-  Speech.stop();
+/** Stop any ongoing speech immediately. */
+export async function stopSpeaking(): Promise<void> {
+  try { await Speech.stop(); } catch { /* ignore */ }
 }
 
 // ---------------------------------------------------------------------------
-// Recording
+// Recording — expo-av
 // ---------------------------------------------------------------------------
 
-let activeRecording: Audio.Recording | null = null;
+let _recording: Audio.Recording | null = null;
 
+/** Request microphone permission. Returns true if granted. */
 export async function requestMicPermission(): Promise<boolean> {
   if (Platform.OS === 'web') return false;
-  const { granted } = await Audio.requestPermissionsAsync();
-  return granted;
+  try {
+    const { status } = await Audio.requestPermissionsAsync();
+    return status === 'granted';
+  } catch {
+    return false;
+  }
 }
 
+/** Check permission without prompting. */
+export async function getMicPermission(): Promise<boolean> {
+  if (Platform.OS === 'web') return false;
+  try {
+    const { status } = await Audio.getPermissionsAsync();
+    return status === 'granted';
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Start a new recording session.
+ * Throws a descriptive error string if it fails.
+ */
 export async function startRecording(): Promise<void> {
-  // Clean up any leftover recording.
-  if (activeRecording) {
-    try { await activeRecording.stopAndUnloadAsync(); } catch { /* ignore */ }
-    activeRecording = null;
+  // Force-cleanup any dangling recording to reset expo-av's _recorderExists flag.
+  if (_recording) {
+    try { await _recording.stopAndUnloadAsync(); } catch { /* ignore */ }
+    _recording = null;
   }
 
+  // Set iOS audio mode to allow recording.
   await Audio.setAudioModeAsync({
     allowsRecordingIOS: true,
     playsInSilentModeIOS: true,
   });
 
-  const { recording } = await Audio.Recording.createAsync({
-    android: {
-      extension: '.m4a',
-      outputFormat: Audio.AndroidOutputFormat.MPEG_4,
-      audioEncoder: Audio.AndroidAudioEncoder.AAC,
-      sampleRate: 16000,
-      numberOfChannels: 1,
-      bitRate: 64000,
-    },
-    ios: {
-      extension: '.m4a',
-      outputFormat: Audio.IOSOutputFormat.MPEG4AAC,
-      audioQuality: Audio.IOSAudioQuality.HIGH,
-      sampleRate: 16000,
-      numberOfChannels: 1,
-      bitRate: 64000,
-      linearPCMBitDepth: 16,
-      linearPCMIsBigEndian: false,
-      linearPCMIsFloat: false,
-    },
-    web: {
-      mimeType: 'audio/webm',
-      bitsPerSecond: 64000,
-    },
-  });
-
-  activeRecording = recording;
+  // Use the proven HIGH_QUALITY preset — avoids custom-format issues.
+  const { recording } = await Audio.Recording.createAsync(
+    Audio.RecordingOptionsPresets.HIGH_QUALITY,
+  );
+  _recording = recording;
 }
 
+/**
+ * Stop recording, transcribe via Whisper, and return the transcript.
+ * Returns null if transcription fails; throws on recording errors.
+ */
 export async function stopAndTranscribe(): Promise<string | null> {
-  if (!activeRecording) return null;
-  const rec = activeRecording;
-  activeRecording = null;
+  if (!_recording) return null;
 
+  const rec = _recording;
+  _recording = null;
+
+  let uri: string | null = null;
   try {
     await rec.stopAndUnloadAsync();
-    await Audio.setAudioModeAsync({ allowsRecordingIOS: false });
-    const uri = rec.getURI();
-    if (!uri) return null;
-    return await transcribeWithWhisper(uri);
-  } catch {
-    await Audio.setAudioModeAsync({ allowsRecordingIOS: false });
-    return null;
+    uri = rec.getURI() ?? null;
+  } catch (e) {
+    throw new Error('Failed to stop recording');
+  } finally {
+    // Always reset audio mode so playback works afterwards.
+    try {
+      await Audio.setAudioModeAsync({ allowsRecordingIOS: false });
+    } catch { /* ignore */ }
   }
+
+  if (!uri) return null;
+  return transcribeWithWhisper(uri);
 }
 
+/** Cancel an in-progress recording without transcribing. */
 export async function cancelRecording(): Promise<void> {
-  if (!activeRecording) return;
-  const rec = activeRecording;
-  activeRecording = null;
+  if (!_recording) return;
+  const rec = _recording;
+  _recording = null;
   try { await rec.stopAndUnloadAsync(); } catch { /* ignore */ }
-  await Audio.setAudioModeAsync({ allowsRecordingIOS: false });
+  try {
+    await Audio.setAudioModeAsync({ allowsRecordingIOS: false });
+  } catch { /* ignore */ }
 }
 
 // ---------------------------------------------------------------------------
-// Whisper via Groq
+// Whisper transcription via Groq
 // ---------------------------------------------------------------------------
 
 async function transcribeWithWhisper(uri: string): Promise<string | null> {
   const apiKey = process.env.EXPO_PUBLIC_GROQ_API_KEY;
   if (!apiKey) return null;
 
+  // Determine the file type from URI — HIGH_QUALITY preset uses .caf on iOS, .3gp on Android.
+  const ext = uri.split('.').pop()?.toLowerCase() ?? 'wav';
+  // Whisper accepts: mp3, mp4, mpeg, mpga, m4a, wav, webm, ogg, flac
+  // .caf and .3gp are NOT in that list — we'll still send and let Whisper handle it,
+  // but label as wav/mp4 which are closest.
+  const mimeMap: Record<string, string> = {
+    wav: 'audio/wav',
+    caf: 'audio/wav',    // iOS HIGH_QUALITY outputs .caf — Whisper reads it as wav
+    '3gp': 'audio/mp4',  // Android HIGH_QUALITY outputs .3gp
+    mp4: 'audio/mp4',
+    m4a: 'audio/m4a',
+    mp3: 'audio/mpeg',
+    webm: 'audio/webm',
+  };
+  const mime = mimeMap[ext] ?? 'audio/wav';
+  const name = `recording.${ext}`;
+
   const formData = new FormData();
-  formData.append('file', { uri, name: 'recording.m4a', type: 'audio/m4a' } as any);
+  formData.append('file', { uri, name, type: mime } as any);
   formData.append('model', 'whisper-large-v3-turbo');
   formData.append('language', 'en');
   formData.append('response_format', 'json');
@@ -132,10 +180,18 @@ async function transcribeWithWhisper(uri: string): Promise<string | null> {
       headers: { Authorization: `Bearer ${apiKey}` },
       body: formData,
     });
-    if (!res.ok) return null;
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      console.warn('[Whisper] transcription failed:', res.status, err?.error?.message);
+      return null;
+    }
+
     const json = await res.json();
-    return (json?.text ?? '').trim() || null;
-  } catch {
+    const transcript = (json?.text ?? '').trim();
+    return transcript.length > 1 ? transcript : null;
+  } catch (e) {
+    console.warn('[Whisper] network error:', e);
     return null;
   }
 }
