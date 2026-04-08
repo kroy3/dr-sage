@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx expo:*)",
+      "Bash(npm --version)",
+      "Bash(export PATH=\"/usr/local/bin:/opt/homebrew/bin:$HOME/.nvm/versions/node/*/bin:$PATH\")",
+      "Read(//usr/local/bin/**)",
+      "Read(//Users/kushalrajroy/Documents/virtual_councellor/$HOME/.bun/bin/**)",
+      "Bash(brew list:*)",
+      "Bash(wc -l /Users/kushalrajroy/Documents/virtual_councellor/src/services/*.ts /Users/kushalrajroy/Documents/virtual_councellor/src/stores/*.ts)",
+      "Bash(grep \"from ''@/services/storage''\" /Users/kushalrajroy/Documents/virtual_councellor/src/stores/*.ts)",
+      "Bash(python3 -c \":*)"
+    ]
+  }
+}

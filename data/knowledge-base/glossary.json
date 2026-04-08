@@ -1,0 +1,714 @@
+[
+  {
+    "id": "automatic-thoughts",
+    "term": "Automatic Thoughts",
+    "definition": "Spontaneous, rapid thoughts that occur in response to situations, often below conscious awareness. In CBT, these are examined for cognitive distortions.",
+    "category": "cognitive-psychology",
+    "relatedTerms": ["cognitive-distortion", "schema", "core-beliefs"],
+    "example": "Seeing a friend not wave back and automatically thinking 'They must hate me.'"
+  },
+  {
+    "id": "cognitive-distortion",
+    "term": "Cognitive Distortion",
+    "definition": "Systematic patterns of inaccurate thinking that maintain negative emotions and self-defeating beliefs. Common in depression and anxiety.",
+    "category": "cognitive-psychology",
+    "relatedTerms": ["automatic-thoughts", "catastrophizing", "all-or-nothing-thinking"],
+    "example": "All-or-nothing thinking: 'If I fail this test, I'm a total failure as a person.'"
+  },
+  {
+    "id": "schema",
+    "term": "Schema",
+    "definition": "Deep-rooted core beliefs or mental frameworks developed in childhood that shape how we interpret our experiences and ourselves.",
+    "category": "cognitive-psychology",
+    "relatedTerms": ["core-beliefs", "automatic-thoughts", "schema-therapy"],
+    "example": "An 'abandonment schema' might lead someone to constantly fear people will leave them."
+  },
+  {
+    "id": "catastrophizing",
+    "term": "Catastrophizing",
+    "definition": "A cognitive distortion where one predicts the worst possible outcome and believes they cannot cope with it.",
+    "category": "cognitive-psychology",
+    "relatedTerms": ["cognitive-distortion", "anxiety", "rumination"],
+    "example": "'I made one mistake at work — I'll definitely get fired and never find another job.'"
+  },
+  {
+    "id": "mindfulness",
+    "term": "Mindfulness",
+    "definition": "The practice of intentionally paying attention to the present moment with curiosity and without judgment. Rooted in Buddhist meditation, now widely used in psychotherapy.",
+    "category": "mindfulness-based",
+    "relatedTerms": ["acceptance", "present-moment", "meditation"],
+    "example": "Noticing physical sensations of anxiety without trying to suppress or escape them."
+  },
+  {
+    "id": "acceptance",
+    "term": "Acceptance",
+    "definition": "In psychological contexts, willingness to experience thoughts, feelings, and sensations as they are, without unnecessary struggle. Central to ACT and DBT.",
+    "category": "mindfulness-based",
+    "relatedTerms": ["mindfulness", "psychological-flexibility", "radical-acceptance"],
+    "example": "Acknowledging feelings of grief without trying to force happiness or deny the pain."
+  },
+  {
+    "id": "psychological-flexibility",
+    "term": "Psychological Flexibility",
+    "definition": "The ability to contact the present moment fully, and to change or persist in behavior that serves one's values. The central goal of Acceptance and Commitment Therapy.",
+    "category": "acceptance-based",
+    "relatedTerms": ["acceptance", "values", "defusion"],
+    "example": "Choosing to attend an anxiety-provoking social event because connection is a core value, despite feeling nervous."
+  },
+  {
+    "id": "values",
+    "term": "Values",
+    "definition": "Deeply held principles about what matters most in life that guide meaningful behavior. In ACT, values are distinct from goals — they are ongoing directions, not destinations.",
+    "category": "acceptance-based",
+    "relatedTerms": ["psychological-flexibility", "commitment", "meaning"],
+    "example": "Valuing honesty means acting truthfully even when it's uncomfortable."
+  },
+  {
+    "id": "defusion",
+    "term": "Cognitive Defusion",
+    "definition": "An ACT technique of changing the relationship with thoughts — seeing thoughts as just words or mental events, rather than literal truths that must be acted upon.",
+    "category": "acceptance-based",
+    "relatedTerms": ["values", "psychological-flexibility", "automatic-thoughts"],
+    "example": "Instead of 'I am worthless,' practicing 'I notice I'm having the thought that I am worthless.'"
+  },
+  {
+    "id": "attachment-theory",
+    "term": "Attachment Theory",
+    "definition": "Developed by John Bowlby, this theory describes how early emotional bonds with caregivers shape relationship patterns throughout life, including trust, intimacy, and emotional regulation.",
+    "category": "developmental-psychology",
+    "relatedTerms": ["secure-attachment", "anxious-attachment", "avoidant-attachment"],
+    "example": "A child who receives consistent care develops a 'secure attachment' and is more comfortable exploring independently."
+  },
+  {
+    "id": "secure-attachment",
+    "term": "Secure Attachment",
+    "definition": "An attachment style characterized by comfort with emotional intimacy and interdependence. Secure individuals can rely on others and be relied upon without excessive anxiety.",
+    "category": "developmental-psychology",
+    "relatedTerms": ["attachment-theory", "anxious-attachment", "avoidant-attachment"],
+    "example": "Feeling comfortable expressing needs in a relationship while trusting a partner will be responsive."
+  },
+  {
+    "id": "anxious-attachment",
+    "term": "Anxious Attachment",
+    "definition": "An attachment style marked by worry about relationships, fear of abandonment, and high need for reassurance. Often stems from inconsistent early caregiving.",
+    "category": "developmental-psychology",
+    "relatedTerms": ["attachment-theory", "secure-attachment", "schema"],
+    "example": "Constantly seeking reassurance from a partner and becoming very distressed when they don't respond quickly to messages."
+  },
+  {
+    "id": "avoidant-attachment",
+    "term": "Avoidant Attachment",
+    "definition": "An attachment style characterized by discomfort with closeness and a tendency to minimize emotional needs and suppress feelings to maintain independence.",
+    "category": "developmental-psychology",
+    "relatedTerms": ["attachment-theory", "secure-attachment", "emotional-suppression"],
+    "example": "Feeling uncomfortable when a partner expresses strong emotions, and withdrawing instead of engaging."
+  },
+  {
+    "id": "emotional-regulation",
+    "term": "Emotional Regulation",
+    "definition": "The ability to understand, manage, and respond to emotional experiences in a flexible and adaptive way. Difficulties in this area are central to many psychological disorders.",
+    "category": "emotional-intelligence",
+    "relatedTerms": ["distress-tolerance", "impulse-control", "dbt"],
+    "example": "Taking three deep breaths before responding to an upsetting email instead of reacting immediately."
+  },
+  {
+    "id": "distress-tolerance",
+    "term": "Distress Tolerance",
+    "definition": "The capacity to withstand painful emotional experiences without resorting to harmful coping behaviors. A key skill module in Dialectical Behavior Therapy.",
+    "category": "emotional-intelligence",
+    "relatedTerms": ["emotional-regulation", "dbt", "radical-acceptance"],
+    "example": "Using the TIPP skill (Temperature, Intense exercise, Paced breathing, Progressive relaxation) during a crisis."
+  },
+  {
+    "id": "radical-acceptance",
+    "term": "Radical Acceptance",
+    "definition": "Complete and total acknowledgment of reality as it is, without judgment or resistance. From DBT, it does not mean approving of painful situations, but accepting their existence.",
+    "category": "dialectical-behavior",
+    "relatedTerms": ["acceptance", "distress-tolerance", "dbt"],
+    "example": "Accepting that a relationship has ended, even while feeling profound grief, rather than ruminating on 'what ifs.'"
+  },
+  {
+    "id": "rumination",
+    "term": "Rumination",
+    "definition": "Repetitive, passive focus on distressing thoughts, feelings, and problems. A key maintenance factor in depression. Distinct from problem-solving, as it does not lead to action.",
+    "category": "cognitive-psychology",
+    "relatedTerms": ["depression", "worry", "cognitive-distortion"],
+    "example": "Repeatedly replaying an embarrassing social interaction in one's head for hours or days."
+  },
+  {
+    "id": "worry",
+    "term": "Worry",
+    "definition": "A chain of thoughts about potential future threats that is primarily verbal/linguistic in nature. The cognitive component of anxiety. Contrasted with rumination, which focuses on the past.",
+    "category": "anxiety",
+    "relatedTerms": ["generalized-anxiety", "rumination", "catastrophizing"],
+    "example": "Repeatedly thinking through worst-case scenarios about an upcoming medical appointment."
+  },
+  {
+    "id": "neuroplasticity",
+    "term": "Neuroplasticity",
+    "definition": "The brain's ability to reorganize itself by forming new neural connections throughout life. This provides the biological basis for psychotherapy's effectiveness — change is always possible.",
+    "category": "neuroscience",
+    "relatedTerms": ["learning", "habits", "therapy-effectiveness"],
+    "example": "Regular mindfulness practice has been shown to increase gray matter density in brain regions associated with emotional regulation."
+  },
+  {
+    "id": "self-compassion",
+    "term": "Self-Compassion",
+    "definition": "Developed by Dr. Kristin Neff, self-compassion involves treating oneself with the same kindness, care, and understanding one would show a good friend, especially during times of failure or suffering.",
+    "category": "positive-psychology",
+    "relatedTerms": ["mindfulness", "self-esteem", "shame"],
+    "example": "After making a mistake, saying to yourself: 'This is a difficult moment. Suffering is part of being human. May I be kind to myself right now.'"
+  },
+  {
+    "id": "resilience",
+    "term": "Resilience",
+    "definition": "The capacity to recover from adversity, trauma, and stress. Resilience is not a fixed trait but a set of skills and processes that can be developed.",
+    "category": "positive-psychology",
+    "relatedTerms": ["post-traumatic-growth", "coping", "self-efficacy"],
+    "example": "Returning to baseline functioning after job loss by drawing on social support and problem-solving skills."
+  },
+  {
+    "id": "self-efficacy",
+    "term": "Self-Efficacy",
+    "definition": "Developed by Albert Bandura, self-efficacy refers to one's belief in their capacity to execute behaviors necessary to produce specific outcomes. Higher self-efficacy is linked to better mental health.",
+    "category": "cognitive-psychology",
+    "relatedTerms": ["confidence", "resilience", "behavioral-activation"],
+    "example": "A person with high self-efficacy around exercise believes they can stick to a workout plan even when motivation is low."
+  },
+  {
+    "id": "locus-of-control",
+    "term": "Locus of Control",
+    "definition": "The degree to which people believe they have control over the outcomes in their lives. Internal locus: outcomes are due to one's own actions. External locus: outcomes are determined by outside forces.",
+    "category": "cognitive-psychology",
+    "relatedTerms": ["self-efficacy", "helplessness", "agency"],
+    "example": "Someone with an internal locus of control believes studying hard will improve grades; someone with external locus attributes grades to teacher favoritism."
+  },
+  {
+    "id": "learned-helplessness",
+    "term": "Learned Helplessness",
+    "definition": "Discovered by Martin Seligman, this is a state where a person, after experiencing repeated uncontrollable adverse events, comes to believe they have no control over outcomes and stops trying.",
+    "category": "behavioral-psychology",
+    "relatedTerms": ["depression", "locus-of-control", "self-efficacy"],
+    "example": "After repeated failures in relationships, believing 'There's no point trying — nothing I do will make them stay.'"
+  },
+  {
+    "id": "positive-reinforcement",
+    "term": "Positive Reinforcement",
+    "definition": "Adding a desirable stimulus following a behavior to increase the likelihood of that behavior occurring again. A core concept in behavioral psychology.",
+    "category": "behavioral-psychology",
+    "relatedTerms": ["behavioral-activation", "operant-conditioning", "negative-reinforcement"],
+    "example": "Praising a child immediately after they share their toys to encourage sharing behavior."
+  },
+  {
+    "id": "negative-reinforcement",
+    "term": "Negative Reinforcement",
+    "definition": "Removing an aversive stimulus following a behavior to increase that behavior. Often misunderstood as punishment — it is not. The removal of something negative increases the behavior.",
+    "category": "behavioral-psychology",
+    "relatedTerms": ["positive-reinforcement", "avoidance", "operant-conditioning"],
+    "example": "Avoiding a social situation removes anxiety (aversive stimulus), reinforcing avoidance behavior."
+  },
+  {
+    "id": "avoidance",
+    "term": "Avoidance",
+    "definition": "Behaviors aimed at escaping or avoiding feared situations, thoughts, or feelings. While providing short-term relief, avoidance maintains and worsens anxiety long-term.",
+    "category": "behavioral-psychology",
+    "relatedTerms": ["negative-reinforcement", "exposure-therapy", "anxiety"],
+    "example": "Not opening work emails because they cause anxiety — the temporary relief reinforces email-avoidance."
+  },
+  {
+    "id": "exposure-therapy-concept",
+    "term": "Exposure",
+    "definition": "The therapeutic approach of systematically confronting feared situations, objects, or memories in a safe context, allowing fear to naturally subside through habituation or new learning.",
+    "category": "behavioral-psychology",
+    "relatedTerms": ["avoidance", "anxiety", "habituation"],
+    "example": "Gradually approaching dogs from a distance, working up to petting one, to overcome cynophobia."
+  },
+  {
+    "id": "habituation",
+    "term": "Habituation",
+    "definition": "The decrease in response to a stimulus after repeated exposure. One mechanism by which exposure therapy works — anxiety diminishes as feared stimuli are repeatedly encountered without harm.",
+    "category": "behavioral-psychology",
+    "relatedTerms": ["exposure-therapy-concept", "anxiety", "desensitization"],
+    "example": "Someone with a fear of flying who flies regularly notices their anxiety decreasing over time."
+  },
+  {
+    "id": "transference",
+    "term": "Transference",
+    "definition": "In psychodynamic therapy, the unconscious redirection of feelings from one relationship (often childhood) onto the therapist. Seen as both a challenge and a therapeutic opportunity.",
+    "category": "psychodynamic",
+    "relatedTerms": ["countertransference", "therapeutic-relationship", "unconscious"],
+    "example": "Feeling intense anger at a therapist who sets a limit, which mirrors childhood rage toward a controlling parent."
+  },
+  {
+    "id": "countertransference",
+    "term": "Countertransference",
+    "definition": "The therapist's emotional reactions to a client, influenced by the therapist's own history and psychology. When recognized, it can provide valuable clinical information.",
+    "category": "psychodynamic",
+    "relatedTerms": ["transference", "therapeutic-relationship"],
+    "example": "A therapist feeling unusually protective of a client may notice this mirrors feelings toward a younger sibling."
+  },
+  {
+    "id": "unconditional-positive-regard",
+    "term": "Unconditional Positive Regard",
+    "definition": "Carl Rogers' concept of accepting and supporting a person without conditions or judgment, regardless of what they say or do. One of the core conditions for therapeutic change in person-centered therapy.",
+    "category": "humanistic",
+    "relatedTerms": ["empathy", "genuineness", "person-centered-therapy"],
+    "example": "A therapist continues to show warmth and care for a client even after they disclose something they feel ashamed about."
+  },
+  {
+    "id": "empathy",
+    "term": "Empathy",
+    "definition": "The ability to understand and share the feelings of another. In therapy, distinguishes between affective empathy (feeling with) and cognitive empathy (perspective-taking). Different from sympathy.",
+    "category": "humanistic",
+    "relatedTerms": ["unconditional-positive-regard", "compassion", "therapeutic-alliance"],
+    "example": "A therapist saying: 'It sounds like you felt completely invisible — like no matter how much you did, it was never enough.'"
+  },
+  {
+    "id": "therapeutic-alliance",
+    "term": "Therapeutic Alliance",
+    "definition": "The collaborative relationship between therapist and client, comprising agreement on goals and tasks, and the quality of the emotional bond. The strongest predictor of therapy outcome.",
+    "category": "clinical-psychology",
+    "relatedTerms": ["empathy", "trust", "working-alliance"],
+    "example": "Client and therapist agreeing that reducing social isolation is the primary goal, and both feeling safe enough to explore difficult topics."
+  },
+  {
+    "id": "defense-mechanisms",
+    "term": "Defense Mechanisms",
+    "definition": "Unconscious psychological strategies used to protect the ego from anxiety, conflict, or uncomfortable truths. Concept from Freudian theory, refined by Anna Freud.",
+    "category": "psychodynamic",
+    "relatedTerms": ["repression", "projection", "sublimation"],
+    "example": "Repression: forgetting traumatic childhood events. Rationalization: inventing logical reasons for an emotionally driven decision."
+  },
+  {
+    "id": "projection",
+    "term": "Projection",
+    "definition": "A defense mechanism where one attributes their own unacceptable feelings, thoughts, or motives to another person.",
+    "category": "psychodynamic",
+    "relatedTerms": ["defense-mechanisms", "transference"],
+    "example": "Someone feeling jealous of a friend instead believing their friend is jealous of them."
+  },
+  {
+    "id": "sublimation",
+    "term": "Sublimation",
+    "definition": "A mature defense mechanism where unacceptable impulses are channeled into socially acceptable or productive activities.",
+    "category": "psychodynamic",
+    "relatedTerms": ["defense-mechanisms", "coping"],
+    "example": "Channeling anger into intense athletic training or creative writing."
+  },
+  {
+    "id": "repression",
+    "term": "Repression",
+    "definition": "A defense mechanism where distressing thoughts, feelings, or memories are pushed out of conscious awareness into the unconscious.",
+    "category": "psychodynamic",
+    "relatedTerms": ["defense-mechanisms", "unconscious", "suppression"],
+    "example": "Having no memory of an abusive childhood experience that is revealed only in therapy."
+  },
+  {
+    "id": "dissociation",
+    "term": "Dissociation",
+    "definition": "A disruption in the normally integrated functions of consciousness, memory, identity, or perception. Exists on a spectrum from mild detachment to complex disorders.",
+    "category": "trauma",
+    "relatedTerms": ["ptsd", "trauma", "derealization"],
+    "example": "Feeling detached from one's body or surroundings (derealization/depersonalization) during or after a traumatic event."
+  },
+  {
+    "id": "trauma",
+    "term": "Trauma",
+    "definition": "An emotional response to a deeply distressing event that overwhelms one's ability to cope. Trauma is defined not just by the event but by its impact on the individual.",
+    "category": "trauma",
+    "relatedTerms": ["ptsd", "dissociation", "complex-trauma"],
+    "example": "A car accident, childhood abuse, witnessing violence, or a sudden loss can all be traumatic experiences."
+  },
+  {
+    "id": "hypervigilance",
+    "term": "Hypervigilance",
+    "definition": "A state of heightened alertness and sensitivity to potential threats. Common in PTSD and anxiety disorders — the nervous system is stuck in 'threat detection' mode.",
+    "category": "trauma",
+    "relatedTerms": ["ptsd", "anxiety", "fight-flight-freeze"],
+    "example": "Constantly scanning a restaurant for exits, being startled by minor noises, or interpreting neutral facial expressions as hostile."
+  },
+  {
+    "id": "fight-flight-freeze",
+    "term": "Fight-Flight-Freeze Response",
+    "definition": "The body's automatic, physiological response to perceived threat, coordinated by the amygdala and nervous system. Prepares the body to confront, escape, or freeze to avoid danger.",
+    "category": "neuroscience",
+    "relatedTerms": ["hypervigilance", "anxiety", "autonomic-nervous-system"],
+    "example": "Heart racing, muscles tensing, and mind going blank during a stressful confrontation."
+  },
+  {
+    "id": "autonomic-nervous-system",
+    "term": "Autonomic Nervous System",
+    "definition": "The part of the nervous system that regulates involuntary functions. The sympathetic branch activates the fight-or-flight response; the parasympathetic branch promotes rest and recovery.",
+    "category": "neuroscience",
+    "relatedTerms": ["fight-flight-freeze", "vagal-tone", "polyvagal-theory"],
+    "example": "Deep, slow breathing activates the parasympathetic nervous system, reducing heart rate and anxiety."
+  },
+  {
+    "id": "polyvagal-theory",
+    "term": "Polyvagal Theory",
+    "definition": "Stephen Porges' theory describing how the vagus nerve regulates social engagement and stress responses. Provides a biological framework for understanding trauma responses.",
+    "category": "neuroscience",
+    "relatedTerms": ["autonomic-nervous-system", "vagal-tone", "trauma"],
+    "example": "Feeling immobilized and shut down under extreme threat (a 'freeze' response) as opposed to active fight or flight."
+  },
+  {
+    "id": "cognitive-behavioral-model",
+    "term": "Cognitive-Behavioral Model",
+    "definition": "The framework underlying CBT, positing that thoughts, feelings, behaviors, and physical sensations are interconnected. Changing one element affects all others.",
+    "category": "cognitive-behavioral",
+    "relatedTerms": ["automatic-thoughts", "cognitive-distortion", "behavioral-activation"],
+    "example": "The thought 'I'm incompetent' leads to anxiety (emotion), avoidance (behavior), and muscle tension (physical sensation)."
+  },
+  {
+    "id": "behavioral-activation-concept",
+    "term": "Behavioral Activation",
+    "definition": "A CBT-based technique for depression that increases engagement with rewarding or meaningful activities, counteracting the withdrawal and inactivity that maintain depression.",
+    "category": "behavioral-psychology",
+    "relatedTerms": ["depression", "activity-scheduling", "reinforcement"],
+    "example": "Scheduling a 20-minute walk each morning, even when motivation is low, to interrupt the depression-inactivity cycle."
+  },
+  {
+    "id": "interpersonal-effectiveness",
+    "term": "Interpersonal Effectiveness",
+    "definition": "A DBT skills module focusing on navigating relationships effectively — balancing relationship needs, self-respect, and goal attainment. Includes DEAR MAN and GIVE techniques.",
+    "category": "dialectical-behavior",
+    "relatedTerms": ["dbt", "assertiveness", "communication"],
+    "example": "Using DEAR MAN to clearly request a raise from a manager: Describe, Express, Assert, Reinforce, Mindful, Appear confident, Negotiate."
+  },
+  {
+    "id": "grounding",
+    "term": "Grounding",
+    "definition": "Techniques used to bring awareness back to the present moment, particularly useful during anxiety, dissociation, or flashbacks. Engages the five senses to anchor attention in the here-and-now.",
+    "category": "coping-technique",
+    "relatedTerms": ["mindfulness", "anxiety", "dissociation"],
+    "example": "The 5-4-3-2-1 technique: Name 5 things you see, 4 you hear, 3 you can touch, 2 you smell, 1 you taste."
+  },
+  {
+    "id": "psychoeducation",
+    "term": "Psychoeducation",
+    "definition": "The process of providing information to clients about their mental health condition, treatment options, and coping strategies. Empowers clients and reduces shame.",
+    "category": "clinical-psychology",
+    "relatedTerms": ["informed-consent", "stigma", "empowerment"],
+    "example": "Teaching a client with panic disorder about the fight-or-flight response to normalize their physical symptoms."
+  },
+  {
+    "id": "stigma",
+    "term": "Mental Health Stigma",
+    "definition": "Negative attitudes, discrimination, and misunderstanding surrounding mental health conditions. Stigma is a major barrier to people seeking help.",
+    "category": "social-psychology",
+    "relatedTerms": ["psychoeducation", "help-seeking", "shame"],
+    "example": "Not seeking depression treatment because of fear that others will see it as a sign of weakness."
+  },
+  {
+    "id": "shame",
+    "term": "Shame",
+    "definition": "A painful emotion focused on a negative evaluation of the entire self ('I am bad'), distinct from guilt ('I did something bad'). Shame tends to lead to hiding and avoidance rather than repair.",
+    "category": "emotional-intelligence",
+    "relatedTerms": ["guilt", "self-compassion", "vulnerability"],
+    "example": "Feeling that a mistake at work means you are fundamentally incompetent, rather than that you made an error that can be corrected."
+  },
+  {
+    "id": "guilt",
+    "term": "Guilt",
+    "definition": "A negative evaluation of a specific behavior ('I did something bad') rather than the self. Unlike shame, guilt can motivate reparative action and reconnection.",
+    "category": "emotional-intelligence",
+    "relatedTerms": ["shame", "responsibility", "empathy"],
+    "example": "Feeling regret about snapping at a friend and being motivated to apologize."
+  },
+  {
+    "id": "vulnerability",
+    "term": "Vulnerability",
+    "definition": "Brené Brown's research defines vulnerability as the willingness to show up emotionally when there are no guarantees. Vulnerability is the birthplace of connection and courage, not a weakness.",
+    "category": "positive-psychology",
+    "relatedTerms": ["shame", "courage", "connection"],
+    "example": "Sharing a personal fear with a close friend despite worrying about their reaction."
+  },
+  {
+    "id": "post-traumatic-growth",
+    "term": "Post-Traumatic Growth",
+    "definition": "Positive psychological change that can emerge from the struggle with highly challenging life circumstances. Does not deny suffering but describes transformation that can occur alongside it.",
+    "category": "positive-psychology",
+    "relatedTerms": ["resilience", "trauma", "meaning-making"],
+    "example": "A cancer survivor reporting greater appreciation for life and deeper relationships after their diagnosis and treatment."
+  },
+  {
+    "id": "meaning-making",
+    "term": "Meaning-Making",
+    "definition": "The process of finding purpose, coherence, or significance in one's experiences, especially difficult ones. Victor Frankl's logotherapy centers on this concept.",
+    "category": "existential-psychology",
+    "relatedTerms": ["post-traumatic-growth", "values", "logotherapy"],
+    "example": "A person who experienced loss finding meaning by volunteering with others who have gone through similar experiences."
+  },
+  {
+    "id": "flow-state",
+    "term": "Flow State",
+    "definition": "Mihaly Csikszentmihalyi's concept of complete absorption in a challenging, intrinsically rewarding activity. Associated with high performance and wellbeing.",
+    "category": "positive-psychology",
+    "relatedTerms": ["engagement", "intrinsic-motivation", "wellbeing"],
+    "example": "A musician losing track of time while improvising, feeling effortless concentration and enjoyment."
+  },
+  {
+    "id": "intrinsic-motivation",
+    "term": "Intrinsic Motivation",
+    "definition": "Being motivated by internal rewards — interest, enjoyment, and personal satisfaction — rather than external rewards or punishments. Associated with greater wellbeing and persistence.",
+    "category": "motivational-psychology",
+    "relatedTerms": ["flow-state", "self-determination-theory", "autonomy"],
+    "example": "Reading books for the pleasure of learning, versus reading only when required for a grade."
+  },
+  {
+    "id": "self-determination-theory",
+    "term": "Self-Determination Theory",
+    "definition": "Ryan and Deci's theory proposing that psychological wellbeing requires fulfillment of three basic needs: autonomy (self-direction), competence (mastery), and relatedness (connection).",
+    "category": "motivational-psychology",
+    "relatedTerms": ["intrinsic-motivation", "autonomy", "wellbeing"],
+    "example": "Employees who feel trusted, effective in their roles, and connected to colleagues have higher job satisfaction and wellbeing."
+  },
+  {
+    "id": "wellbeing",
+    "term": "Psychological Wellbeing",
+    "definition": "More than the absence of illness, wellbeing encompasses positive emotions, engagement, positive relationships, meaning, and achievement (Seligman's PERMA model).",
+    "category": "positive-psychology",
+    "relatedTerms": ["self-determination-theory", "resilience", "flourishing"],
+    "example": "Regularly experiencing positive emotions, having deep relationships, and feeling that daily activities are meaningful."
+  },
+  {
+    "id": "metacognition",
+    "term": "Metacognition",
+    "definition": "Thinking about one's own thinking — awareness and regulation of one's cognitive processes. Metacognitive therapy targets unhelpful beliefs about thinking itself.",
+    "category": "cognitive-psychology",
+    "relatedTerms": ["rumination", "worry", "cognitive-distortion"],
+    "example": "Noticing 'I've been ruminating for 30 minutes' and choosing to redirect attention, rather than getting caught in the content of the rumination."
+  },
+  {
+    "id": "dialectic",
+    "term": "Dialectic",
+    "definition": "In DBT, the central dialectic is the balance between acceptance and change. Both poles are held simultaneously, and truth is found in the synthesis of opposites.",
+    "category": "dialectical-behavior",
+    "relatedTerms": ["dbt", "acceptance", "radical-acceptance"],
+    "example": "Accepting that pain is real and understandable, while also working toward change — both at the same time."
+  },
+  {
+    "id": "boundary-setting",
+    "term": "Boundary Setting",
+    "definition": "The practice of identifying and communicating one's personal limits in relationships — what behaviors are acceptable and what are not. Healthy boundaries protect wellbeing and self-respect.",
+    "category": "interpersonal",
+    "relatedTerms": ["assertiveness", "interpersonal-effectiveness", "self-respect"],
+    "example": "Telling a family member: 'I'm not able to discuss that topic right now, but I'm happy to talk about something else.'"
+  },
+  {
+    "id": "assertiveness",
+    "term": "Assertiveness",
+    "definition": "The ability to express one's needs, feelings, and opinions clearly and respectfully, while also respecting others. A middle ground between passivity and aggression.",
+    "category": "interpersonal",
+    "relatedTerms": ["boundary-setting", "interpersonal-effectiveness", "self-respect"],
+    "example": "Saying 'I feel frustrated when meetings run over time — can we agree to keep to the agenda?' rather than staying silent or complaining to a colleague."
+  },
+  {
+    "id": "cognitive-reappraisal",
+    "term": "Cognitive Reappraisal",
+    "definition": "An emotion regulation strategy that involves changing how one thinks about a situation to alter its emotional impact. One of the most evidence-based strategies for wellbeing.",
+    "category": "emotional-intelligence",
+    "relatedTerms": ["cognitive-restructuring", "emotional-regulation", "coping"],
+    "example": "Reframing a public speaking event from 'I might embarrass myself' to 'This is an opportunity to share what I know.'"
+  },
+  {
+    "id": "social-support",
+    "term": "Social Support",
+    "definition": "The perception and actuality of being cared for, valued, and part of a social network. One of the strongest protective factors against mental health problems.",
+    "category": "social-psychology",
+    "relatedTerms": ["loneliness", "resilience", "connection"],
+    "example": "Having a friend to call after a stressful day, or being part of a community group that provides belonging."
+  },
+  {
+    "id": "loneliness",
+    "term": "Loneliness",
+    "definition": "The subjective feeling of lacking adequate social connection, distinct from objective social isolation. Loneliness is increasingly recognized as a significant public health concern.",
+    "category": "social-psychology",
+    "relatedTerms": ["social-support", "connection", "depression"],
+    "example": "Feeling alone and disconnected even when surrounded by people at a party."
+  },
+  {
+    "id": "cognitive-load",
+    "term": "Cognitive Load",
+    "definition": "The total amount of mental effort being used in working memory. High cognitive load impairs decision-making and emotional regulation, which is why stress narrows thinking.",
+    "category": "cognitive-psychology",
+    "relatedTerms": ["stress", "executive-function", "working-memory"],
+    "example": "Making poor food choices when exhausted and mentally drained — reduced cognitive resources make self-regulation harder."
+  },
+  {
+    "id": "executive-function",
+    "term": "Executive Function",
+    "definition": "A set of cognitive processes managed by the prefrontal cortex, including planning, working memory, cognitive flexibility, and inhibitory control. Disrupted by stress, trauma, and ADHD.",
+    "category": "neuroscience",
+    "relatedTerms": ["cognitive-load", "adhd", "prefrontal-cortex"],
+    "example": "Organizing a complex project, stopping an impulsive reaction, and shifting between tasks all require executive function."
+  },
+  {
+    "id": "neurotransmitter",
+    "term": "Neurotransmitter",
+    "definition": "Chemical messengers that transmit signals between neurons. Serotonin, dopamine, norepinephrine, and GABA are neurotransmitters closely linked to mood and mental health.",
+    "category": "neuroscience",
+    "relatedTerms": ["serotonin", "dopamine", "neuroplasticity"],
+    "example": "Low serotonin levels are associated with depression; many antidepressants work by increasing serotonin availability."
+  },
+  {
+    "id": "serotonin",
+    "term": "Serotonin",
+    "definition": "A neurotransmitter that plays a key role in regulating mood, sleep, appetite, and social behavior. Often called the 'feel-good' neurotransmitter, though its role is more complex than this.",
+    "category": "neuroscience",
+    "relatedTerms": ["neurotransmitter", "dopamine", "depression"],
+    "example": "Exercise, sunlight exposure, and certain foods can increase serotonin production naturally."
+  },
+  {
+    "id": "dopamine",
+    "term": "Dopamine",
+    "definition": "A neurotransmitter central to the brain's reward and motivation systems. Released in anticipation of rewards; drives seeking behavior and plays a role in pleasure and learning.",
+    "category": "neuroscience",
+    "relatedTerms": ["neurotransmitter", "reward", "addiction"],
+    "example": "The dopamine release from checking social media notifications reinforces the checking behavior."
+  },
+  {
+    "id": "cortisol",
+    "term": "Cortisol",
+    "definition": "The primary stress hormone, released by the adrenal glands. In short bursts, cortisol is helpful; chronically elevated cortisol is associated with depression, anxiety, and physical health problems.",
+    "category": "neuroscience",
+    "relatedTerms": ["stress", "hpa-axis", "fight-flight-freeze"],
+    "example": "Waking up with a jolt of anxiety and a racing heart is often driven by a cortisol surge."
+  },
+  {
+    "id": "mindset",
+    "term": "Growth Mindset",
+    "definition": "Carol Dweck's concept that abilities and intelligence can be developed through effort and learning (growth mindset), as opposed to being fixed traits (fixed mindset). Growth mindset is associated with greater resilience.",
+    "category": "positive-psychology",
+    "relatedTerms": ["resilience", "self-efficacy", "neuroplasticity"],
+    "example": "Viewing a failed project as a learning opportunity rather than evidence of inherent inability."
+  },
+  {
+    "id": "all-or-nothing-thinking",
+    "term": "All-or-Nothing Thinking",
+    "definition": "A cognitive distortion (also called black-and-white or dichotomous thinking) where situations are perceived in extremes with no middle ground.",
+    "category": "cognitive-psychology",
+    "relatedTerms": ["cognitive-distortion", "perfectionism", "catastrophizing"],
+    "example": "'I ate one piece of cake — my whole diet is ruined now, so I might as well eat everything.'"
+  },
+  {
+    "id": "perfectionism",
+    "term": "Perfectionism",
+    "definition": "Setting excessively high standards and evaluating self-worth primarily in terms of achievement and flawless performance. Linked to depression, anxiety, and burnout.",
+    "category": "cognitive-psychology",
+    "relatedTerms": ["all-or-nothing-thinking", "self-criticism", "shame"],
+    "example": "Refusing to submit a report because it is not perfect, leading to procrastination and missed deadlines."
+  },
+  {
+    "id": "burnout",
+    "term": "Burnout",
+    "definition": "A state of chronic stress that leads to emotional exhaustion, depersonalization (cynicism), and reduced sense of accomplishment. Recognized by the WHO as an occupational phenomenon.",
+    "category": "stress-psychology",
+    "relatedTerms": ["stress", "exhaustion", "perfectionism"],
+    "example": "A nurse who once loved their work becoming emotionally detached, exhausted, and cynical about patients after years of overwork."
+  },
+  {
+    "id": "stress-response",
+    "term": "Stress Response",
+    "definition": "The body's physiological and psychological reaction to demands that exceed perceived coping resources. Acute stress can be adaptive; chronic stress is harmful to mental and physical health.",
+    "category": "stress-psychology",
+    "relatedTerms": ["cortisol", "fight-flight-freeze", "burnout"],
+    "example": "Increased heart rate, muscle tension, and narrowed focus before a job interview — an adaptive acute stress response."
+  },
+  {
+    "id": "window-of-tolerance",
+    "term": "Window of Tolerance",
+    "definition": "Dan Siegel's concept describing the optimal zone of arousal in which a person can function effectively. Outside this window, people are either hyperaroused (anxiety, panic) or hypoaroused (dissociation, numbing).",
+    "category": "trauma",
+    "relatedTerms": ["dissociation", "hypervigilance", "emotional-regulation"],
+    "example": "Feeling overwhelmed and unable to process information during an intense argument (hyperaroused, outside the window)."
+  },
+  {
+    "id": "somatic-experiencing",
+    "term": "Somatic Experiencing",
+    "definition": "A body-oriented approach to healing trauma developed by Peter Levine. Focuses on releasing traumatic stress stored in the body rather than reliving the traumatic story.",
+    "category": "trauma",
+    "relatedTerms": ["trauma", "body-based-therapy", "nervous-system"],
+    "example": "Noticing where physical tension arises in the body when recalling a stressful memory, and slowly releasing it."
+  },
+  {
+    "id": "inner-child",
+    "term": "Inner Child",
+    "definition": "A concept in psychotherapy representing the childlike part of the psyche that retains early emotional memories and patterns. Inner child work involves healing wounds from early experiences.",
+    "category": "psychodynamic",
+    "relatedTerms": ["schema", "reparenting", "attachment-theory"],
+    "example": "Recognizing that a strong reaction to being criticized connects to a childhood belief of not being 'good enough.'"
+  },
+  {
+    "id": "mindful-eating",
+    "term": "Mindful Eating",
+    "definition": "Applying mindfulness principles to eating — paying full, non-judgmental attention to the sensory experience of food and internal hunger/fullness cues, without distraction.",
+    "category": "mindfulness-based",
+    "relatedTerms": ["mindfulness", "eating-disorders", "body-image"],
+    "example": "Eating a meal without screens, noticing flavors, textures, and stopping when feeling satisfied rather than stuffed."
+  },
+  {
+    "id": "gratitude",
+    "term": "Gratitude",
+    "definition": "The recognition and appreciation of positive aspects of one's life. Gratitude practices are among the most evidence-supported positive psychology interventions for increasing wellbeing.",
+    "category": "positive-psychology",
+    "relatedTerms": ["positive-emotions", "wellbeing", "broaden-and-build"],
+    "example": "Writing three specific things you are grateful for each evening, and why they happened."
+  },
+  {
+    "id": "broaden-and-build",
+    "term": "Broaden-and-Build Theory",
+    "definition": "Barbara Fredrickson's theory that positive emotions broaden one's awareness and repertoire of actions, building lasting personal resources (resilience, social connections, knowledge).",
+    "category": "positive-psychology",
+    "relatedTerms": ["gratitude", "positive-emotions", "resilience"],
+    "example": "Joy in play leads to developing physical skills; curiosity leads to acquiring new knowledge — both resources persist after the emotion fades."
+  },
+  {
+    "id": "active-listening",
+    "term": "Active Listening",
+    "definition": "A communication technique requiring full concentration, understanding, and response to what is being said. Involves reflecting, paraphrasing, and asking open-ended questions without judgment.",
+    "category": "interpersonal",
+    "relatedTerms": ["empathy", "therapeutic-alliance", "validation"],
+    "example": "Paraphrasing a friend's concern back to them: 'It sounds like you're feeling overlooked at work — is that right?'"
+  },
+  {
+    "id": "validation",
+    "term": "Validation",
+    "definition": "Communicating to another person that their feelings, thoughts, and experiences make sense and are understandable given their circumstances. A core skill in DBT and person-centered therapy.",
+    "category": "interpersonal",
+    "relatedTerms": ["active-listening", "empathy", "dbt"],
+    "example": "'Of course you feel anxious — what you're going through is genuinely hard, and your feelings make complete sense.'"
+  },
+  {
+    "id": "gaslighting",
+    "term": "Gaslighting",
+    "definition": "A form of psychological manipulation where someone causes another to question their own perceptions, memories, or sanity. Named after the 1944 film 'Gaslight.'",
+    "category": "social-psychology",
+    "relatedTerms": ["narcissistic-abuse", "trauma", "self-doubt"],
+    "example": "Being told 'That never happened' or 'You're too sensitive' repeatedly until you start doubting your own experiences."
+  },
+  {
+    "id": "codependency",
+    "term": "Codependency",
+    "definition": "A pattern where one person excessively relies on another for emotional regulation and sense of identity, often at the expense of their own needs. Common in relationships with addiction or dysfunction.",
+    "category": "interpersonal",
+    "relatedTerms": ["boundary-setting", "enabling", "enmeshment"],
+    "example": "Feeling responsible for a partner's emotions and making decisions based on avoiding their distress rather than one's own needs."
+  },
+  {
+    "id": "positive-psychology",
+    "term": "Positive Psychology",
+    "definition": "Founded by Martin Seligman, positive psychology is the scientific study of what makes life worth living — focusing on wellbeing, strengths, and flourishing rather than only pathology.",
+    "category": "positive-psychology",
+    "relatedTerms": ["wellbeing", "resilience", "flourishing"],
+    "example": "Identifying and regularly using signature character strengths (creativity, humor, kindness) to enhance daily wellbeing."
+  },
+  {
+    "id": "narrative-therapy-concept",
+    "term": "Narrative",
+    "definition": "In narrative therapy, the stories people tell about themselves and their lives that shape their identity and behavior. Therapy involves re-authoring these stories to find more empowering perspectives.",
+    "category": "narrative-therapy",
+    "relatedTerms": ["externalizing", "narrative-therapy", "identity"],
+    "example": "The story 'I am an anxious person' can be rewritten to 'I am a person who sometimes experiences anxiety — it is not my identity.'"
+  }
+]

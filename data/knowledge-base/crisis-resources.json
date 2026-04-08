@@ -1,0 +1,107 @@
+{
+  "disclaimer": "If you are in immediate danger or risk of harming yourself or others, please call 911 or your local emergency number immediately.",
+  "emergencyMessage": "You matter. Help is available. Please reach out — you don't have to face this alone.",
+  "resources": [
+    {
+      "name": "988 Suicide & Crisis Lifeline",
+      "contact": "988",
+      "type": "phone_and_chat",
+      "available": "24/7",
+      "country": "US",
+      "description": "Free and confidential support for people in distress, and prevention and crisis resources. Call or text 988.",
+      "website": "https://988lifeline.org"
+    },
+    {
+      "name": "Crisis Text Line",
+      "contact": "Text HOME to 741741",
+      "type": "text",
+      "available": "24/7",
+      "country": "US",
+      "description": "Free, 24/7 crisis support via text message. Connect with a trained Crisis Counselor.",
+      "website": "https://www.crisistextline.org"
+    },
+    {
+      "name": "SAMHSA National Helpline",
+      "contact": "1-800-662-4357",
+      "type": "phone",
+      "available": "24/7",
+      "country": "US",
+      "description": "Free, confidential treatment referral and information service for mental health and substance use disorders.",
+      "website": "https://www.samhsa.gov/find-help/national-helpline"
+    },
+    {
+      "name": "The Trevor Project (LGBTQ+ Youth)",
+      "contact": "1-866-488-7386",
+      "type": "phone_and_text",
+      "available": "24/7",
+      "country": "US",
+      "description": "Crisis intervention and suicide prevention for LGBTQ+ young people. Text START to 678-678.",
+      "website": "https://www.thetrevorproject.org"
+    },
+    {
+      "name": "Veterans Crisis Line",
+      "contact": "988 then press 1",
+      "type": "phone",
+      "available": "24/7",
+      "country": "US",
+      "description": "Confidential crisis support for veterans and their families. Also text 838255.",
+      "website": "https://www.veteranscrisisline.net"
+    },
+    {
+      "name": "Samaritans (UK & Ireland)",
+      "contact": "116 123",
+      "type": "phone",
+      "available": "24/7",
+      "country": "UK_Ireland",
+      "description": "Free, confidential emotional support for people experiencing feelings of distress or despair.",
+      "website": "https://www.samaritans.org"
+    },
+    {
+      "name": "Beyond Blue (Australia)",
+      "contact": "1300 22 4636",
+      "type": "phone",
+      "available": "24/7",
+      "country": "Australia",
+      "description": "Support for anxiety, depression, and suicide prevention.",
+      "website": "https://www.beyondblue.org.au"
+    },
+    {
+      "name": "Crisis Services Canada",
+      "contact": "1-833-456-4566",
+      "type": "phone",
+      "available": "24/7",
+      "country": "Canada",
+      "description": "Canada Suicide Prevention Service — available 24 hours a day.",
+      "website": "https://www.crisisservicescanada.ca"
+    },
+    {
+      "name": "iCall (India)",
+      "contact": "9152987821",
+      "type": "phone",
+      "available": "Mon-Sat 8am-10pm IST",
+      "country": "India",
+      "description": "Psychosocial helpline by TISS providing free counseling and support.",
+      "website": "https://icallhelpline.org"
+    }
+  ],
+  "warningSignsToWatch": [
+    "Talking about wanting to die or to kill oneself",
+    "Looking for ways to kill oneself",
+    "Talking about being a burden to others",
+    "Increasing use of alcohol or drugs",
+    "Withdrawing from friends, family, and activities",
+    "Extreme mood swings",
+    "Talking about feeling hopeless or having no reason to live",
+    "Talking about feeling trapped or in unbearable pain",
+    "Giving away prized possessions",
+    "Saying goodbye to people as if they won't be seen again"
+  ],
+  "ifSomeoneIsInCrisis": [
+    "Stay with them — don't leave them alone",
+    "Remove access to any lethal means if safe to do so",
+    "Listen without judgment",
+    "Ask directly: 'Are you thinking about suicide?' — asking does not plant the idea",
+    "Encourage them to call a crisis line or take them to the nearest emergency room",
+    "Call 911 if there is immediate danger"
+  ]
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "cbt",
+    "name": "Cognitive Behavioral Therapy (CBT)",
+    "shortDescription": "CBT is a structured, goal-oriented psychotherapy that focuses on identifying and changing negative thought patterns and behaviors. It is one of the most widely researched and evidence-based forms of therapy available today.",
+    "fullDescription": "Cognitive Behavioral Therapy (CBT) was developed by psychiatrist Aaron T. Beck in the 1960s, building on earlier work in behavioral therapy and Albert Ellis's Rational Emotive Behavior Therapy. Beck observed that his patients experienced streams of negative thoughts that seemed to arise spontaneously, which he termed 'automatic thoughts.' He found that helping patients identify and evaluate these thoughts led to significant improvements in their mood and functioning.\n\nThe core theory of CBT is that our thoughts, feelings, and behaviors are interconnected, and that changing maladaptive thinking patterns can lead to changes in emotions and behavior. CBT posits that psychological distress is largely maintained by cognitive distortions—systematic errors in thinking such as catastrophizing, black-and-white thinking, and overgeneralization. Through structured exercises, clients learn to recognize these distortions and replace them with more balanced, realistic thoughts.\n\nIn practice, CBT is typically a short-term treatment (12–20 sessions) that involves collaboration between therapist and client. Sessions include psychoeducation, cognitive restructuring, behavioral experiments, and homework assignments. CBT has been extensively researched and has strong empirical support for treating depression, anxiety disorders, PTSD, OCD, eating disorders, and many other conditions. It forms the foundation for several newer therapies including DBT, ACT, and MBCT.",
+    "keyPrinciples": [
+      "Thoughts, feelings, and behaviors are interconnected",
+      "Cognitive distortions maintain psychological distress",
+      "Identifying and challenging automatic negative thoughts leads to symptom relief",
+      "Behavioral experiments test the validity of beliefs",
+      "Skills are practiced between sessions through homework",
+      "Therapy is collaborative, structured, and time-limited",
+      "Focus is on present problems and practical solutions"
+    ],
+    "techniques": ["cognitive-restructuring", "thought-records", "behavioral-activation", "exposure-therapy"],
+    "bestFor": ["anxiety", "depression", "ptsd", "ocd", "eating-disorders", "insomnia", "phobias", "panic-disorder"],
+    "founders": "Aaron T. Beck",
+    "yearDeveloped": "1960s",
+    "evidenceLevel": "strong",
+    "category": "cognitive-behavioral",
+    "references": [
+      "Beck, A.T. (1976). Cognitive Therapy and the Emotional Disorders. International Universities Press.",
+      "Burns, D.D. (1980). Feeling Good: The New Mood Therapy. William Morrow.",
+      "Beck, J.S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). Guilford Press.",
+      "Hofmann, S.G., Asnaani, A., Vonk, I.J., Sawyer, A.T., & Fang, A. (2012). The efficacy of cognitive behavioral therapy: A review of meta-analyses. Cognitive Therapy and Research, 36(5), 427-440."
+    ]
+  },
+  {
+    "id": "dbt",
+    "name": "Dialectical Behavior Therapy (DBT)",
+    "shortDescription": "DBT is a comprehensive cognitive-behavioral treatment that combines standard CBT techniques with mindfulness and acceptance strategies. Originally developed for borderline personality disorder, it teaches skills for emotional regulation, distress tolerance, and interpersonal effectiveness.",
+    "fullDescription": "Dialectical Behavior Therapy was developed by psychologist Marsha M. Linehan in the late 1980s, initially to treat chronically suicidal individuals with borderline personality disorder (BPD). Linehan found that standard CBT alone was insufficient for this population and integrated Eastern mindfulness practices and dialectical philosophy to create a more comprehensive treatment.\n\nThe term 'dialectical' refers to the synthesis of opposites—most fundamentally, the balance between acceptance and change. DBT holds that clients need to simultaneously accept themselves as they are while also working to change problematic behaviors. This dialectical stance reduces the invalidation that many clients with BPD experience in standard therapy, improving therapeutic alliance and retention.\n\nDBT consists of four primary components: individual therapy, group skills training, phone coaching, and therapist consultation teams. The skills training covers four modules: Mindfulness (core awareness and presence), Distress Tolerance (surviving crises without making things worse), Emotion Regulation (understanding and managing intense emotions), and Interpersonal Effectiveness (maintaining relationships while asserting needs). Each module provides concrete, teachable skills. DBT has strong evidence for reducing suicidal behavior, self-harm, and hospitalization, and has been adapted for eating disorders, substance use disorders, PTSD, and adolescent populations.",
+    "keyPrinciples": [
+      "Dialectical balance between acceptance and change",
+      "Biosocial theory: emotional vulnerability interacts with invalidating environments",
+      "Mindfulness as a core foundational skill",
+      "Behavioral chain analysis to understand problem behaviors",
+      "Skills are taught in four modules: Mindfulness, Distress Tolerance, Emotion Regulation, Interpersonal Effectiveness",
+      "Validation is essential alongside push for change",
+      "Therapists also need support (consultation team)"
+    ],
+    "techniques": ["distress-tolerance-tipp", "opposite-action", "interpersonal-effectiveness-dear-man", "radical-acceptance", "mindfulness-meditation"],
+    "bestFor": ["borderline-personality-disorder", "self-harm", "suicidal-ideation", "emotional-dysregulation", "eating-disorders", "substance-use"],
+    "founders": "Marsha M. Linehan",
+    "yearDeveloped": "1980s",
+    "evidenceLevel": "strong",
+    "category": "cognitive-behavioral",
+    "references": [
+      "Linehan, M.M. (1993). Cognitive-Behavioral Treatment of Borderline Personality Disorder. Guilford Press.",
+      "Linehan, M.M. (2015). DBT Skills Training Manual (2nd ed.). Guilford Press.",
+      "Linehan, M.M., et al. (2006). Two-year randomized controlled trial and follow-up of dialectical behavior therapy vs therapy by experts for suicidal behaviors and borderline personality disorder. Archives of General Psychiatry, 63(7), 757-766."
+    ]
+  },
+  {
+    "id": "act",
+    "name": "Acceptance and Commitment Therapy (ACT)",
+    "shortDescription": "ACT uses acceptance and mindfulness strategies, together with commitment and behavior-change strategies, to increase psychological flexibility. Rather than trying to eliminate difficult feelings, ACT teaches people to change their relationship with those experiences.",
+    "fullDescription": "Acceptance and Commitment Therapy was developed by Steven C. Hayes and colleagues in the 1980s, rooted in Relational Frame Theory (RFT), a behavioral account of human language and cognition. ACT diverges from traditional CBT by de-emphasizing the direct challenging of thought content and instead focusing on changing one's relationship to thoughts and feelings.\n\nThe central goal of ACT is to increase psychological flexibility—the ability to be present, open up to difficult experiences, and do what matters. ACT identifies six core processes that contribute to psychological flexibility: acceptance (willingness to experience difficult feelings), cognitive defusion (stepping back from thoughts), present-moment awareness, self-as-context (a transcendent sense of self), values clarification, and committed action. Together, these form the 'hexaflex' model.\n\nIn practice, ACT uses experiential exercises, metaphors, and mindfulness techniques to help clients. For example, a client might practice 'leaves on a stream' (watching thoughts float by without attaching to them) or explore core values through structured exercises. Rather than aiming for symptom reduction as a primary goal, ACT aims for a rich and meaningful life where difficult experiences are held with openness. Research supports ACT for depression, anxiety, chronic pain, substance use, psychosis, and workplace stress, with a growing evidence base that continues to expand.",
+    "keyPrinciples": [
+      "Psychological flexibility is the key to mental health",
+      "Suffering is a normal part of the human experience",
+      "The goal is not to eliminate pain but to live a valued life alongside it",
+      "Six core processes: acceptance, defusion, present moment, self-as-context, values, committed action",
+      "Language and cognition are central to human suffering",
+      "Experiential avoidance is a major source of psychopathology",
+      "Values guide meaningful behavior change"
+    ],
+    "techniques": ["values-clarification", "defusion-techniques", "mindfulness-meditation"],
+    "bestFor": ["anxiety", "depression", "chronic-pain", "substance-use", "workplace-stress", "ocd"],
+    "founders": "Steven C. Hayes",
+    "yearDeveloped": "1980s",
+    "evidenceLevel": "strong",
+    "category": "cognitive-behavioral",
+    "references": [
+      "Hayes, S.C., Strosahl, K.D., & Wilson, K.G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). Guilford Press.",
+      "A-Tjak, J.G., et al. (2015). A meta-analysis of the efficacy of acceptance and commitment therapy for clinically relevant mental and physical health problems. Psychotherapy and Psychosomatics, 84(1), 30-36."
+    ]
+  },
+  {
+    "id": "psychodynamic",
+    "name": "Psychodynamic Therapy",
+    "shortDescription": "Psychodynamic therapy focuses on unconscious processes and how they influence current behavior. It aims to increase self-awareness and understanding of the influence of the past on present behavior, helping clients uncover and resolve deep-seated emotional conflicts.",
+    "fullDescription": "Psychodynamic therapy has its roots in Sigmund Freud's psychoanalysis, developed in the late 19th and early 20th centuries. Over time, it has been refined and modernized by theorists including Carl Jung, Melanie Klein, Donald Winnicott, Heinz Kohut, and Otto Kernberg. Modern psychodynamic therapy is more conversational and interactive than classical psychoanalysis, though it retains the core emphasis on unconscious processes and the therapeutic relationship.\n\nThe central premise of psychodynamic therapy is that much of our mental life operates outside conscious awareness, and that unconscious thoughts, feelings, and memories—particularly those from early relationships—shape our current patterns of behavior, relationships, and emotional responses. Key concepts include transference (projecting feelings about past figures onto the therapist), defense mechanisms (unconscious strategies for managing anxiety), and the importance of early attachment experiences.\n\nIn practice, psychodynamic therapy involves free association, exploration of dreams and fantasies, attention to the therapeutic relationship, and interpretation of patterns. Sessions are typically less structured than CBT. Treatment can be short-term (12–24 sessions) or long-term (months to years). Research has demonstrated efficacy for depression, anxiety, personality disorders, and somatic complaints, with evidence suggesting that benefits continue to grow after treatment ends—a phenomenon not consistently found with other therapies.",
+    "keyPrinciples": [
+      "Unconscious processes influence thoughts, feelings, and behaviors",
+      "Early childhood experiences shape adult personality and relationships",
+      "The therapeutic relationship is a vehicle for understanding relational patterns",
+      "Defense mechanisms protect against anxiety but can become maladaptive",
+      "Insight and self-awareness are key agents of change",
+      "Transference and countertransference provide valuable clinical information",
+      "Emotional expression and processing are essential for healing"
+    ],
+    "techniques": [],
+    "bestFor": ["depression", "personality-disorders", "relationship-difficulties", "complex-trauma", "identity-issues"],
+    "founders": "Sigmund Freud (classical); modern contributors include Heinz Kohut, Otto Kernberg, Nancy McWilliams",
+    "yearDeveloped": "1890s (classical); ongoing modern development",
+    "evidenceLevel": "moderate-to-strong",
+    "category": "psychodynamic",
+    "references": [
+      "Shedler, J. (2010). The efficacy of psychodynamic psychotherapy. American Psychologist, 65(2), 98-109.",
+      "McWilliams, N. (2011). Psychoanalytic Diagnosis (2nd ed.). Guilford Press.",
+      "Leichsenring, F., & Rabung, S. (2008). Effectiveness of long-term psychodynamic psychotherapy: A meta-analysis. JAMA, 300(13), 1551-1565."
+    ]
+  },
+  {
+    "id": "person-centered",
+    "name": "Person-Centered Therapy (Rogerian Therapy)",
+    "shortDescription": "Person-centered therapy is a humanistic approach that emphasizes the client's inherent capacity for self-actualization. The therapist provides unconditional positive regard, empathy, and genuineness to create a supportive environment for growth.",
+    "fullDescription": "Person-centered therapy was developed by Carl Rogers in the 1940s and 1950s as a radical departure from the directive, expert-driven approaches that dominated psychotherapy at the time. Rogers believed that every person has an innate tendency toward growth and self-actualization, and that psychological problems arise when this tendency is blocked by conditions of worth—the feeling that one must meet certain conditions to be worthy of love and acceptance.\n\nThe approach is built on three core conditions that the therapist must provide: unconditional positive regard (nonjudgmental acceptance of the client), empathic understanding (deeply comprehending the client's subjective experience), and congruence (the therapist being genuine and authentic in the relationship). Rogers argued that when these conditions are present, clients naturally move toward greater self-awareness, self-acceptance, and positive change without the therapist needing to direct or advise.\n\nPerson-centered therapy is non-directive; the therapist follows the client's lead rather than imposing an agenda or techniques. The therapeutic relationship itself is considered the primary mechanism of change. This approach has profoundly influenced not only therapy but also education, organizational development, and conflict resolution. Research supports its effectiveness for depression, anxiety, and relationship difficulties, and its core conditions are now considered essential elements across most therapeutic orientations.",
+    "keyPrinciples": [
+      "Every person has an inherent tendency toward self-actualization",
+      "Three core conditions: unconditional positive regard, empathy, congruence",
+      "The client is the expert on their own experience",
+      "Non-directive: the therapist follows the client's lead",
+      "Conditions of worth create psychological distress",
+      "The therapeutic relationship is the primary agent of change",
+      "Self-concept becomes more congruent with experience through therapy"
+    ],
+    "techniques": [],
+    "bestFor": ["depression", "anxiety", "relationship-difficulties", "low-self-esteem", "personal-growth"],
+    "founders": "Carl R. Rogers",
+    "yearDeveloped": "1940s–1950s",
+    "evidenceLevel": "moderate",
+    "category": "humanistic",
+    "references": [
+      "Rogers, C.R. (1951). Client-Centered Therapy. Houghton Mifflin.",
+      "Rogers, C.R. (1961). On Becoming a Person. Houghton Mifflin.",
+      "Elliott, R., et al. (2004). Research on experiential psychotherapies. In M.J. Lambert (Ed.), Bergin and Garfield's Handbook of Psychotherapy and Behavior Change (5th ed.)."
+    ]
+  },
+  {
+    "id": "emdr",
+    "name": "Eye Movement Desensitization and Reprocessing (EMDR)",
+    "shortDescription": "EMDR is an integrative psychotherapy approach that uses bilateral stimulation (typically eye movements) to help the brain process and integrate traumatic memories. It reduces the emotional distress associated with disturbing experiences.",
+    "fullDescription": "EMDR was developed by Francine Shapiro in 1987 after she noticed that moving her eyes back and forth seemed to reduce the intensity of disturbing thoughts. She developed this observation into a structured eight-phase treatment protocol and conducted research to validate its effectiveness. EMDR is based on the Adaptive Information Processing (AIP) model, which proposes that psychopathology results from unprocessed or maladaptively stored memories.\n\nThe AIP model suggests that when a traumatic or disturbing event occurs, it may overwhelm the brain's natural processing capacity, causing the memory to be stored in its raw, unprocessed form—complete with the original images, thoughts, emotions, and body sensations. These unprocessed memories are believed to underlie many psychological symptoms. EMDR aims to facilitate the brain's natural healing process by enabling the reprocessing of these memories.\n\nThe eight phases of EMDR include: history-taking, preparation, assessment, desensitization, installation, body scan, closure, and reevaluation. During the desensitization phase, the client focuses on the traumatic memory while simultaneously engaging in bilateral stimulation—typically guided eye movements, but sometimes tapping or auditory tones. This dual attention appears to facilitate the integration of the memory into the broader memory network, reducing its emotional charge. EMDR has strong evidence for PTSD and is recognized by the WHO, APA, and VA/DoD as an effective trauma treatment. It has also been applied to phobias, panic disorder, grief, and performance anxiety.",
+    "keyPrinciples": [
+      "Adaptive Information Processing (AIP) model guides treatment",
+      "Traumatic memories can be stored in an unprocessed, maladaptive form",
+      "Bilateral stimulation facilitates memory reprocessing",
+      "Eight-phase structured protocol ensures comprehensive treatment",
+      "The brain has a natural capacity to heal from psychological trauma",
+      "Both past memories and present triggers are addressed",
+      "Future templates are installed for adaptive responding"
+    ],
+    "techniques": [],
+    "bestFor": ["ptsd", "trauma", "phobias", "panic-disorder", "grief", "performance-anxiety"],
+    "founders": "Francine Shapiro",
+    "yearDeveloped": "1987",
+    "evidenceLevel": "strong",
+    "category": "trauma-focused",
+    "references": [
+      "Shapiro, F. (2018). Eye Movement Desensitization and Reprocessing (EMDR) Therapy: Basic Principles, Protocols, and Procedures (3rd ed.). Guilford Press.",
+      "World Health Organization. (2013). Guidelines for the Management of Conditions Specifically Related to Stress.",
+      "Chen, Y.R., et al. (2014). Efficacy of eye movement desensitization and reprocessing for patients with posttraumatic stress disorder: A meta-analysis. PLoS One, 9(8), e103676."
+    ]
+  },
+  {
+    "id": "motivational-interviewing",
+    "name": "Motivational Interviewing (MI)",
+    "shortDescription": "Motivational Interviewing is a collaborative, person-centered counseling style that strengthens a person's own motivation and commitment to change. It is especially effective for ambivalence about behavior change.",
+    "fullDescription": "Motivational Interviewing was developed by William R. Miller and Stephen Rollnick, beginning with Miller's initial description in 1983 and further elaborated in their 1991 book. MI emerged from the addiction treatment field, where Miller observed that a confrontational approach often increased resistance, while an empathic, collaborative style facilitated change.\n\nMI is guided by four key processes: engaging (building a therapeutic relationship), focusing (developing direction), evoking (eliciting the client's own motivations for change), and planning (developing commitment and a plan). The approach is built on the 'spirit' of MI, which encompasses partnership (collaboration rather than authority), acceptance (respect for autonomy), compassion (prioritizing the client's welfare), and evocation (drawing out the client's own wisdom rather than instilling it).\n\nCore techniques include open-ended questions, affirmations, reflective listening, and summarizing (OARS). Therapists are trained to recognize and reinforce 'change talk'—statements by the client that indicate motivation, ability, reasons, or need for change—while gently rolling with resistance rather than opposing it. MI has been extensively researched across substance use, health behavior change, medication adherence, diet and exercise, and mental health treatment engagement. It is often used as a prelude to or in combination with other treatments.",
+    "keyPrinciples": [
+      "Motivation for change is elicited from the client, not imposed",
+      "Ambivalence about change is normal and must be explored",
+      "The therapeutic relationship is a partnership, not an authority dynamic",
+      "Direct confrontation increases resistance",
+      "OARS: Open questions, Affirmations, Reflections, Summaries",
+      "Change talk is reinforced; sustain talk is handled with empathy",
+      "Autonomy is always respected"
+    ],
+    "techniques": [],
+    "bestFor": ["substance-use", "behavior-change", "treatment-engagement", "health-behaviors", "ambivalence"],
+    "founders": "William R. Miller and Stephen Rollnick",
+    "yearDeveloped": "1983",
+    "evidenceLevel": "strong",
+    "category": "integrative",
+    "references": [
+      "Miller, W.R., & Rollnick, S. (2013). Motivational Interviewing: Helping People Change (3rd ed.). Guilford Press.",
+      "Lundahl, B.W., et al. (2010). A meta-analysis of motivational interviewing: Twenty-five years of empirical studies. Research on Social Work Practice, 20(2), 137-160."
+    ]
+  },
+  {
+    "id": "mbsr",
+    "name": "Mindfulness-Based Stress Reduction (MBSR)",
+    "shortDescription": "MBSR is a structured 8-week program that teaches mindfulness meditation to help people manage stress, pain, and illness. It cultivates moment-to-moment, nonjudgmental awareness of one's experience.",
+    "fullDescription": "Mindfulness-Based Stress Reduction was developed by Jon Kabat-Zinn at the University of Massachusetts Medical Center in 1979. Kabat-Zinn drew on Buddhist meditation practices, yoga, and mind-body medicine to create a secular, scientifically grounded program that could be offered in medical settings. MBSR was originally designed for patients with chronic pain and stress-related conditions.\n\nThe program consists of eight weekly group sessions (typically 2.5 hours each), a full-day silent retreat, and daily home practice. Participants learn several formal meditation practices including the body scan (systematic attention to bodily sensations), sitting meditation (focusing on breath and expanding awareness), mindful movement (gentle yoga), and walking meditation. Informal practices involve bringing mindful awareness to everyday activities like eating, walking, and communicating.\n\nThe core teaching of MBSR is that by intentionally paying attention to present-moment experience with a nonjudgmental, curious attitude, one can change one's relationship to stress, pain, and difficult emotions. Rather than reacting automatically, practitioners develop the capacity to respond thoughtfully. Research demonstrates MBSR's effectiveness for stress reduction, chronic pain management, anxiety, depression relapse prevention, immune function improvement, and overall quality of life. It has become one of the most widely studied and implemented mindfulness programs worldwide.",
+    "keyPrinciples": [
+      "Mindfulness is moment-to-moment, nonjudgmental awareness",
+      "Paying attention on purpose, in the present moment",
+      "Observing experience without trying to change it",
+      "Responding rather than reacting to stressors",
+      "Regular practice builds the capacity for mindful awareness",
+      "The body and mind are deeply interconnected",
+      "Non-striving: the paradox of letting go of goals in meditation"
+    ],
+    "techniques": ["mindfulness-meditation", "body-scan", "diaphragmatic-breathing", "progressive-muscle-relaxation"],
+    "bestFor": ["stress", "chronic-pain", "anxiety", "depression-relapse-prevention", "insomnia"],
+    "founders": "Jon Kabat-Zinn",
+    "yearDeveloped": "1979",
+    "evidenceLevel": "strong",
+    "category": "mindfulness-based",
+    "references": [
+      "Kabat-Zinn, J. (2013). Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness (revised ed.). Bantam Books.",
+      "Khoury, B., et al. (2013). Mindfulness-based therapy: A comprehensive meta-analysis. Clinical Psychology Review, 33(6), 763-771."
+    ]
+  },
+  {
+    "id": "mbct",
+    "name": "Mindfulness-Based Cognitive Therapy (MBCT)",
+    "shortDescription": "MBCT combines mindfulness practices with cognitive therapy techniques to help people who suffer from recurrent depression. It teaches participants to recognize and disengage from habitual negative thought patterns that contribute to depressive relapse.",
+    "fullDescription": "Mindfulness-Based Cognitive Therapy was developed by Zindel Segal, Mark Williams, and John Teasdale in the late 1990s, combining the structure of MBSR with elements of cognitive therapy for depression. The developers were originally tasked with creating a maintenance version of CBT for depression but discovered that mindfulness training was more effective at preventing relapse than cognitive techniques alone.\n\nMBCT is grounded in the understanding that people who have experienced depression are vulnerable to relapse because sad moods can reactivate patterns of negative thinking (rumination) that were present during previous episodes. This process, called 'cognitive reactivity,' can quickly escalate a mild mood dip into a full depressive episode. MBCT teaches participants to recognize the early warning signs of depressive relapse and to relate differently to their thoughts, feelings, and body sensations.\n\nLike MBSR, MBCT is delivered as an 8-week group program with daily home practice. It includes body scan, sitting meditation, mindful movement, and specific cognitive therapy exercises such as identifying thoughts as mental events rather than facts. The 3-minute breathing space is a signature MBCT practice that serves as a bridge between formal meditation and daily life. MBCT is recommended by the UK's National Institute for Health and Care Excellence (NICE) for preventing depressive relapse in people who have had three or more episodes. Research shows it reduces relapse rates by approximately 40-50% compared to usual care.",
+    "keyPrinciples": [
+      "Thoughts are mental events, not facts",
+      "Cognitive reactivity drives depressive relapse",
+      "Decentering: observing thoughts from a distance rather than being caught up in them",
+      "Mindfulness interrupts automatic pilot and rumination",
+      "Awareness of early warning signs of relapse is crucial",
+      "Approaching difficulty rather than avoiding it",
+      "Being mode vs. Doing mode: shifting from problem-solving to present-moment awareness"
+    ],
+    "techniques": ["mindfulness-meditation", "body-scan", "cognitive-restructuring", "thought-records"],
+    "bestFor": ["depression-relapse-prevention", "recurrent-depression", "anxiety", "rumination"],
+    "founders": "Zindel Segal, Mark Williams, John Teasdale",
+    "yearDeveloped": "1990s",
+    "evidenceLevel": "strong",
+    "category": "mindfulness-based",
+    "references": [
+      "Segal, Z.V., Williams, J.M.G., & Teasdale, J.D. (2013). Mindfulness-Based Cognitive Therapy for Depression (2nd ed.). Guilford Press.",
+      "Kuyken, W., et al. (2016). Efficacy of mindfulness-based cognitive therapy in prevention of depressive relapse. JAMA Psychiatry, 73(6), 565-574.",
+      "NICE (2009). Depression in Adults: Recognition and Management. Clinical Guideline CG90."
+    ]
+  },
+  {
+    "id": "solution-focused",
+    "name": "Solution-Focused Brief Therapy (SFBT)",
+    "shortDescription": "SFBT is a future-focused, goal-directed approach that helps clients envision and work toward their preferred future. Rather than analyzing problems in depth, it identifies and amplifies existing strengths and past successes.",
+    "fullDescription": "Solution-Focused Brief Therapy was developed by Steve de Shazer, Insoo Kim Berg, and their colleagues at the Brief Family Therapy Center in Milwaukee during the 1980s. The approach emerged from careful observation of what worked in therapy sessions, particularly the discovery that focusing on solutions rather than problems led to faster and more effective outcomes.\n\nSFBT is based on the premise that clients already possess the resources and strengths needed to solve their problems, and that the therapist's role is to help uncover and amplify these resources. The approach is distinctly future-oriented: rather than spending extensive time analyzing the history and causes of problems, SFBT directs attention to what the client wants to be different and what is already working.\n\nKey techniques include the 'miracle question' (If a miracle happened tonight and your problem was solved, what would be different tomorrow?), scaling questions (On a scale of 1-10, where are you now?), exception-finding (When was the problem less severe or absent?), and coping questions (How have you managed to cope with this difficulty?). Sessions typically focus on small, concrete, achievable goals. SFBT is genuinely brief, often lasting 3-8 sessions. It has been applied across diverse settings including schools, hospitals, child welfare, and corporate environments, with evidence supporting its use for depression, family conflict, and behavioral issues.",
+    "keyPrinciples": [
+      "If it isn't broken, don't fix it",
+      "If something works, do more of it",
+      "If something doesn't work, do something different",
+      "Small steps can lead to large changes",
+      "The solution is not necessarily related to the problem",
+      "Clients are the experts on their own lives",
+      "The future is both created and negotiable"
+    ],
+    "techniques": [],
+    "bestFor": ["brief-interventions", "family-conflict", "behavioral-issues", "goal-setting", "depression"],
+    "founders": "Steve de Shazer and Insoo Kim Berg",
+    "yearDeveloped": "1980s",
+    "evidenceLevel": "moderate",
+    "category": "systemic",
+    "references": [
+      "de Shazer, S. (1988). Clues: Investigating Solutions in Brief Therapy. Norton.",
+      "Gingerich, W.J., & Peterson, L.T. (2013). Effectiveness of solution-focused brief therapy: A systematic qualitative review of controlled outcome studies. Research on Social Work Practice, 23(3), 266-283."
+    ]
+  },
+  {
+    "id": "gestalt",
+    "name": "Gestalt Therapy",
+    "shortDescription": "Gestalt therapy is an experiential and humanistic approach that focuses on present-moment awareness, personal responsibility, and the integration of fragmented aspects of the self. It emphasizes direct experience over abstract interpretation.",
+    "fullDescription": "Gestalt therapy was developed by Fritz Perls, Laura Perls, and Paul Goodman in the 1940s and 1950s. Drawing on Gestalt psychology, existentialism, phenomenology, and field theory, Gestalt therapy offered an alternative to both psychoanalysis and behaviorism by emphasizing present experience, awareness, and the holistic nature of human functioning.\n\nThe term 'Gestalt' comes from German, meaning 'whole' or 'pattern,' reflecting the therapy's emphasis on perceiving experience as an integrated whole rather than reducing it to isolated parts. A key concept is the 'unfinished business'—unresolved feelings and unexpressed emotions from past experiences that interfere with present functioning. Gestalt therapy also emphasizes contact—the process of engaging with one's environment—and the ways people interrupt healthy contact through mechanisms like deflection, retroflection, and confluence.\n\nGestalt therapy is highly experiential. Rather than talking about feelings, clients are encouraged to experience them directly in the present moment. Techniques include the empty chair dialogue (speaking to an imagined person or part of oneself), exaggeration (amplifying a gesture or statement to bring awareness), and experiments (trying new behaviors in session). The therapist-client relationship is characterized by genuine dialogue and I-Thou encounter. Research supports Gestalt therapy for depression, anxiety, relationship issues, and personal growth, though the evidence base is smaller than for CBT.",
+    "keyPrinciples": [
+      "Awareness in the here-and-now is curative",
+      "The whole is greater than the sum of its parts",
+      "Personal responsibility: 'I' statements replace 'it' statements",
+      "Unfinished business from the past affects present functioning",
+      "Contact with the environment is essential for healthy functioning",
+      "Experiential learning is more powerful than intellectual insight alone",
+      "The paradoxical theory of change: change happens when one becomes what one is, not when one tries to become what one is not"
+    ],
+    "techniques": [],
+    "bestFor": ["personal-growth", "relationship-issues", "self-awareness", "depression", "grief"],
+    "founders": "Fritz Perls, Laura Perls, and Paul Goodman",
+    "yearDeveloped": "1940s–1950s",
+    "evidenceLevel": "moderate",
+    "category": "humanistic-experiential",
+    "references": [
+      "Perls, F., Hefferline, R., & Goodman, P. (1951). Gestalt Therapy: Excitement and Growth in the Human Personality. Julian Press.",
+      "Brownell, P. (2010). Gestalt Therapy: A Guide to Contemporary Practice. Springer.",
+      "Strümpfel, U., & Goldman, R. (2002). Contacting Gestalt therapy. In D.J. Cain & J. Seeman (Eds.), Humanistic Psychotherapies: Handbook of Research and Practice."
+    ]
+  },
+  {
+    "id": "narrative",
+    "name": "Narrative Therapy",
+    "shortDescription": "Narrative therapy helps people rewrite the dominant stories that shape their lives. By externalizing problems and discovering alternative narratives, clients gain agency over their experiences and identity.",
+    "fullDescription": "Narrative therapy was developed by Michael White and David Epston in the 1980s in Australia and New Zealand. Influenced by postmodern philosophy, social constructionism, and the work of Michel Foucault, narrative therapy views problems as separate from people and assumes that people have many skills, competencies, values, and abilities that can help them change their relationship with problems.\n\nThe central metaphor is that people make sense of their lives through stories, and that the dominant stories we tell about ourselves profoundly shape our identity and possibilities. When problems dominate someone's life narrative, it can feel all-encompassing and inescapable. Narrative therapy works by 'externalizing' the problem—separating it from the person's identity. For example, rather than saying 'I am depressed,' a client might say 'Depression has been influencing my life.' This linguistic shift opens space for a different relationship with the problem.\n\nKey practices include externalizing conversations, mapping the influence of the problem, discovering 'unique outcomes' (times when the person resisted or escaped the problem's influence), re-authoring conversations (developing richer, preferred storylines), and definitional ceremonies (sharing new stories with witnesses). Narrative therapy is deeply respectful of cultural context and power dynamics, making it particularly well-suited for working across cultures and with marginalized communities. It has been applied to trauma, grief, family therapy, community work, and school settings.",
+    "keyPrinciples": [
+      "The person is not the problem; the problem is the problem",
+      "People's lives and identities are shaped by the stories they tell",
+      "Dominant narratives can be restrictive and problem-saturated",
+      "Alternative stories already exist but may be overlooked",
+      "Externalizing the problem creates space for change",
+      "Cultural and social contexts shape personal narratives",
+      "Clients are the primary authors of their life stories"
+    ],
+    "techniques": ["journaling"],
+    "bestFor": ["identity-issues", "trauma", "grief", "family-therapy", "cultural-sensitivity", "childhood-behavioral-issues"],
+    "founders": "Michael White and David Epston",
+    "yearDeveloped": "1980s",
+    "evidenceLevel": "moderate",
+    "category": "postmodern",
+    "references": [
+      "White, M., & Epston, D. (1990). Narrative Means to Therapeutic Ends. Norton.",
+      "White, M. (2007). Maps of Narrative Practice. Norton.",
+      "Etchison, M., & Kleist, D.M. (2000). Review of narrative therapy: Research and utility. The Family Journal, 8(1), 61-66."
+    ]
+  },
+  {
+    "id": "interpersonal",
+    "name": "Interpersonal Therapy (IPT)",
+    "shortDescription": "IPT is a time-limited, evidence-based therapy that focuses on improving interpersonal relationships and social functioning to help reduce psychological symptoms. It addresses grief, role disputes, role transitions, and interpersonal deficits.",
+    "fullDescription": "Interpersonal Therapy was developed by Gerald Klerman and Myrna Weissman in the 1970s, initially as a research treatment for major depression. IPT is grounded in the work of Harry Stack Sullivan, John Bowlby's attachment theory, and the broader interpersonal school of psychotherapy, all of which emphasize the central role of relationships in mental health.\n\nIPT focuses on four key problem areas: grief (complicated bereavement), role disputes (conflicts with significant others), role transitions (major life changes such as divorce, retirement, or becoming a parent), and interpersonal deficits (patterns of social isolation or unsatisfying relationships). Treatment typically begins with an interpersonal inventory—a systematic review of the client's significant relationships—to identify which problem area(s) are most relevant to the current depressive episode.\n\nIPT is typically delivered in 12–16 sessions with three phases: a beginning phase (assessment and formulation), middle phase (work on the identified problem area), and termination phase (consolidating gains and planning for the future). The therapist takes an active, supportive role and uses techniques such as communication analysis, role-playing, and exploring emotional responses in relationships. IPT has strong evidence for major depression and has been adapted for bipolar disorder, eating disorders, PTSD, and perinatal depression. It is recognized by the WHO as an evidence-based treatment for depression.",
+    "keyPrinciples": [
+      "Depression occurs in an interpersonal context",
+      "Improving relationships and communication improves mood",
+      "Four problem areas: grief, role disputes, role transitions, interpersonal deficits",
+      "The 'sick role' legitimizes the patient's experience and reduces self-blame",
+      "Therapy is time-limited and focused on current relationships",
+      "Emotional processing within an interpersonal framework facilitates change",
+      "Communication patterns are central targets of intervention"
+    ],
+    "techniques": [],
+    "bestFor": ["depression", "perinatal-depression", "eating-disorders", "grief", "relationship-difficulties"],
+    "founders": "Gerald Klerman and Myrna Weissman",
+    "yearDeveloped": "1970s",
+    "evidenceLevel": "strong",
+    "category": "interpersonal",
+    "references": [
+      "Weissman, M.M., Markowitz, J.C., & Klerman, G.L. (2018). The Guide to Interpersonal Psychotherapy (updated and expanded ed.). Oxford University Press.",
+      "Cuijpers, P., et al. (2011). Interpersonal psychotherapy for depression: A meta-analysis. American Journal of Psychiatry, 168(6), 581-592."
+    ]
+  },
+  {
+    "id": "positive-psychology",
+    "name": "Positive Psychology Interventions",
+    "shortDescription": "Positive psychology focuses on what makes life worth living—strengths, virtues, well-being, and flourishing—rather than solely on reducing pathology. Interventions aim to build positive emotions, engagement, relationships, meaning, and accomplishment.",
+    "fullDescription": "Positive psychology was formally established by Martin Seligman and Mihaly Csikszentmihalyi around 2000, though its roots extend to humanistic psychology and earlier philosophical traditions. Seligman, then president of the American Psychological Association, argued that psychology had become overly focused on pathology and needed to also study what constitutes a good life, what strengths and virtues people possess, and how well-being can be promoted.\n\nThe field is organized around several key frameworks. Seligman's PERMA model identifies five pillars of well-being: Positive Emotions, Engagement (flow states), Relationships, Meaning (purpose), and Accomplishment. Character strengths, as classified by the VIA (Values in Action) system developed by Peterson and Seligman, provide a vocabulary of 24 strengths organized under six virtues. Csikszentmihalyi's concept of 'flow'—complete absorption in an optimally challenging activity—is another foundational concept.\n\nPositive psychology interventions (PPIs) are structured activities designed to cultivate positive feelings, behaviors, and cognitions. Examples include gratitude journaling, identifying and using signature strengths, savoring exercises, acts of kindness, best possible self visualization, and meaning-making activities. Meta-analyses show that PPIs can significantly enhance well-being and reduce depressive symptoms. These interventions are used in clinical settings, schools, workplaces, and community programs. Positive psychology complements rather than replaces traditional approaches to mental illness.",
+    "keyPrinciples": [
+      "Well-being is more than the absence of illness",
+      "PERMA: Positive Emotions, Engagement, Relationships, Meaning, Accomplishment",
+      "Character strengths are universal and can be cultivated",
+      "Flow states contribute to engagement and satisfaction",
+      "Gratitude, kindness, and meaning enhance well-being",
+      "Building strengths is as important as fixing weaknesses",
+      "Flourishing is the ultimate aim of positive psychology"
+    ],
+    "techniques": ["gratitude-practice", "journaling", "visualization", "values-clarification"],
+    "bestFor": ["well-being-enhancement", "depression", "low-self-esteem", "burnout", "personal-growth"],
+    "founders": "Martin Seligman and Mihaly Csikszentmihalyi",
+    "yearDeveloped": "2000",
+    "evidenceLevel": "moderate-to-strong",
+    "category": "positive-psychology",
+    "references": [
+      "Seligman, M.E.P. (2011). Flourish: A Visionary New Understanding of Happiness and Well-being. Free Press.",
+      "Peterson, C., & Seligman, M.E.P. (2004). Character Strengths and Virtues: A Handbook and Classification. APA Press/Oxford University Press.",
+      "Bolier, L., et al. (2013). Positive psychology interventions: A meta-analysis of randomized controlled studies. BMC Public Health, 13, 119."
+    ]
+  }
+]

@@ -1,0 +1,509 @@
+[
+  {
+    "id": "generalized-anxiety",
+    "name": "Generalized Anxiety Disorder (GAD)",
+    "category": "anxiety-disorders",
+    "shortDescription": "GAD is characterized by persistent, excessive worry about a variety of everyday topics that is difficult to control and causes significant distress or impairment.",
+    "fullDescription": "Generalized Anxiety Disorder is marked by chronic, exaggerated worry and tension that is much more intense than the situation warrants. People with GAD often expect disaster and may be overly concerned about health, money, family, work, or other issues. The worry is difficult to control and is accompanied by physical symptoms such as muscle tension, fatigue, restlessness, difficulty concentrating, irritability, and sleep disturbance. To meet diagnostic criteria, the excessive anxiety and worry must occur more days than not for at least six months and must cause clinically significant distress or impairment in social, occupational, or other important areas of functioning. GAD often co-occurs with major depression, other anxiety disorders, and substance use disorders. It typically develops gradually and can occur at any age, though the median age of onset is 30 years. GAD is highly treatable with psychotherapy (particularly CBT), medication, or a combination of both.",
+    "symptoms": [
+      "Persistent, excessive worry about multiple topics",
+      "Difficulty controlling worry",
+      "Restlessness or feeling keyed up or on edge",
+      "Being easily fatigued",
+      "Difficulty concentrating or mind going blank",
+      "Irritability",
+      "Muscle tension",
+      "Sleep disturbance (difficulty falling or staying asleep, or restless unsatisfying sleep)"
+    ],
+    "prevalence": "3.1% of US adults in any given year; 5.7% lifetime prevalence",
+    "treatmentApproaches": ["cbt", "mbsr", "act", "mbct"],
+    "copingStrategies": ["diaphragmatic-breathing", "grounding-5-4-3-2-1", "progressive-muscle-relaxation", "worry-time-scheduling"],
+    "disclaimer": "This information is educational only. Please consult a licensed mental health professional for diagnosis and treatment.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "National Institute of Mental Health. Generalized Anxiety Disorder.",
+      "Cuijpers, P., et al. (2014). Psychological treatment of generalized anxiety disorder: A meta-analysis. Clinical Psychology Review, 34(2), 130-140."
+    ]
+  },
+  {
+    "id": "social-anxiety",
+    "name": "Social Anxiety Disorder (Social Phobia)",
+    "category": "anxiety-disorders",
+    "shortDescription": "Social anxiety disorder involves intense fear and avoidance of social situations due to concerns about being judged, embarrassed, or humiliated by others.",
+    "fullDescription": "Social Anxiety Disorder is characterized by a marked and persistent fear of social or performance situations in which the person is exposed to possible scrutiny by others. The individual fears that they will act in a way or show anxiety symptoms that will be negatively evaluated, leading to embarrassment, humiliation, or rejection. Common feared situations include public speaking, meeting new people, eating or drinking in public, and being the center of attention. The fear is out of proportion to the actual threat, and the person either avoids these situations or endures them with intense anxiety. Social anxiety disorder typically begins in adolescence (median age of onset is 13 years) and, without treatment, tends to be chronic. It can significantly impair academic achievement, career advancement, and the ability to form and maintain relationships. Cognitive Behavioral Therapy with exposure components is the first-line treatment, and social skills training may also be beneficial.",
+    "symptoms": [
+      "Intense fear of social situations where one might be judged",
+      "Avoidance of social interactions or enduring them with significant distress",
+      "Fear of showing visible signs of anxiety (blushing, trembling, sweating)",
+      "Excessive worry before, during, and after social events",
+      "Difficulty making or maintaining eye contact",
+      "Nausea or stomach upset in social situations",
+      "Rigid body posture or speaking with an overly soft voice",
+      "Difficulty asserting oneself"
+    ],
+    "prevalence": "7.1% of US adults in any given year; 12.1% lifetime prevalence",
+    "treatmentApproaches": ["cbt", "act", "person-centered"],
+    "copingStrategies": ["diaphragmatic-breathing", "cognitive-restructuring", "grounding-5-4-3-2-1", "exposure-therapy"],
+    "disclaimer": "This information is educational only. Please consult a licensed mental health professional for diagnosis and treatment.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "National Institute of Mental Health. Social Anxiety Disorder.",
+      "Mayo-Wilson, E., et al. (2014). Psychological and pharmacological interventions for social anxiety disorder in adults: A systematic review and network meta-analysis. The Lancet Psychiatry, 1(5), 368-376."
+    ]
+  },
+  {
+    "id": "panic-disorder",
+    "name": "Panic Disorder",
+    "category": "anxiety-disorders",
+    "shortDescription": "Panic disorder involves recurrent, unexpected panic attacks and persistent worry about having more attacks or their consequences, often leading to significant behavioral changes.",
+    "fullDescription": "Panic Disorder is characterized by recurrent, unexpected panic attacks—sudden surges of overwhelming fear and physical discomfort that peak within minutes. During a panic attack, individuals may experience heart palpitations, sweating, trembling, shortness of breath, chest pain, nausea, dizziness, chills or hot flashes, numbness or tingling, feelings of unreality or detachment from oneself, fear of losing control, and fear of dying. At least one attack must be followed by one month or more of persistent concern about additional attacks, worry about their implications (e.g., having a heart attack, 'going crazy'), or significant maladaptive behavior changes (e.g., avoiding exercise or unfamiliar situations). Panic disorder often leads to agoraphobia—avoidance of places or situations where escape might be difficult or help unavailable in the event of a panic attack. The lifetime prevalence is 4.7% in the US, with women affected approximately twice as often as men. CBT, particularly involving interoceptive exposure (deliberately inducing and tolerating panic-like sensations), is highly effective.",
+    "symptoms": [
+      "Recurrent unexpected panic attacks",
+      "Heart palpitations or accelerated heart rate",
+      "Sweating, trembling, or shaking",
+      "Shortness of breath or feelings of choking",
+      "Chest pain or discomfort",
+      "Nausea or abdominal distress",
+      "Dizziness, lightheadedness, or faintness",
+      "Chills or hot flashes",
+      "Numbness or tingling sensations",
+      "Feelings of unreality (derealization) or detachment (depersonalization)",
+      "Fear of losing control or 'going crazy'",
+      "Fear of dying",
+      "Persistent worry about future attacks",
+      "Avoidance of situations associated with panic"
+    ],
+    "prevalence": "2-3% of US adults in any given year; 4.7% lifetime prevalence",
+    "treatmentApproaches": ["cbt", "emdr", "mbsr"],
+    "copingStrategies": ["diaphragmatic-breathing", "grounding-5-4-3-2-1", "progressive-muscle-relaxation"],
+    "disclaimer": "This information is educational only. Please consult a licensed mental health professional for diagnosis and treatment.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "Pompoli, A., et al. (2016). Psychological therapies for panic disorder with or without agoraphobia. Cochrane Database of Systematic Reviews, 4, CD011004."
+    ]
+  },
+  {
+    "id": "major-depression",
+    "name": "Major Depressive Disorder (MDD)",
+    "category": "mood-disorders",
+    "shortDescription": "MDD is characterized by persistent sadness, loss of interest or pleasure, and a range of cognitive and physical symptoms that significantly impair daily functioning.",
+    "fullDescription": "Major Depressive Disorder is one of the most common mental health conditions worldwide. It is characterized by episodes lasting at least two weeks during which a person experiences depressed mood or loss of interest/pleasure in nearly all activities, along with at least four additional symptoms: significant changes in appetite or weight, insomnia or hypersomnia, psychomotor agitation or retardation, fatigue or loss of energy, feelings of worthlessness or excessive guilt, diminished ability to think or concentrate, or recurrent thoughts of death or suicidal ideation. MDD is more than ordinary sadness—it represents a significant change in functioning and is often accompanied by impaired concentration, social withdrawal, and difficulty performing at work or school. MDD can be recurrent, with each episode increasing the risk of future episodes. Risk factors include family history, early life adversity, chronic stress, medical illness, and certain medications. Treatment typically involves psychotherapy (CBT, IPT, or psychodynamic therapy), antidepressant medication, or a combination. For severe or treatment-resistant cases, options include electroconvulsive therapy (ECT) and transcranial magnetic stimulation (TMS).",
+    "symptoms": [
+      "Depressed mood most of the day, nearly every day",
+      "Markedly diminished interest or pleasure in activities",
+      "Significant weight loss or gain, or change in appetite",
+      "Insomnia or hypersomnia",
+      "Psychomotor agitation or retardation",
+      "Fatigue or loss of energy",
+      "Feelings of worthlessness or excessive guilt",
+      "Diminished ability to think, concentrate, or make decisions",
+      "Recurrent thoughts of death or suicidal ideation"
+    ],
+    "prevalence": "8.3% of US adults (21 million people) in 2021; 20.6% lifetime prevalence",
+    "treatmentApproaches": ["cbt", "interpersonal", "psychodynamic", "mbct", "behavioral-activation"],
+    "copingStrategies": ["behavioral-activation", "gratitude-practice", "journaling", "mindfulness-meditation"],
+    "disclaimer": "This information is educational only. Please consult a licensed mental health professional for diagnosis and treatment. If you are experiencing suicidal thoughts, please contact the 988 Suicide & Crisis Lifeline by calling or texting 988.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "National Institute of Mental Health. Major Depression.",
+      "Cuijpers, P., et al. (2020). Psychotherapies for depression: A network meta-analysis covering efficacy, acceptability and long-term outcomes. World Psychiatry, 20(2), 283-293."
+    ]
+  },
+  {
+    "id": "persistent-depressive",
+    "name": "Persistent Depressive Disorder (Dysthymia)",
+    "category": "mood-disorders",
+    "shortDescription": "Persistent depressive disorder is a chronic form of depression lasting at least two years, characterized by a depressed mood for most of the day, more days than not, along with additional depressive symptoms.",
+    "fullDescription": "Persistent Depressive Disorder (PDD), formerly known as dysthymia, is a chronic form of depression in which a person's mood is regularly low. The depressed mood must be present for most of the day, more days than not, for at least two years in adults (one year in children and adolescents). During this period, the individual also experiences at least two of the following: poor appetite or overeating, insomnia or hypersomnia, low energy or fatigue, low self-esteem, poor concentration or difficulty making decisions, and feelings of hopelessness. The person must not have been without symptoms for more than two months at a time during the two-year period. Because PDD is chronic, many people come to see their depressive symptoms as part of their personality rather than a treatable condition—they may say 'I've always been this way.' PDD can co-occur with major depressive episodes (sometimes called 'double depression'), which can complicate diagnosis and treatment. Treatment approaches include psychotherapy (CBT, CBASP, IPT) and antidepressant medication, though treatment response may be slower than with episodic depression.",
+    "symptoms": [
+      "Depressed mood most of the day, more days than not, for at least 2 years",
+      "Poor appetite or overeating",
+      "Insomnia or hypersomnia",
+      "Low energy or fatigue",
+      "Low self-esteem",
+      "Poor concentration or difficulty making decisions",
+      "Feelings of hopelessness"
+    ],
+    "prevalence": "1.5% of US adults in any given year; 2.5% lifetime prevalence",
+    "treatmentApproaches": ["cbt", "interpersonal", "psychodynamic"],
+    "copingStrategies": ["behavioral-activation", "gratitude-practice", "journaling", "self-compassion-break"],
+    "disclaimer": "This information is educational only. Please consult a licensed mental health professional for diagnosis and treatment.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "Cuijpers, P., et al. (2010). Psychotherapy for chronic major depression and dysthymia: A meta-analysis. Clinical Psychology Review, 30(1), 51-62."
+    ]
+  },
+  {
+    "id": "ptsd",
+    "name": "Post-Traumatic Stress Disorder (PTSD)",
+    "category": "trauma-and-stressor-related",
+    "shortDescription": "PTSD develops after exposure to a traumatic event and is characterized by intrusive re-experiencing, avoidance, negative changes in thinking and mood, and heightened arousal and reactivity.",
+    "fullDescription": "Post-Traumatic Stress Disorder can develop after exposure to actual or threatened death, serious injury, or sexual violence—whether experienced directly, witnessed, learned about (when it happened to a close person), or through repeated exposure to aversive details (as with first responders). PTSD symptoms fall into four clusters: intrusion (flashbacks, nightmares, distressing memories), avoidance (of trauma-related thoughts, feelings, or external reminders), negative alterations in cognitions and mood (distorted blame, persistent negative emotions, detachment, inability to experience positive emotions), and alterations in arousal and reactivity (irritability, hypervigilance, exaggerated startle, concentration difficulties, sleep disturbance). Symptoms must persist for more than one month and cause significant distress or functional impairment. Not everyone who experiences trauma develops PTSD; risk factors include the severity and duration of the trauma, prior trauma exposure, pre-existing mental health conditions, lack of social support, and biological vulnerability. Evidence-based treatments include Prolonged Exposure therapy, Cognitive Processing Therapy, EMDR, and certain medications (SSRIs). Many people recover with appropriate treatment, though some may experience chronic symptoms.",
+    "symptoms": [
+      "Intrusive, distressing memories of the traumatic event",
+      "Recurrent distressing dreams related to the event",
+      "Flashbacks (feeling as if the event is happening again)",
+      "Intense psychological distress at reminders of the event",
+      "Avoidance of trauma-related thoughts, feelings, or conversations",
+      "Avoidance of places, activities, or people that trigger memories",
+      "Inability to remember important aspects of the event",
+      "Persistent negative beliefs about oneself or the world",
+      "Distorted blame of self or others for the trauma",
+      "Persistent negative emotional states (fear, horror, anger, guilt, shame)",
+      "Diminished interest in activities",
+      "Feeling detached or estranged from others",
+      "Irritable behavior and angry outbursts",
+      "Hypervigilance",
+      "Exaggerated startle response",
+      "Difficulty concentrating",
+      "Sleep disturbance"
+    ],
+    "prevalence": "3.6% of US adults in any given year; 6.8% lifetime prevalence",
+    "treatmentApproaches": ["emdr", "cbt", "act"],
+    "copingStrategies": ["grounding-5-4-3-2-1", "diaphragmatic-breathing", "progressive-muscle-relaxation", "mindfulness-meditation"],
+    "disclaimer": "This information is educational only. Please consult a licensed mental health professional for diagnosis and treatment. If you are experiencing a crisis, please contact the 988 Suicide & Crisis Lifeline.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "National Center for PTSD, U.S. Department of Veterans Affairs.",
+      "Cusack, K., et al. (2016). Psychological treatments for adults with posttraumatic stress disorder: A systematic review and meta-analysis. Clinical Psychology Review, 43, 128-141."
+    ]
+  },
+  {
+    "id": "ocd",
+    "name": "Obsessive-Compulsive Disorder (OCD)",
+    "category": "obsessive-compulsive-and-related",
+    "shortDescription": "OCD is characterized by persistent, unwanted thoughts (obsessions) and repetitive behaviors or mental acts (compulsions) performed to reduce the distress caused by obsessions.",
+    "fullDescription": "Obsessive-Compulsive Disorder involves two core components: obsessions and compulsions. Obsessions are recurrent, persistent, intrusive thoughts, urges, or images that cause marked anxiety or distress. Common obsession themes include contamination, harm, symmetry/order, forbidden or taboo thoughts (aggressive, sexual, or religious), and the need for certainty. Compulsions are repetitive behaviors (hand washing, checking, ordering) or mental acts (counting, praying, mental reviewing) that the person feels driven to perform in response to an obsession or according to rigid rules. Compulsions are aimed at reducing anxiety or preventing a dreaded event, but they are either excessive or not realistically connected to what they are designed to prevent. The obsessions and compulsions are time-consuming (often taking more than one hour per day) and cause significant distress or impairment. OCD affects approximately 1.2% of US adults and typically begins in childhood or early adulthood. The gold-standard treatment is Exposure and Response Prevention (ERP), a specialized form of CBT in which clients gradually face their fears without engaging in compulsions. Medication (SSRIs at higher doses) is also effective, and combination treatment may offer additional benefit.",
+    "symptoms": [
+      "Recurrent, persistent, intrusive, unwanted thoughts (obsessions)",
+      "Anxiety or distress caused by obsessions",
+      "Repetitive behaviors or mental acts performed to reduce distress (compulsions)",
+      "Recognition that obsessions and compulsions are excessive (in most adults)",
+      "Significant time spent on obsessions and compulsions (often 1+ hours/day)",
+      "Avoidance of situations that trigger obsessions",
+      "Difficulty tolerating uncertainty",
+      "Impaired functioning in work, school, or relationships"
+    ],
+    "prevalence": "1.2% of US adults in any given year; 2.3% lifetime prevalence",
+    "treatmentApproaches": ["cbt", "act"],
+    "copingStrategies": ["exposure-therapy", "mindfulness-meditation", "defusion-techniques"],
+    "disclaimer": "This information is educational only. Please consult a licensed mental health professional for diagnosis and treatment.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "International OCD Foundation. About OCD.",
+      "Öst, L.G., et al. (2015). Cognitive behavior therapy versus exposure and response prevention for obsessive-compulsive disorder: A systematic review and meta-analysis. Clinical Psychology Review, 40, 156-169."
+    ]
+  },
+  {
+    "id": "adhd",
+    "name": "Attention-Deficit/Hyperactivity Disorder (ADHD)",
+    "category": "neurodevelopmental",
+    "shortDescription": "ADHD is a neurodevelopmental disorder characterized by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with functioning and development.",
+    "fullDescription": "Attention-Deficit/Hyperactivity Disorder is one of the most common neurodevelopmental disorders, often first identified in childhood and frequently persisting into adulthood. ADHD presents in three forms: predominantly inattentive presentation (difficulty sustaining attention, following through on tasks, and organizing activities), predominantly hyperactive-impulsive presentation (fidgeting, difficulty remaining seated, talking excessively, interrupting), and combined presentation. Symptoms must be present before age 12, occur in two or more settings (e.g., home, school, work), and clearly interfere with functioning. In adults, hyperactivity may manifest as restlessness or difficulty relaxing, while inattention often appears as difficulty with time management, organization, and following through on commitments. ADHD has a strong genetic component, with heritability estimated at approximately 74%. Neuroimaging studies show differences in brain structure and function, particularly in prefrontal cortical regions involved in executive function. Treatment typically involves a combination of medication (stimulants such as methylphenidate and amphetamines, or non-stimulants), behavioral interventions, psychoeducation, environmental modifications, and skills training for organization and time management. CBT adapted for ADHD has shown promise in addressing the functional impairments and negative self-beliefs that often accompany the disorder.",
+    "symptoms": [
+      "Difficulty sustaining attention in tasks or play",
+      "Frequent careless mistakes in work or activities",
+      "Difficulty listening when spoken to directly",
+      "Failure to follow through on instructions or finish tasks",
+      "Difficulty organizing tasks and activities",
+      "Avoidance of tasks requiring sustained mental effort",
+      "Frequently losing things necessary for tasks",
+      "Easily distracted by extraneous stimuli",
+      "Forgetfulness in daily activities",
+      "Fidgeting or squirming",
+      "Leaving seat when remaining seated is expected",
+      "Running or climbing in inappropriate situations (restlessness in adults)",
+      "Difficulty engaging in leisure activities quietly",
+      "Talking excessively",
+      "Blurting out answers before questions are completed",
+      "Difficulty waiting one's turn",
+      "Interrupting or intruding on others"
+    ],
+    "prevalence": "4.4% of US adults; 9.4% of US children (ages 2-17)",
+    "treatmentApproaches": ["cbt"],
+    "copingStrategies": ["mindfulness-meditation", "behavioral-activation", "journaling"],
+    "disclaimer": "This information is educational only. Please consult a licensed mental health professional for diagnosis and treatment.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "National Institute of Mental Health. Attention-Deficit/Hyperactivity Disorder.",
+      "Faraone, S.V., et al. (2021). The World Federation of ADHD International Consensus Statement. Neuroscience & Biobehavioral Reviews, 128, 789-818."
+    ]
+  },
+  {
+    "id": "bipolar-i",
+    "name": "Bipolar I Disorder",
+    "category": "mood-disorders",
+    "shortDescription": "Bipolar I Disorder is characterized by manic episodes lasting at least seven days (or requiring hospitalization), typically alternating with depressive episodes. Mania involves elevated or irritable mood, increased energy, and impaired judgment.",
+    "fullDescription": "Bipolar I Disorder is defined by the occurrence of at least one manic episode, which is a distinct period of abnormally and persistently elevated, expansive, or irritable mood and abnormally increased goal-directed activity or energy lasting at least seven days (or any duration if hospitalization is required). During a manic episode, three or more of the following symptoms are present: inflated self-esteem or grandiosity, decreased need for sleep, pressured speech, flight of ideas, distractibility, increased goal-directed activity or psychomotor agitation, and excessive involvement in risky activities (e.g., spending sprees, risky sexual behavior, impulsive business investments). Manic episodes represent a noticeable change from the person's usual behavior and are severe enough to cause marked impairment, require hospitalization, or include psychotic features. Most people with Bipolar I also experience major depressive episodes, though this is not required for diagnosis. The disorder typically emerges in late adolescence or early adulthood, with an average age of onset around 18 years. Treatment is primarily pharmacological, with mood stabilizers (lithium, valproate) and atypical antipsychotics as first-line agents. Psychotherapy—particularly psychoeducation, CBT adapted for bipolar disorder, interpersonal and social rhythm therapy (IPSRT), and family-focused therapy—serves as an important adjunct to medication.",
+    "symptoms": [
+      "Manic episodes: elevated, expansive, or irritable mood",
+      "Increased energy and goal-directed activity",
+      "Inflated self-esteem or grandiosity",
+      "Decreased need for sleep",
+      "Pressured speech (talking more than usual)",
+      "Racing thoughts or flight of ideas",
+      "Distractibility",
+      "Excessive involvement in risky activities",
+      "Depressive episodes: sadness, hopelessness, loss of interest",
+      "Fatigue and sleep disturbance during depressive episodes",
+      "Possible psychotic features during severe episodes"
+    ],
+    "prevalence": "2.8% of US adults in any given year (Bipolar I and II combined)",
+    "treatmentApproaches": ["cbt", "interpersonal", "psychodynamic"],
+    "copingStrategies": ["mindfulness-meditation", "journaling", "diaphragmatic-breathing"],
+    "disclaimer": "This information is educational only. Please consult a licensed mental health professional for diagnosis and treatment. Bipolar disorder requires professional management, typically including medication.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "National Institute of Mental Health. Bipolar Disorder.",
+      "Geddes, J.R., & Miklowitz, D.J. (2013). Treatment of bipolar disorder. The Lancet, 381(9878), 1672-1682."
+    ]
+  },
+  {
+    "id": "bipolar-ii",
+    "name": "Bipolar II Disorder",
+    "category": "mood-disorders",
+    "shortDescription": "Bipolar II Disorder involves a pattern of hypomanic episodes (less severe than mania) and depressive episodes. The depressive episodes are often the predominant and most impairing feature.",
+    "fullDescription": "Bipolar II Disorder is characterized by a pattern of depressive episodes and hypomanic episodes. Hypomania is a less severe form of mania—it involves the same types of symptoms but is shorter in duration (at least four days), does not cause marked impairment in social or occupational functioning, does not require hospitalization, and does not include psychotic features. Despite this, Bipolar II is not a 'milder' form of Bipolar I; it is associated with significant suffering, particularly through its depressive episodes, which tend to be longer and more frequent than in Bipolar I. Many individuals with Bipolar II spend the majority of their illness time in a depressive state, which can be chronic and debilitating. Bipolar II is often misdiagnosed as major depressive disorder because patients are more likely to seek treatment during depressive episodes and may not recognize hypomanic episodes as abnormal (they may even enjoy them). Accurate diagnosis is critical because treatment with antidepressants alone, without mood stabilizers, can trigger hypomania or rapid cycling. Treatment includes mood stabilizers, atypical antipsychotics, and psychotherapy approaches similar to those used for Bipolar I.",
+    "symptoms": [
+      "Hypomanic episodes: elevated mood, increased energy (at least 4 days)",
+      "Depressive episodes: persistent sadness, loss of interest, fatigue",
+      "Decreased need for sleep during hypomania",
+      "Increased talkativeness during hypomania",
+      "Inflated self-confidence during hypomania",
+      "Increased goal-directed activity",
+      "Impulsivity during hypomanic states",
+      "Significant impairment primarily from depressive episodes",
+      "Possible irritability in both mood states"
+    ],
+    "prevalence": "0.8% of US adults in any given year",
+    "treatmentApproaches": ["cbt", "interpersonal"],
+    "copingStrategies": ["mindfulness-meditation", "journaling", "behavioral-activation"],
+    "disclaimer": "This information is educational only. Please consult a licensed mental health professional for diagnosis and treatment. Bipolar disorder requires professional management, typically including medication.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "Suppes, T., & Dennehy, E.B. (2002). Evidence-based long-term treatment of bipolar II disorder. Journal of Clinical Psychiatry, 63(Suppl 10), 29-33."
+    ]
+  },
+  {
+    "id": "anorexia-nervosa",
+    "name": "Anorexia Nervosa",
+    "category": "eating-disorders",
+    "shortDescription": "Anorexia nervosa is an eating disorder characterized by restriction of energy intake leading to significantly low body weight, intense fear of gaining weight, and disturbance in self-perceived weight or shape.",
+    "fullDescription": "Anorexia Nervosa is a serious, potentially life-threatening eating disorder characterized by three key features: restriction of energy intake relative to requirements leading to significantly low body weight in the context of age, sex, developmental trajectory, and physical health; intense fear of gaining weight or becoming fat, or persistent behavior that interferes with weight gain; and disturbance in the way one's body weight or shape is experienced, undue influence of body weight or shape on self-evaluation, or persistent lack of recognition of the seriousness of the current low body weight. There are two subtypes: restricting type (weight loss through dieting, fasting, or excessive exercise) and binge-eating/purging type (engaging in binge eating or purging behaviors). Anorexia nervosa has the highest mortality rate of any mental illness, due both to medical complications (cardiac arrhythmias, organ failure, electrolyte imbalances) and suicide. It most commonly begins in adolescence and disproportionately affects females, though it occurs across all genders, ages, and demographic groups. Treatment requires a multidisciplinary approach including nutritional rehabilitation, psychotherapy (CBT-E, family-based treatment for adolescents, psychodynamic therapy), and medical monitoring. Hospitalization may be necessary for severe cases.",
+    "symptoms": [
+      "Significant restriction of food intake",
+      "Significantly low body weight",
+      "Intense fear of gaining weight",
+      "Distorted body image",
+      "Denial of the seriousness of low body weight",
+      "Excessive exercise",
+      "Ritualistic eating behaviors",
+      "Social withdrawal",
+      "Amenorrhea (loss of menstrual period)",
+      "Cold intolerance, fatigue, dizziness",
+      "Lanugo (fine body hair)",
+      "Preoccupation with food, calories, and dieting"
+    ],
+    "prevalence": "0.3-0.4% lifetime prevalence in women; 0.03% in men",
+    "treatmentApproaches": ["cbt", "psychodynamic", "interpersonal"],
+    "copingStrategies": ["mindfulness-meditation", "journaling", "self-compassion-break"],
+    "disclaimer": "This information is educational only. Eating disorders are serious medical conditions that require professional treatment. Please consult a licensed mental health professional and medical doctor for diagnosis and treatment.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "National Eating Disorders Association (NEDA).",
+      "Zipfel, S., et al. (2015). Anorexia nervosa: aetiology, assessment, and treatment. The Lancet Psychiatry, 2(12), 1099-1111."
+    ]
+  },
+  {
+    "id": "bulimia-nervosa",
+    "name": "Bulimia Nervosa",
+    "category": "eating-disorders",
+    "shortDescription": "Bulimia nervosa involves recurrent episodes of binge eating followed by compensatory behaviors such as self-induced vomiting, misuse of laxatives, fasting, or excessive exercise.",
+    "fullDescription": "Bulimia Nervosa is characterized by recurrent episodes of binge eating—consuming an objectively large amount of food in a discrete period while feeling a lack of control—followed by inappropriate compensatory behaviors to prevent weight gain. Compensatory methods include self-induced vomiting, misuse of laxatives or diuretics, fasting, and excessive exercise. Both the binge eating and compensatory behaviors occur, on average, at least once a week for three months. Self-evaluation is unduly influenced by body shape and weight. Unlike anorexia nervosa, individuals with bulimia nervosa are typically at a normal weight or slightly overweight, which can make the disorder less visible to others. The cycle of bingeing and purging is associated with significant shame and secrecy. Medical complications include electrolyte imbalances (which can be life-threatening), dental erosion, esophageal tears, chronic gastric reflux, and cardiac complications. Treatment includes CBT-E (enhanced cognitive behavior therapy for eating disorders, which is the first-line treatment), interpersonal therapy, and sometimes medication (SSRIs, particularly fluoxetine). Group therapy and guided self-help programs can also be effective.",
+    "symptoms": [
+      "Recurrent episodes of binge eating",
+      "Sense of lack of control during binges",
+      "Compensatory behaviors (vomiting, laxative misuse, fasting, excessive exercise)",
+      "Self-evaluation unduly influenced by body shape and weight",
+      "Preoccupation with body image",
+      "Eating in secret",
+      "Shame and guilt after binge episodes",
+      "Swollen salivary glands",
+      "Dental problems from vomiting",
+      "Gastrointestinal issues"
+    ],
+    "prevalence": "0.3% of US adults in any given year; 1-1.5% lifetime prevalence",
+    "treatmentApproaches": ["cbt", "interpersonal"],
+    "copingStrategies": ["mindfulness-meditation", "self-compassion-break", "journaling", "distress-tolerance-tipp"],
+    "disclaimer": "This information is educational only. Eating disorders are serious medical conditions that require professional treatment. Please consult a licensed mental health professional and medical doctor.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "Hay, P.J., et al. (2009). Psychological treatments for bulimia nervosa and binging. Cochrane Database of Systematic Reviews, 4, CD000562."
+    ]
+  },
+  {
+    "id": "binge-eating-disorder",
+    "name": "Binge Eating Disorder (BED)",
+    "category": "eating-disorders",
+    "shortDescription": "Binge eating disorder is the most common eating disorder, characterized by recurrent episodes of eating large quantities of food rapidly and to the point of discomfort, accompanied by a sense of loss of control and significant distress, without regular compensatory behaviors.",
+    "fullDescription": "Binge Eating Disorder is characterized by recurrent episodes of binge eating that occur, on average, at least once a week for three months. Binge episodes are associated with three or more of the following: eating much more rapidly than normal, eating until uncomfortably full, eating large amounts when not physically hungry, eating alone due to embarrassment, and feeling disgusted, depressed, or guilty afterward. The binge eating causes marked distress and is not associated with the regular use of inappropriate compensatory behaviors (such as purging, fasting, or excessive exercise), which distinguishes BED from bulimia nervosa. BED is the most common eating disorder in the United States, affecting approximately 2.8% of adults at some point in their lives. It occurs across all racial and ethnic groups and affects both men and women (though somewhat more common in women). BED is associated with obesity, though not all individuals with BED are overweight, and not all individuals who are overweight have BED. Treatment includes CBT (particularly CBT-E), interpersonal therapy, and behavioral weight loss programs. Lisdexamfetamine (Vyvanse) is the first FDA-approved medication for BED. Addressing emotional regulation and the psychological underpinnings of binge eating is central to recovery.",
+    "symptoms": [
+      "Recurrent episodes of eating unusually large amounts of food",
+      "Feeling a lack of control during binge episodes",
+      "Eating more rapidly than normal",
+      "Eating until uncomfortably full",
+      "Eating large amounts when not physically hungry",
+      "Eating alone due to embarrassment",
+      "Feeling disgusted, depressed, or guilty after overeating",
+      "Marked distress about binge eating",
+      "No regular use of compensatory behaviors"
+    ],
+    "prevalence": "1.2% of US adults in any given year; 2.8% lifetime prevalence",
+    "treatmentApproaches": ["cbt", "interpersonal"],
+    "copingStrategies": ["mindfulness-meditation", "self-compassion-break", "journaling", "diaphragmatic-breathing"],
+    "disclaimer": "This information is educational only. Eating disorders are serious conditions that require professional treatment. Please consult a licensed mental health professional.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "National Eating Disorders Association (NEDA).",
+      "Hilbert, A., et al. (2019). Meta-analysis of the efficacy of psychological and medical treatments for binge-eating disorder. Journal of Consulting and Clinical Psychology, 87(1), 91-105."
+    ]
+  },
+  {
+    "id": "borderline-personality",
+    "name": "Borderline Personality Disorder (BPD)",
+    "category": "personality-disorders",
+    "shortDescription": "BPD is characterized by pervasive instability in moods, interpersonal relationships, self-image, and behavior, often leading to impulsive actions and conflicted relationships.",
+    "fullDescription": "Borderline Personality Disorder is a complex mental health condition marked by a pervasive pattern of instability in interpersonal relationships, self-image, and emotions, along with marked impulsivity. The disorder typically begins in early adulthood and manifests across various contexts. Core features include frantic efforts to avoid real or imagined abandonment, unstable and intense relationships that alternate between idealization and devaluation, identity disturbance (unstable sense of self), impulsivity in areas that are potentially self-damaging (spending, substance use, reckless driving, binge eating), recurrent suicidal behavior or self-harm, emotional instability with rapid mood shifts, chronic feelings of emptiness, inappropriate intense anger, and transient stress-related paranoid ideation or dissociative symptoms. The emotional dysregulation in BPD is severe—individuals often experience emotions more intensely than others, with slower return to baseline. Linehan's biosocial theory suggests BPD develops from the interaction of biological emotional vulnerability with an invalidating environment. BPD was historically considered difficult to treat, but evidence-based treatments—particularly DBT, mentalization-based therapy (MBT), transference-focused psychotherapy (TFP), and schema therapy—have shown significant effectiveness. Recovery is possible, and many individuals show substantial improvement over time.",
+    "symptoms": [
+      "Frantic efforts to avoid real or imagined abandonment",
+      "Pattern of unstable, intense relationships",
+      "Identity disturbance: unstable self-image or sense of self",
+      "Impulsivity in potentially self-damaging areas",
+      "Recurrent suicidal behavior, gestures, or self-harming behavior",
+      "Emotional instability and intense mood reactivity",
+      "Chronic feelings of emptiness",
+      "Inappropriate, intense anger or difficulty controlling anger",
+      "Transient, stress-related paranoia or dissociation"
+    ],
+    "prevalence": "1.4% of US adults; up to 20% of psychiatric inpatients",
+    "treatmentApproaches": ["dbt", "psychodynamic", "cbt"],
+    "copingStrategies": ["distress-tolerance-tipp", "opposite-action", "radical-acceptance", "mindfulness-meditation", "self-compassion-break"],
+    "disclaimer": "This information is educational only. Please consult a licensed mental health professional for diagnosis and treatment. If you are experiencing thoughts of self-harm or suicide, please contact the 988 Suicide & Crisis Lifeline.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "National Institute of Mental Health. Borderline Personality Disorder.",
+      "Storebø, O.J., et al. (2020). Psychological therapies for people with borderline personality disorder. Cochrane Database of Systematic Reviews, 5, CD012955."
+    ]
+  },
+  {
+    "id": "substance-use-disorder",
+    "name": "Substance Use Disorders",
+    "category": "substance-related",
+    "shortDescription": "Substance use disorders involve a pattern of symptoms resulting from the use of a substance that the individual continues taking despite experiencing problems. They range in severity and can involve any psychoactive substance.",
+    "fullDescription": "Substance Use Disorders (SUDs) are defined by a cluster of cognitive, behavioral, and physiological symptoms indicating that an individual continues using one or more substances despite significant substance-related problems. The DSM-5 identifies 10 separate classes of substances: alcohol, caffeine, cannabis, hallucinogens, inhalants, opioids, sedatives/hypnotics/anxiolytics, stimulants, tobacco, and other/unknown substances. Diagnosis is based on 11 criteria grouped into four categories: impaired control (using more than intended, failed attempts to cut down, excessive time spent on substance-related activities, craving), social impairment (failure to fulfill role obligations, continued use despite social problems, giving up important activities), risky use (use in physically hazardous situations, continued use despite physical or psychological problems), and pharmacological criteria (tolerance and withdrawal). Severity is classified as mild (2-3 criteria), moderate (4-5 criteria), or severe (6+ criteria). SUDs are now understood as chronic brain disorders with genetic, psychosocial, and environmental contributors. The brain's reward, motivation, and memory circuits are significantly affected. Treatment approaches include medication-assisted treatment (MAT), motivational interviewing, CBT, contingency management, 12-step facilitation, and therapeutic communities. Recovery is possible, and long-term management with ongoing support is typically most effective.",
+    "symptoms": [
+      "Using more of the substance than intended",
+      "Persistent desire or unsuccessful efforts to cut down",
+      "Spending excessive time obtaining, using, or recovering from the substance",
+      "Craving or strong desire to use",
+      "Failure to fulfill major role obligations due to use",
+      "Continued use despite persistent social or interpersonal problems",
+      "Important activities given up or reduced because of use",
+      "Recurrent use in physically hazardous situations",
+      "Continued use despite knowledge of physical or psychological problems",
+      "Tolerance (needing more to achieve the same effect)",
+      "Withdrawal symptoms when use is reduced or stopped"
+    ],
+    "prevalence": "7.7% of US adults (alcohol use disorder); 3.8% (illicit drug use disorder)",
+    "treatmentApproaches": ["motivational-interviewing", "cbt", "dbt"],
+    "copingStrategies": ["mindfulness-meditation", "diaphragmatic-breathing", "distress-tolerance-tipp", "behavioral-activation"],
+    "disclaimer": "This information is educational only. Substance use disorders are medical conditions that require professional treatment. Please consult a healthcare provider. Substance withdrawal can be medically dangerous and should be supervised by a professional.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "SAMHSA (Substance Abuse and Mental Health Services Administration). National Helpline: 1-800-662-4357.",
+      "National Institute on Drug Abuse. Principles of Drug Addiction Treatment: A Research-Based Guide (3rd ed.)."
+    ]
+  },
+  {
+    "id": "insomnia-disorder",
+    "name": "Insomnia Disorder",
+    "category": "sleep-wake-disorders",
+    "shortDescription": "Insomnia disorder involves persistent difficulty with sleep initiation, duration, consolidation, or quality that occurs despite adequate opportunity for sleep and results in daytime impairment.",
+    "fullDescription": "Insomnia Disorder is characterized by a predominant complaint of dissatisfaction with sleep quantity or quality, associated with difficulty initiating sleep, difficulty maintaining sleep (frequent awakenings or difficulty returning to sleep), or early morning awakening with inability to return to sleep. The sleep difficulty occurs at least three nights per week, is present for at least three months, and causes clinically significant distress or impairment in social, occupational, educational, academic, or other important areas of functioning. The sleep difficulty occurs despite adequate opportunity for sleep and is not better explained by another sleep disorder, medical condition, or substance use. Chronic insomnia is extremely common and is associated with increased risk for depression, anxiety, cardiovascular disease, and impaired cognitive function. Many individuals with insomnia develop maladaptive behaviors and cognitions that perpetuate the problem (e.g., excessive time in bed, clock-watching, catastrophic thinking about the consequences of poor sleep). Cognitive Behavioral Therapy for Insomnia (CBT-I) is the recommended first-line treatment, as it addresses these perpetuating factors and produces durable improvements. CBT-I includes sleep restriction, stimulus control, sleep hygiene education, relaxation training, and cognitive restructuring of sleep-related beliefs.",
+    "symptoms": [
+      "Difficulty falling asleep (sleep onset insomnia)",
+      "Difficulty staying asleep (sleep maintenance insomnia)",
+      "Early morning awakening with inability to return to sleep",
+      "Non-restorative sleep despite adequate time in bed",
+      "Daytime fatigue or low energy",
+      "Difficulty concentrating or memory problems",
+      "Mood disturbance (irritability, anxiety)",
+      "Impaired social or occupational functioning",
+      "Increased errors or accidents",
+      "Preoccupation or worry about sleep"
+    ],
+    "prevalence": "6-10% of adults meet diagnostic criteria; 30% report insomnia symptoms",
+    "treatmentApproaches": ["cbt", "mbsr"],
+    "copingStrategies": ["progressive-muscle-relaxation", "diaphragmatic-breathing", "mindfulness-meditation", "body-scan"],
+    "disclaimer": "This information is educational only. Please consult a healthcare professional for persistent sleep difficulties, as they may indicate an underlying medical condition.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "Riemann, D., et al. (2017). European guideline for the diagnosis and treatment of insomnia. Journal of Sleep Research, 26(6), 675-700.",
+      "Trauer, J.M., et al. (2015). Cognitive behavioral therapy for chronic insomnia: A systematic review and meta-analysis. Annals of Internal Medicine, 163(3), 191-204."
+    ]
+  },
+  {
+    "id": "adjustment-disorder",
+    "name": "Adjustment Disorder",
+    "category": "trauma-and-stressor-related",
+    "shortDescription": "Adjustment disorder involves emotional or behavioral symptoms developing in response to an identifiable stressor, with symptoms out of proportion to the stressor's severity and causing significant impairment.",
+    "fullDescription": "Adjustment Disorder is characterized by the development of emotional or behavioral symptoms in response to an identifiable stressor occurring within three months of the onset of the stressor. The symptoms are clinically significant as evidenced by either marked distress that is out of proportion to the severity or intensity of the stressor (taking into account external context and cultural factors) or significant impairment in social, occupational, or other important areas of functioning. Common stressors include relationship difficulties, divorce, job loss, financial problems, illness, moving, or life transitions. Subtypes include adjustment disorder with depressed mood, with anxiety, with mixed anxiety and depressed mood, with disturbance of conduct, with mixed disturbance of emotions and conduct, and unspecified. Adjustment disorders are among the most commonly diagnosed conditions in clinical practice and are considered a bridge between normal stress responses and more severe psychiatric disorders. By definition, symptoms do not persist for more than six months after the stressor or its consequences have terminated. However, if the stressor is chronic (e.g., ongoing illness), symptoms may persist longer. Treatment typically involves supportive therapy, problem-solving approaches, stress management, and brief psychotherapy.",
+    "symptoms": [
+      "Emotional distress disproportionate to the stressor",
+      "Depressed mood or tearfulness",
+      "Anxiety, worry, or nervousness",
+      "Difficulty coping with daily responsibilities",
+      "Feeling overwhelmed",
+      "Social withdrawal",
+      "Behavioral changes (e.g., reckless behavior, fighting)",
+      "Impairment in work, school, or relationships",
+      "Physical complaints (headaches, stomachaches)"
+    ],
+    "prevalence": "5-20% of outpatient mental health treatment populations; varies widely by setting",
+    "treatmentApproaches": ["cbt", "solution-focused", "person-centered"],
+    "copingStrategies": ["diaphragmatic-breathing", "journaling", "mindfulness-meditation", "self-compassion-break"],
+    "disclaimer": "This information is educational only. Please consult a licensed mental health professional for diagnosis and treatment.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "Casey, P. (2014). Adjustment disorder: New developments. Current Psychiatry Reports, 16(6), 451.",
+      "O'Donnell, M.L., et al. (2016). Adjustment disorder: Current developments and future directions. International Journal of Environmental Research and Public Health, 13(9), 943."
+    ]
+  },
+  {
+    "id": "autism-spectrum",
+    "name": "Autism Spectrum Disorder (ASD)",
+    "category": "neurodevelopmental",
+    "shortDescription": "Autism Spectrum Disorder is a neurodevelopmental condition characterized by persistent differences in social communication and interaction, along with restricted, repetitive patterns of behavior, interests, or activities.",
+    "fullDescription": "Autism Spectrum Disorder encompasses a broad range of conditions characterized by challenges with social skills, repetitive behaviors, speech, and nonverbal communication. The DSM-5 consolidated previous separate diagnoses (autistic disorder, Asperger's disorder, and pervasive developmental disorder not otherwise specified) under the single umbrella of ASD, reflecting our understanding that these conditions represent a spectrum of neurodevelopmental differences. Core diagnostic features include persistent deficits in social communication and social interaction across multiple contexts (e.g., difficulties with social-emotional reciprocity, nonverbal communicative behaviors, and developing and maintaining relationships) and restricted, repetitive patterns of behavior, interests, or activities (e.g., stereotyped movements, insistence on sameness, highly restricted interests, hyper- or hypo-reactivity to sensory input). Symptoms must be present in the early developmental period, though they may not fully manifest until social demands exceed capacities. ASD occurs across all racial, ethnic, and socioeconomic groups and is approximately four times more common in males. The autism community increasingly promotes a neurodiversity perspective, viewing autism as a natural variation of the human brain rather than purely a disorder to be cured. Support and interventions focus on enhancing strengths, building skills, and addressing co-occurring conditions (anxiety, depression, ADHD) that may cause distress. Evidence-based supports include applied behavior analysis (ABA), speech-language therapy, occupational therapy, social skills training, and CBT adapted for autistic individuals.",
+    "symptoms": [
+      "Differences in social-emotional reciprocity",
+      "Differences in nonverbal communication (eye contact, body language, gestures)",
+      "Challenges in developing and maintaining relationships",
+      "Stereotyped or repetitive motor movements, speech, or use of objects",
+      "Insistence on sameness, inflexible adherence to routines",
+      "Highly restricted, fixated interests of abnormal intensity or focus",
+      "Hyper- or hypo-reactivity to sensory input",
+      "Symptoms present in early developmental period",
+      "Variable impact on daily functioning (Level 1 to Level 3 support needs)"
+    ],
+    "prevalence": "1 in 36 children (approximately 2.8%); increasing rates likely reflect improved detection",
+    "treatmentApproaches": ["cbt", "act"],
+    "copingStrategies": ["mindfulness-meditation", "progressive-muscle-relaxation", "visualization"],
+    "disclaimer": "This information is educational only. ASD is a neurodevelopmental condition, not a mental illness. Many autistic individuals and advocates prefer identity-first language ('autistic person'). Please consult qualified professionals for assessment and support planning.",
+    "references": [
+      "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.).",
+      "Centers for Disease Control and Prevention. Autism Spectrum Disorder: Data & Statistics.",
+      "Lord, C., et al. (2020). Autism spectrum disorder. Nature Reviews Disease Primers, 6(1), 5."
+    ]
+  }
+]

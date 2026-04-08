@@ -1,0 +1,502 @@
+[
+  {
+    "id": "acute-anxiety-coping",
+    "situation": "Acute Anxiety or Panic",
+    "description": "When you are experiencing intense anxiety, a panic attack, or feel overwhelmed by fear, these strategies can help calm your nervous system and bring you back to the present moment.",
+    "strategies": [
+      {
+        "name": "Box Breathing",
+        "description": "A structured breathing pattern used by Navy SEALs and first responders to quickly calm the nervous system. The equal-length phases create a rhythm that activates the parasympathetic response.",
+        "steps": [
+          "Inhale slowly through your nose for 4 counts",
+          "Hold your breath for 4 counts",
+          "Exhale slowly through your mouth for 4 counts",
+          "Hold (lungs empty) for 4 counts",
+          "Repeat for 4-8 cycles or until you feel calmer"
+        ],
+        "timeRequired": "3-5 minutes"
+      },
+      {
+        "name": "5-4-3-2-1 Grounding",
+        "description": "Engage all five senses to anchor yourself in the present moment, pulling attention away from anxious thoughts and back into your immediate environment.",
+        "steps": [
+          "Name 5 things you can see",
+          "Name 4 things you can touch or feel",
+          "Name 3 things you can hear",
+          "Name 2 things you can smell",
+          "Name 1 thing you can taste",
+          "Take a deep breath and notice how you feel"
+        ],
+        "timeRequired": "3-5 minutes"
+      },
+      {
+        "name": "Cold Water or Ice Technique",
+        "description": "Applying cold to the face activates the mammalian dive reflex, which rapidly lowers heart rate and reduces physiological arousal. This is part of the DBT TIPP skills.",
+        "steps": [
+          "Fill a bowl with cold water and ice, or grab a cold pack",
+          "Bend over and submerge your face in the cold water for 15-30 seconds, or hold the cold pack against your cheeks and forehead",
+          "Alternatively, splash very cold water on your face repeatedly",
+          "Notice the immediate shift in your heart rate and arousal level",
+          "Repeat if needed"
+        ],
+        "timeRequired": "1-3 minutes"
+      },
+      {
+        "name": "Bilateral Tapping",
+        "description": "Alternating left-right tapping on the body (knees, shoulders, or arms) can help reduce distress by engaging both hemispheres of the brain, similar to the bilateral stimulation used in EMDR.",
+        "steps": [
+          "Cross your arms over your chest, placing each hand on the opposite shoulder (butterfly hug position)",
+          "Alternately tap your left and right shoulders at a comfortable pace",
+          "Continue for 1-3 minutes while breathing slowly",
+          "Focus on a calming image or simply notice the tapping sensation",
+          "Alternatively, tap alternately on your knees"
+        ],
+        "timeRequired": "2-5 minutes"
+      }
+    ]
+  },
+  {
+    "id": "low-mood-coping",
+    "situation": "Low Mood or Depressive Feelings",
+    "description": "When you are feeling sad, hopeless, unmotivated, or emotionally flat, these strategies can gently help shift your mood and re-engage with life. Remember: action often precedes motivation, not the other way around.",
+    "strategies": [
+      {
+        "name": "The 5-Minute Rule",
+        "description": "When depression makes everything feel impossible, commit to doing just 5 minutes of an activity. You can stop after 5 minutes if you still want to, but most people find they continue once they start.",
+        "steps": [
+          "Choose one small activity (e.g., taking a walk, tidying one surface, calling a friend)",
+          "Commit to doing it for exactly 5 minutes—no more",
+          "Set a timer on your phone",
+          "Begin the activity without judging your motivation level",
+          "When the timer goes off, check in: Do you want to continue? Either choice is okay"
+        ],
+        "timeRequired": "5 minutes (often extends naturally)"
+      },
+      {
+        "name": "Opposite Action for Sadness",
+        "description": "Depression urges withdrawal and isolation. Opposite action means gently doing the opposite—getting active and connecting with others—even when you don't feel like it.",
+        "steps": [
+          "Notice the urge to withdraw, isolate, or stay in bed",
+          "Choose one small opposite action: get dressed, go outside, text a friend, or put on music",
+          "Do the activity 'all the way'—engage your body language and posture too",
+          "You don't need to feel like doing it first—act and let the feeling follow",
+          "Notice any small shifts in mood, even if they are subtle"
+        ],
+        "timeRequired": "10-30 minutes"
+      },
+      {
+        "name": "Gratitude Reflection",
+        "description": "Intentionally directing attention to small positives can counterbalance the negativity bias that depression strengthens. This is not about forcing positivity but gently broadening perspective.",
+        "steps": [
+          "Get a notebook or open a notes app",
+          "Write down 3 things you are grateful for today—they can be very small",
+          "For each one, write a sentence about why it matters to you",
+          "Read back what you wrote and let yourself feel the appreciation",
+          "Try to do this at the same time each day to build the habit"
+        ],
+        "timeRequired": "5-10 minutes"
+      },
+      {
+        "name": "Pleasant Activity Scheduling",
+        "description": "Plan at least one small enjoyable or meaningful activity each day. When depressed, we stop doing the things that bring us joy, which deepens the depression.",
+        "steps": [
+          "Make a list of activities that have brought you pleasure or a sense of accomplishment in the past",
+          "Choose one activity for today—pick something manageable, not overwhelming",
+          "Schedule it at a specific time (don't leave it to chance)",
+          "Do the activity as planned, regardless of your current mood",
+          "Rate your mood before and after on a 1-10 scale and notice any change"
+        ],
+        "timeRequired": "Varies by activity; planning takes 5-10 minutes"
+      }
+    ]
+  },
+  {
+    "id": "anger-management-coping",
+    "situation": "Anger Management",
+    "description": "When you feel intense anger rising, these strategies can help you manage the physiological arousal and respond thoughtfully rather than reactively. Anger is a valid emotion, but how we express it matters.",
+    "strategies": [
+      {
+        "name": "STOP Skill",
+        "description": "A DBT skill that creates a pause between the trigger and your response, preventing impulsive reactions you may regret.",
+        "steps": [
+          "STOP: Freeze. Do not move, speak, or react",
+          "TAKE A STEP BACK: Physically or mentally step away from the situation. Take a breath",
+          "OBSERVE: Notice what is happening inside you (body sensations, thoughts, urges) and outside (the facts of the situation)",
+          "PROCEED MINDFULLY: Choose how to respond based on your values and goals, rather than reacting on impulse"
+        ],
+        "timeRequired": "1-3 minutes"
+      },
+      {
+        "name": "Physical Release",
+        "description": "Intense exercise or physical activity can metabolize the adrenaline and cortisol produced by anger, reducing physiological arousal so you can think more clearly.",
+        "steps": [
+          "If possible, remove yourself from the triggering situation",
+          "Engage in vigorous physical activity: brisk walking, running, push-ups, or jumping jacks",
+          "Continue for at least 10-15 minutes",
+          "Focus on the physical sensations of exertion rather than the anger",
+          "After the intensity decreases, return to the situation with a clearer mind"
+        ],
+        "timeRequired": "10-20 minutes"
+      },
+      {
+        "name": "Counting and Cooling Down",
+        "description": "The classic technique of counting to 10 (or 100) gives the prefrontal cortex time to come back online after the amygdala hijack of intense anger.",
+        "steps": [
+          "Pause and close your eyes if possible",
+          "Slowly count to 10 (or higher if needed), taking a deep breath with each number",
+          "With each exhale, imagine releasing some of the anger",
+          "After counting, ask yourself: What do I need right now? What would be the wisest response?",
+          "If still very activated, count again or combine with deep breathing"
+        ],
+        "timeRequired": "2-5 minutes"
+      },
+      {
+        "name": "Anger Thought Challenging",
+        "description": "When anger passes its initial spike, examine the thoughts fueling it. Are you making assumptions? Personalizing? Catastrophizing?",
+        "steps": [
+          "Write down the thought driving the anger (e.g., 'They did that on purpose to disrespect me')",
+          "Ask: Is this thought a fact or an interpretation?",
+          "Consider alternative explanations for the other person's behavior",
+          "Ask: Will this matter in a week? A month? A year?",
+          "Develop a more balanced perspective that acknowledges your feelings without escalating them"
+        ],
+        "timeRequired": "10-15 minutes"
+      }
+    ]
+  },
+  {
+    "id": "insomnia-coping",
+    "situation": "Insomnia and Sleep Difficulties",
+    "description": "When you are struggling to fall asleep or stay asleep, these strategies draw from Cognitive Behavioral Therapy for Insomnia (CBT-I), the gold-standard treatment for insomnia.",
+    "strategies": [
+      {
+        "name": "Stimulus Control",
+        "description": "Strengthen the association between your bed and sleep by following these rules consistently. Over time, your bed becomes a powerful cue for sleepiness.",
+        "steps": [
+          "Use your bed only for sleep (and intimacy)—no phones, TV, reading, or worrying in bed",
+          "Go to bed only when you feel sleepy (not just tired)",
+          "If you cannot fall asleep within approximately 20 minutes, get up and go to another room",
+          "Do something calm and boring in dim light (e.g., read something dull, listen to soft music)",
+          "Return to bed only when you feel sleepy again",
+          "Repeat as many times as necessary",
+          "Set the same wake time every day, regardless of how much you slept"
+        ],
+        "timeRequired": "Ongoing nightly practice; results typically appear within 2-4 weeks"
+      },
+      {
+        "name": "Progressive Muscle Relaxation for Sleep",
+        "description": "A modified version of PMR designed specifically for bedtime. It releases physical tension that may be preventing sleep.",
+        "steps": [
+          "Lie in bed in a comfortable position",
+          "Starting with your toes, tense each muscle group for 5 seconds, then release for 15-20 seconds",
+          "Progress slowly through feet, calves, thighs, abdomen, chest, hands, arms, shoulders, neck, and face",
+          "Focus on the contrast between tension and relaxation",
+          "After completing all muscle groups, lie still and notice the overall feeling of relaxation",
+          "Allow yourself to drift off naturally"
+        ],
+        "timeRequired": "15-20 minutes"
+      },
+      {
+        "name": "Cognitive Shuffle (Serial Diverse Imagining)",
+        "description": "A technique developed by cognitive scientist Luc Beaudoin that helps the mind transition from alert thinking to the random, associative thinking characteristic of the sleep onset process.",
+        "steps": [
+          "Think of a random word (e.g., 'garden')",
+          "For each letter of the word, think of unrelated objects that start with that letter and briefly visualize each (G: guitar, gorilla, glass; A: apple, airplane, ant; etc.)",
+          "Move slowly through each image, spending just a few seconds on each",
+          "If you reach the end of the word, choose a new random word",
+          "The random, non-logical nature of this exercise mimics pre-sleep cognitive patterns and facilitates sleep onset"
+        ],
+        "timeRequired": "5-15 minutes"
+      },
+      {
+        "name": "Sleep Hygiene Checklist",
+        "description": "Environmental and behavioral factors that create conditions conducive to sleep. These are not a cure for insomnia on their own but provide a foundation for good sleep.",
+        "steps": [
+          "Keep a consistent sleep and wake schedule (even on weekends)",
+          "Avoid caffeine after 2 PM and limit alcohol intake",
+          "Avoid screens (phone, tablet, TV) for 30-60 minutes before bed, or use blue light filters",
+          "Keep your bedroom cool (65-68°F / 18-20°C), dark, and quiet",
+          "Establish a relaxing pre-bed routine (warm bath, gentle stretching, reading)",
+          "Avoid clock-watching—turn clocks away from view",
+          "Get regular exercise, but not within 3 hours of bedtime",
+          "Limit naps to 20-30 minutes before 3 PM, if at all"
+        ],
+        "timeRequired": "Ongoing lifestyle adjustments"
+      }
+    ]
+  },
+  {
+    "id": "social-stress-coping",
+    "situation": "Social Stress and Social Anxiety",
+    "description": "When social situations feel overwhelming, these strategies can help you manage anxiety before, during, and after social interactions.",
+    "strategies": [
+      {
+        "name": "Pre-Event Calming",
+        "description": "Before a social event, anxiety tends to build through anticipatory worry and catastrophic predictions. This strategy interrupts that cycle.",
+        "steps": [
+          "Notice the anticipatory anxiety and name it: 'I'm feeling anxious about this event'",
+          "Challenge catastrophic predictions: What is the realistic worst case? How likely is it?",
+          "Remind yourself of past social experiences that went okay or well",
+          "Practice box breathing for 3-5 minutes",
+          "Set a realistic, manageable goal for the event (e.g., 'I will have one conversation' rather than 'I need to be the life of the party')",
+          "Remind yourself: you can leave if you need to"
+        ],
+        "timeRequired": "10-15 minutes"
+      },
+      {
+        "name": "Focus Shift: Outward Attention",
+        "description": "Social anxiety involves excessive self-focused attention (monitoring how you look, sound, or come across). Shifting focus outward reduces anxiety and improves social performance.",
+        "steps": [
+          "Notice when you are focused inward on yourself (monitoring your body, replaying what you said)",
+          "Deliberately shift your attention outward to the other person or the environment",
+          "Focus on what the other person is saying rather than how you are performing",
+          "Ask the other person a question—curiosity naturally shifts attention outward",
+          "Notice details about the room, the music, or other people to ground yourself externally"
+        ],
+        "timeRequired": "Practiced during social interactions"
+      },
+      {
+        "name": "Post-Event Processing",
+        "description": "After social events, anxious individuals tend to ruminate and engage in post-mortems that magnify perceived failures. This strategy breaks that cycle.",
+        "steps": [
+          "Notice if you are ruminating about the social event (replaying conversations, focusing on 'mistakes')",
+          "Remind yourself that post-event processing is a known anxiety pattern, not reality",
+          "Write down one thing that went okay or one positive interaction",
+          "Ask: If a friend described this experience, would I think it was as bad as it feels?",
+          "Engage in a distracting activity to interrupt the rumination cycle",
+          "Practice self-compassion: being imperfect in social situations is human"
+        ],
+        "timeRequired": "5-10 minutes"
+      }
+    ]
+  },
+  {
+    "id": "work-stress-coping",
+    "situation": "Work Stress and Burnout",
+    "description": "When work demands feel overwhelming, deadlines are pressing, or burnout is setting in, these strategies can help restore balance and protect your well-being.",
+    "strategies": [
+      {
+        "name": "Micro-Breaks",
+        "description": "Short, intentional breaks throughout the workday can significantly reduce stress accumulation and improve productivity. The key is making them deliberate and restorative.",
+        "steps": [
+          "Set a timer to remind yourself to take a 2-3 minute break every 60-90 minutes",
+          "During the break, stand up and stretch, look out a window, or step outside briefly",
+          "Take 5 slow, deep breaths",
+          "Do a quick body scan—where are you holding tension? Soften those areas",
+          "Return to work with renewed focus"
+        ],
+        "timeRequired": "2-3 minutes per break"
+      },
+      {
+        "name": "Boundary Setting",
+        "description": "Clear boundaries between work and personal life are essential for preventing burnout. This is especially important for remote workers.",
+        "steps": [
+          "Define your working hours and communicate them to colleagues",
+          "Create a transition ritual to mark the end of the workday (e.g., a walk, changing clothes, closing your laptop in a specific way)",
+          "Turn off work notifications outside working hours",
+          "Practice saying 'I can look at that tomorrow' when contacted after hours",
+          "Schedule non-negotiable personal activities (exercise, hobbies, time with loved ones)"
+        ],
+        "timeRequired": "Ongoing practice"
+      },
+      {
+        "name": "Priority Matrix",
+        "description": "When everything feels equally urgent, the Eisenhower Matrix helps you distinguish between what is truly important and what merely feels urgent.",
+        "steps": [
+          "List all tasks currently on your plate",
+          "Categorize each as Urgent + Important (do first), Important + Not Urgent (schedule), Urgent + Not Important (delegate or minimize), or Not Urgent + Not Important (eliminate)",
+          "Focus your energy on 'Important' tasks, whether urgent or not",
+          "Recognize that not everything that feels urgent is truly important",
+          "Communicate realistic timelines to others when needed"
+        ],
+        "timeRequired": "15-20 minutes for initial sorting; brief daily check-ins"
+      },
+      {
+        "name": "Values Reconnection",
+        "description": "Burnout often signals a disconnection from meaning and values. Reconnecting with why your work matters (or recognizing when it doesn't) can reignite purpose or clarify needed changes.",
+        "steps": [
+          "Reflect: What drew you to this work originally?",
+          "Identify the aspects of your work that still align with your values",
+          "Notice the aspects that drain you—are they changeable?",
+          "Set one small intention this week to do more of what is meaningful to you at work",
+          "If burnout is persistent, consider whether the role is still right for you—this is important information, not failure"
+        ],
+        "timeRequired": "20-30 minutes for reflection"
+      }
+    ]
+  },
+  {
+    "id": "grief-coping",
+    "situation": "Grief and Loss",
+    "description": "Grief is a natural response to loss—of a loved one, a relationship, a job, health, or a dream. These strategies honor the grief process while supporting your well-being. There is no 'right' way or timeline for grief.",
+    "strategies": [
+      {
+        "name": "Dual Process Model Practice",
+        "description": "Based on Stroebe and Schut's Dual Process Model, healthy grieving involves oscillating between loss-oriented activity (processing the loss) and restoration-oriented activity (attending to ongoing life tasks). Both are necessary.",
+        "steps": [
+          "Recognize that it is healthy to sometimes focus on the loss and sometimes take a break from grief",
+          "Allow yourself dedicated time to grieve: look at photos, write about your feelings, cry, talk about the person or situation",
+          "Also allow yourself time to engage with daily life: work, socialize, enjoy something, plan for the future",
+          "Do not judge yourself for either mode—laughing does not mean you don't care, and crying does not mean you aren't coping",
+          "Trust the oscillation—your mind knows when to approach and when to rest"
+        ],
+        "timeRequired": "Ongoing process"
+      },
+      {
+        "name": "Continuing Bonds",
+        "description": "Modern grief theory recognizes that maintaining a connection with a deceased loved one (through memory, ritual, or internal dialogue) is healthy, not pathological.",
+        "steps": [
+          "Write a letter to the person you have lost, sharing what you wish you could tell them",
+          "Create or maintain rituals that honor their memory (visiting a special place, cooking their favorite meal, marking anniversaries)",
+          "Talk about the person with others who knew them—sharing stories keeps the connection alive",
+          "Consider creating a memory box or scrapbook",
+          "Allow the relationship to evolve rather than trying to 'move on' or 'get over it'"
+        ],
+        "timeRequired": "Varies"
+      },
+      {
+        "name": "Self-Care During Grief",
+        "description": "Grief is physically and emotionally exhausting. Basic self-care can easily fall away during intense grief, but attending to your body's needs provides a foundation for coping.",
+        "steps": [
+          "Prioritize basic needs: try to eat regularly, stay hydrated, and get rest (even if sleep is difficult)",
+          "Gentle movement can help: walking, stretching, or yoga",
+          "Reduce demands on yourself where possible—it is okay to say no and to ask for help",
+          "Limit alcohol and other substances, which can intensify grief emotions",
+          "Be patient with yourself—grief takes longer than most people expect, and that is okay"
+        ],
+        "timeRequired": "Ongoing"
+      }
+    ]
+  },
+  {
+    "id": "loneliness-coping",
+    "situation": "Loneliness and Social Isolation",
+    "description": "Loneliness is the distressing feeling that comes from a perceived gap between desired and actual social connection. It is a common experience that can affect mental and physical health. These strategies help build connection gradually.",
+    "strategies": [
+      {
+        "name": "Small Steps to Connection",
+        "description": "When loneliness has led to withdrawal, the idea of socializing can feel overwhelming. Start with the smallest possible social actions and build from there.",
+        "steps": [
+          "Start with low-stakes interactions: smile at a cashier, say hello to a neighbor, chat briefly with a colleague",
+          "Send a text message to someone you haven't spoken to in a while—keep it simple ('Thinking of you, hope you're well')",
+          "Join an online community or forum related to an interest",
+          "Consider a group activity with a built-in structure (class, club, volunteer group) so socializing is easier",
+          "Set a small weekly goal: one social interaction per week, then gradually increase"
+        ],
+        "timeRequired": "5-30 minutes per interaction"
+      },
+      {
+        "name": "Quality Over Quantity",
+        "description": "Loneliness is not about the number of contacts but the quality of connection. Focus on deepening existing relationships rather than amassing many superficial ones.",
+        "steps": [
+          "Identify 1-3 people you feel some connection with, even if it's not deep yet",
+          "Reach out to one of them with a specific invitation (coffee, walk, phone call)",
+          "During the interaction, practice being present and sharing something genuine about yourself",
+          "Ask open-ended questions and listen actively",
+          "Follow up after the interaction—consistency builds closeness"
+        ],
+        "timeRequired": "Varies"
+      },
+      {
+        "name": "Self-Compassion for Loneliness",
+        "description": "Loneliness often comes with shame ('Something is wrong with me'). Self-compassion counters this shame and makes it easier to reach out.",
+        "steps": [
+          "Acknowledge the pain of loneliness without judgment: 'This is really hard'",
+          "Remind yourself that loneliness is a universal human experience—millions of people feel this way right now",
+          "Counter the shame narrative: loneliness says more about your circumstances than your worth",
+          "Treat yourself with the kindness you would offer a friend who is lonely",
+          "Remember that building connection takes time, and each small step counts"
+        ],
+        "timeRequired": "5-10 minutes"
+      }
+    ]
+  },
+  {
+    "id": "overwhelm-coping",
+    "situation": "Overwhelm and Feeling Overloaded",
+    "description": "When everything feels like too much—too many demands, too many emotions, too many decisions—these strategies help you pause, prioritize, and regain a sense of control.",
+    "strategies": [
+      {
+        "name": "Brain Dump",
+        "description": "When your mind is spinning with too many thoughts, getting everything out of your head and onto paper creates immediate psychological relief and clarity.",
+        "steps": [
+          "Get a blank piece of paper (or open a notes app)",
+          "Write down EVERYTHING that is on your mind—tasks, worries, feelings, ideas—without organizing or filtering",
+          "Keep writing until your mind feels emptier (usually 5-10 minutes)",
+          "Look at the list and notice: it is finite. Your mind made it feel infinite",
+          "Circle the 1-3 things that truly need attention today",
+          "Let the rest wait—they are captured and will not be forgotten"
+        ],
+        "timeRequired": "10-15 minutes"
+      },
+      {
+        "name": "One Thing at a Time",
+        "description": "Overwhelm often comes from trying to hold everything in mind simultaneously. This strategy narrows your focus to one manageable step.",
+        "steps": [
+          "Pause and take three deep breaths",
+          "Ask yourself: What is the ONE thing I can do right now?",
+          "Choose the smallest, most concrete action possible",
+          "Give it your full attention. When your mind tries to pull you to other tasks, gently return to this one thing",
+          "When it is done, celebrate completing it (even briefly), then choose the next one thing"
+        ],
+        "timeRequired": "Varies"
+      },
+      {
+        "name": "The 3-3-3 Rule for Overwhelm",
+        "description": "A simple grounding technique that combines physical movement with sensory awareness to break the cycle of overwhelm.",
+        "steps": [
+          "Name 3 things you can see around you",
+          "Move 3 parts of your body (roll your shoulders, stretch your fingers, move your feet)",
+          "Name 3 sounds you can hear",
+          "This interrupts the overwhelm spiral and reconnects you with the present moment"
+        ],
+        "timeRequired": "1-2 minutes"
+      }
+    ]
+  },
+  {
+    "id": "relationship-conflict-coping",
+    "situation": "Relationship Conflict",
+    "description": "Conflict is a natural part of relationships, but how we handle it determines whether it strengthens or damages the connection. These strategies help you navigate disagreements more effectively.",
+    "strategies": [
+      {
+        "name": "Time-Out Protocol",
+        "description": "When a discussion becomes too heated, a structured time-out prevents saying things you will regret. The key is having an agreement about this BEFORE conflicts arise.",
+        "steps": [
+          "When you notice you or your partner becoming too activated, say: 'I need a time-out. I care about this conversation and want to come back to it when I'm calmer.'",
+          "Agree on a specific time to return to the conversation (e.g., 'Let's talk about this in one hour')",
+          "During the time-out, engage in self-soothing: deep breathing, walking, or another calming activity",
+          "Do NOT use the time-out to build your case or rehearse arguments",
+          "Return to the conversation at the agreed time, even if it is difficult"
+        ],
+        "timeRequired": "20-60 minutes for the time-out"
+      },
+      {
+        "name": "Speaker-Listener Technique",
+        "description": "A structured communication exercise that ensures both partners feel heard before moving to problem-solving. Each person takes turns being the speaker and the listener.",
+        "steps": [
+          "The speaker holds a designated object (a pen, a pillow—anything) to indicate they have the floor",
+          "The speaker shares their perspective using 'I' statements: 'I feel... when... because...'",
+          "The listener's ONLY job is to understand—not to rebut, defend, or solve",
+          "The listener paraphrases what they heard: 'What I hear you saying is...'",
+          "The speaker confirms or clarifies until they feel understood",
+          "Switch roles. The listener now becomes the speaker",
+          "Only after both feel heard do you move to problem-solving"
+        ],
+        "timeRequired": "20-40 minutes"
+      },
+      {
+        "name": "Repair Attempts",
+        "description": "Based on John Gottman's research, the ability to make and receive 'repair attempts' during conflict is the strongest predictor of relationship success. Repairs are any attempt to de-escalate tension.",
+        "steps": [
+          "Notice when conflict is escalating (rising voices, defensiveness, withdrawal)",
+          "Make a repair attempt: use humor ('Can we start over?'), express affection ('I love you even when we disagree'), take responsibility ('I think I'm being defensive'), or acknowledge the other person's viewpoint",
+          "If your partner makes a repair attempt, try to receive it—this is more important than the repair itself",
+          "You can create a code word or signal that means 'We're getting off track, let's reset'",
+          "Practice making repairs often—it gets easier with time"
+        ],
+        "timeRequired": "In-the-moment practice"
+      }
+    ]
+  }
+]

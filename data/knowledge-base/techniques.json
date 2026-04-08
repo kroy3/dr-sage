@@ -1,0 +1,516 @@
+[
+  {
+    "id": "cognitive-restructuring",
+    "name": "Cognitive Restructuring",
+    "approach": "cbt",
+    "category": "cognitive",
+    "shortDescription": "A core CBT technique that involves identifying, challenging, and replacing distorted or unhelpful thought patterns with more balanced, realistic alternatives.",
+    "fullDescription": "Cognitive restructuring is one of the foundational techniques in Cognitive Behavioral Therapy. It is based on the premise that our emotional responses are largely determined not by events themselves, but by our interpretation of those events. When these interpretations are distorted or biased—for example, through catastrophizing, black-and-white thinking, or mind-reading—they can lead to unnecessary emotional suffering. Cognitive restructuring teaches individuals to become aware of their automatic negative thoughts, evaluate the evidence for and against these thoughts, and develop more balanced, realistic alternatives. Over time, this practice can shift deeply held core beliefs and schemas that underlie patterns of distorted thinking. The technique does not aim for 'positive thinking' but rather for accurate, balanced thinking that considers the full picture.",
+    "steps": [
+      "Identify the situation that triggered the emotional response",
+      "Notice and record the automatic thought(s) that arose",
+      "Identify the cognitive distortion(s) at play (e.g., catastrophizing, all-or-nothing thinking)",
+      "Examine the evidence for and against the thought",
+      "Consider alternative explanations or perspectives",
+      "Develop a more balanced, realistic thought",
+      "Rate how the balanced thought affects your emotional intensity",
+      "Practice this process regularly until it becomes more automatic"
+    ],
+    "bestFor": ["negative-thinking", "anxiety", "depression", "low-self-esteem", "anger"],
+    "difficulty": "intermediate",
+    "timeRequired": "15-30 minutes per exercise",
+    "references": [
+      "Beck, J.S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). Guilford Press.",
+      "Burns, D.D. (1980). Feeling Good: The New Mood Therapy. William Morrow."
+    ]
+  },
+  {
+    "id": "behavioral-activation",
+    "name": "Behavioral Activation",
+    "approach": "cbt",
+    "category": "behavioral",
+    "shortDescription": "A technique that combats depression and low motivation by scheduling and engaging in meaningful, pleasurable, or accomplishment-oriented activities, even when motivation is low.",
+    "fullDescription": "Behavioral Activation (BA) is based on the behavioral model of depression, which proposes that depression is maintained by a cycle of withdrawal and avoidance. When people feel depressed, they tend to reduce their activities, leading to fewer positive experiences and reinforcement, which deepens the depression. BA breaks this cycle by helping individuals gradually increase engagement in activities that are consistent with their values and that provide a sense of pleasure or mastery. A key insight of BA is that action precedes motivation—rather than waiting to 'feel like' doing something, individuals are encouraged to act first and allow improved mood to follow. BA has been shown to be as effective as full CBT for depression and is sometimes used as a standalone treatment. It is practical, straightforward, and accessible, making it suitable for a wide range of populations.",
+    "steps": [
+      "Monitor daily activities and their impact on mood (activity log)",
+      "Identify activities associated with pleasure, mastery, or values alignment",
+      "Notice patterns of avoidance or withdrawal that maintain low mood",
+      "Create a hierarchy of activities from easiest to most challenging",
+      "Schedule specific activities into your week, starting small",
+      "Complete activities regardless of current motivation level",
+      "Track mood before and after activities to notice patterns",
+      "Gradually increase the frequency and difficulty of activities",
+      "Problem-solve barriers that arise",
+      "Maintain gains by building a sustainable activity routine"
+    ],
+    "bestFor": ["depression", "low-motivation", "withdrawal", "anhedonia"],
+    "difficulty": "beginner",
+    "timeRequired": "Ongoing daily practice; initial planning 20-30 minutes",
+    "references": [
+      "Martell, C.R., Dimidjian, S., & Herman-Dunn, R. (2010). Behavioral Activation for Depression: A Clinician's Guide. Guilford Press.",
+      "Dimidjian, S., et al. (2006). Randomized trial of behavioral activation, cognitive therapy, and antidepressant medication in the acute treatment of adults with major depression. Journal of Consulting and Clinical Psychology, 74(4), 658-670."
+    ]
+  },
+  {
+    "id": "exposure-therapy",
+    "name": "Exposure Therapy",
+    "approach": "cbt",
+    "category": "behavioral",
+    "shortDescription": "A technique that involves gradually and systematically confronting feared situations, objects, or memories to reduce anxiety and avoidance through habituation and new learning.",
+    "fullDescription": "Exposure therapy is one of the most effective treatments for anxiety disorders, phobias, PTSD, and OCD. It works by helping individuals confront—rather than avoid—the situations, objects, thoughts, or memories that trigger fear and anxiety. Through repeated exposure, anxiety naturally decreases (a process called habituation), and the individual learns that the feared outcomes either do not occur or are manageable (inhibitory learning). Exposure can take several forms: in vivo (real-life confrontation), imaginal (vividly imagining the feared scenario), interoceptive (deliberately inducing feared physical sensations), and virtual reality exposure. In the context of OCD, Exposure and Response Prevention (ERP) combines exposure to obsession triggers with prevention of the compulsive response. A skilled therapist helps create an exposure hierarchy—a ranked list of feared situations from least to most anxiety-provoking—and guides the client through gradual, systematic exposure while processing the experience. Exposure should always be conducted at a pace the client can manage, with informed consent and a strong therapeutic alliance.",
+    "steps": [
+      "Psychoeducation: understand the rationale for exposure and how avoidance maintains anxiety",
+      "Construct a fear hierarchy (list of feared situations ranked by distress level, 0-100)",
+      "Begin with items that produce moderate anxiety (around 40-50 on a 0-100 scale)",
+      "Engage with the feared situation without using safety behaviors or avoidance",
+      "Remain in the situation until anxiety decreases significantly (typically 50% or more)",
+      "Process the experience: What did you learn? Did the feared outcome occur?",
+      "Repeat exposure to the same item until it produces minimal anxiety",
+      "Gradually progress up the hierarchy to more challenging items",
+      "Practice in varied contexts to generalize learning",
+      "Maintain gains through continued practice and relapse prevention"
+    ],
+    "bestFor": ["phobias", "anxiety", "ocd", "ptsd", "social-anxiety", "panic-disorder"],
+    "difficulty": "intermediate-to-advanced",
+    "timeRequired": "30-90 minutes per session; treatment typically 8-15 sessions",
+    "references": [
+      "Abramowitz, J.S., Deacon, B.J., & Whiteside, S.P.H. (2019). Exposure Therapy for Anxiety (2nd ed.). Guilford Press.",
+      "Foa, E.B., Yadin, E., & Lichner, T.K. (2012). Exposure and Response (Ritual) Prevention for Obsessive-Compulsive Disorder: Therapist Guide (2nd ed.). Oxford University Press."
+    ]
+  },
+  {
+    "id": "grounding-5-4-3-2-1",
+    "name": "5-4-3-2-1 Grounding Technique",
+    "approach": "general",
+    "category": "grounding",
+    "shortDescription": "A sensory awareness exercise that uses the five senses to anchor attention in the present moment, reducing anxiety, dissociation, and overwhelm.",
+    "fullDescription": "The 5-4-3-2-1 grounding technique is a simple but powerful exercise that helps bring attention back to the present moment during periods of anxiety, panic, dissociation, or emotional overwhelm. By systematically engaging each of the five senses, the technique interrupts the cycle of anxious or intrusive thoughts and re-establishes connection with the immediate environment. It works by activating the sensory cortex and redirecting attention away from internal distress toward external, concrete stimuli. The technique requires no special equipment or setting and can be practiced anywhere, making it an excellent portable coping tool. It is particularly useful during acute anxiety or panic, flashbacks, dissociative episodes, or any moment of feeling 'unmoored' from the present. Regular practice can make it easier to employ during moments of genuine distress.",
+    "steps": [
+      "Pause and take a slow, deep breath",
+      "Name 5 things you can SEE (look around and notice details—colors, shapes, textures)",
+      "Name 4 things you can TOUCH or FEEL (notice the texture of your clothing, the chair beneath you, the temperature of the air)",
+      "Name 3 things you can HEAR (listen for sounds near and far—a clock ticking, traffic, birds)",
+      "Name 2 things you can SMELL (notice any scents, or bring something to smell)",
+      "Name 1 thing you can TASTE (notice the current taste in your mouth, or take a sip of water)",
+      "Take another slow, deep breath and notice how you feel"
+    ],
+    "bestFor": ["anxiety", "panic", "dissociation", "overwhelm", "ptsd", "grounding"],
+    "difficulty": "beginner",
+    "timeRequired": "3-5 minutes",
+    "references": [
+      "Najavits, L.M. (2002). Seeking Safety: A Treatment Manual for PTSD and Substance Abuse. Guilford Press."
+    ]
+  },
+  {
+    "id": "progressive-muscle-relaxation",
+    "name": "Progressive Muscle Relaxation (PMR)",
+    "approach": "general",
+    "category": "relaxation",
+    "shortDescription": "A systematic relaxation technique that involves tensing and then releasing different muscle groups throughout the body to reduce physical tension and promote calm.",
+    "fullDescription": "Progressive Muscle Relaxation was developed by Edmund Jacobson in the 1930s based on the principle that physical relaxation and anxiety are mutually incompatible states. By deliberately tensing and then releasing muscle groups, individuals learn to distinguish between tension and relaxation and develop the ability to induce a state of deep physical calm. PMR works by activating the parasympathetic nervous system (the body's 'rest and digest' response), lowering heart rate, blood pressure, and cortisol levels. The technique typically progresses through 16 muscle groups, though shorter versions exist. Each group is tensed for 5-10 seconds and then released for 20-30 seconds, with attention paid to the contrast between tension and relaxation. With regular practice, many people develop the ability to release tension quickly without the need for the full tensing sequence. PMR is effective for generalized anxiety, insomnia, headaches, chronic pain, and stress-related conditions.",
+    "steps": [
+      "Find a comfortable position in a quiet environment",
+      "Close your eyes and take several slow, deep breaths",
+      "Start with your feet: tense the muscles tightly for 5-10 seconds",
+      "Release the tension suddenly and notice the feeling of relaxation for 20-30 seconds",
+      "Move to your calves: tense, hold, release, and notice",
+      "Continue progressively through each muscle group: thighs, buttocks, abdomen, chest, hands, forearms, upper arms, shoulders, neck, and face",
+      "After completing all groups, take a moment to scan your body for remaining tension",
+      "Breathe slowly and enjoy the state of relaxation for a few minutes",
+      "When ready, gently open your eyes and return to your surroundings"
+    ],
+    "bestFor": ["anxiety", "insomnia", "muscle-tension", "stress", "chronic-pain", "headaches"],
+    "difficulty": "beginner",
+    "timeRequired": "15-20 minutes (full version); 5-10 minutes (abbreviated version)",
+    "references": [
+      "Jacobson, E. (1938). Progressive Relaxation. University of Chicago Press.",
+      "Manzoni, G.M., et al. (2008). Relaxation training for anxiety: A ten-years systematic review. BMC Psychiatry, 8, 41."
+    ]
+  },
+  {
+    "id": "diaphragmatic-breathing",
+    "name": "Diaphragmatic Breathing (Deep Breathing)",
+    "approach": "general",
+    "category": "relaxation",
+    "shortDescription": "A breathing technique that engages the diaphragm to promote slow, deep breaths, activating the parasympathetic nervous system to reduce anxiety and physiological arousal.",
+    "fullDescription": "Diaphragmatic breathing, also known as belly breathing or deep breathing, is one of the simplest and most immediately effective techniques for reducing anxiety and stress. When we are anxious, our breathing tends to become shallow and rapid (thoracic breathing), which can maintain or worsen anxiety symptoms. Diaphragmatic breathing counters this by engaging the diaphragm muscle to draw air deep into the lungs, expanding the belly rather than the chest. This activates the vagus nerve and the parasympathetic nervous system, producing a physiological relaxation response: decreased heart rate, lowered blood pressure, reduced muscle tension, and diminished cortisol production. Research has shown that even a few minutes of diaphragmatic breathing can significantly reduce physiological arousal and subjective anxiety. The technique is foundational in many therapeutic approaches including CBT, MBSR, yoga, and biofeedback. It can be practiced anytime and anywhere, making it an essential first-line coping tool.",
+    "steps": [
+      "Sit comfortably or lie on your back with knees bent",
+      "Place one hand on your chest and one on your belly",
+      "Inhale slowly through your nose for 4 counts, directing air into your belly (the hand on your belly should rise; the hand on your chest should remain relatively still)",
+      "Pause briefly at the top of the inhale",
+      "Exhale slowly through pursed lips for 6 counts, allowing your belly to fall",
+      "The exhale should be longer than the inhale to maximize the relaxation response",
+      "Continue for 5-10 minutes, maintaining a slow, rhythmic pattern",
+      "Notice the growing sense of calm with each breath cycle"
+    ],
+    "bestFor": ["anxiety", "panic", "stress", "anger", "insomnia", "general-wellbeing"],
+    "difficulty": "beginner",
+    "timeRequired": "5-10 minutes",
+    "references": [
+      "Ma, X., et al. (2017). The effect of diaphragmatic breathing on attention, negative affect and stress in healthy adults. Frontiers in Psychology, 8, 874.",
+      "Jerath, R., et al. (2015). Self-regulation of breathing as a primary treatment for anxiety. Applied Psychophysiology and Biofeedback, 40(2), 107-115."
+    ]
+  },
+  {
+    "id": "mindfulness-meditation",
+    "name": "Mindfulness Meditation",
+    "approach": "mbsr",
+    "category": "mindfulness",
+    "shortDescription": "A practice of paying attention to present-moment experience with openness, curiosity, and nonjudgment, typically using the breath as an anchor for attention.",
+    "fullDescription": "Mindfulness meditation is the practice of intentionally directing attention to present-moment experience with an attitude of openness, curiosity, and nonjudgment. While rooted in Buddhist contemplative traditions, secular mindfulness has been extensively studied and integrated into evidence-based therapeutic approaches including MBSR and MBCT. The most common form involves sitting quietly and focusing on the natural rhythm of the breath. When the mind wanders—which it inevitably does—the practitioner gently notices this and returns attention to the breath, without self-criticism. This simple practice builds three key capacities: the ability to sustain attention, the ability to notice when attention has wandered, and the ability to redirect attention without harsh judgment. Neuroscience research has demonstrated that regular mindfulness practice is associated with changes in brain structure and function, including increased gray matter in areas associated with self-awareness, compassion, and introspection, and decreased activity in the default mode network (associated with mind-wandering and rumination). Benefits include reduced stress, anxiety, and depression; improved emotional regulation; enhanced focus and cognitive flexibility; and greater overall well-being.",
+    "steps": [
+      "Find a comfortable seated position with your back straight but not rigid",
+      "Set a timer for your desired practice length (start with 5-10 minutes)",
+      "Gently close your eyes or lower your gaze",
+      "Bring your attention to the physical sensations of breathing—the rise and fall of your abdomen or the air passing through your nostrils",
+      "When your mind wanders (and it will), simply notice where it went without judgment",
+      "Gently redirect your attention back to the breath",
+      "Each time you notice the mind has wandered and bring it back, you are strengthening your mindfulness 'muscle'",
+      "Continue for the duration of your practice",
+      "When the timer sounds, slowly open your eyes and take a moment before resuming activities"
+    ],
+    "bestFor": ["stress", "anxiety", "depression", "rumination", "emotional-regulation", "general-wellbeing"],
+    "difficulty": "beginner-to-intermediate",
+    "timeRequired": "5-45 minutes (start short and build gradually)",
+    "references": [
+      "Kabat-Zinn, J. (2005). Wherever You Go, There You Are. Hyperion.",
+      "Goyal, M., et al. (2014). Meditation programs for psychological stress and well-being: A systematic review and meta-analysis. JAMA Internal Medicine, 174(3), 357-368."
+    ]
+  },
+  {
+    "id": "body-scan",
+    "name": "Body Scan Meditation",
+    "approach": "mbsr",
+    "category": "mindfulness",
+    "shortDescription": "A guided mindfulness practice that involves systematically directing attention through different parts of the body, noticing sensations without trying to change them.",
+    "fullDescription": "The body scan is a foundational mindfulness practice in MBSR and MBCT. It involves lying down or sitting comfortably and systematically moving attention through different regions of the body, from the toes to the top of the head (or vice versa). The practice cultivates interoceptive awareness—the ability to notice internal body sensations—which is a key component of emotional intelligence and self-regulation. Many people are disconnected from their bodies, living primarily 'from the neck up,' and may not notice the physical manifestations of stress, tension, or emotion until they become severe. The body scan rebuilds this mind-body connection. During the practice, participants are instructed to notice whatever sensations are present—warmth, coolness, tingling, tension, numbness, or nothing at all—with an attitude of curiosity and acceptance. The body scan can help with stress reduction, chronic pain management, sleep difficulties, and emotional awareness. It is often recommended as a daily practice, particularly for beginners to mindfulness.",
+    "steps": [
+      "Lie on your back in a comfortable position, or sit if preferred",
+      "Close your eyes and take several slow, deep breaths to settle in",
+      "Bring your attention to the toes of your left foot. Notice any sensations without trying to change them",
+      "Gradually move attention through the left foot, ankle, lower leg, knee, upper leg, and hip",
+      "Repeat with the right leg from toes to hip",
+      "Move attention through the pelvis, lower back, abdomen, and upper back",
+      "Notice sensations in the chest, shoulders, and each arm down to the fingertips",
+      "Bring attention to the neck, throat, jaw, face, and the top of the head",
+      "Finally, expand awareness to encompass the whole body as one",
+      "Rest in this whole-body awareness for a few moments before gently opening your eyes"
+    ],
+    "bestFor": ["stress", "chronic-pain", "insomnia", "body-awareness", "emotional-regulation"],
+    "difficulty": "beginner",
+    "timeRequired": "15-45 minutes",
+    "references": [
+      "Kabat-Zinn, J. (2013). Full Catastrophe Living (revised ed.). Bantam Books.",
+      "Dreeben, S.J., Mamberg, M.H., & Salmon, P. (2013). The MBSR body scan in clinical practice. Mindfulness, 4(4), 394-401."
+    ]
+  },
+  {
+    "id": "thought-records",
+    "name": "Thought Records",
+    "approach": "cbt",
+    "category": "cognitive",
+    "shortDescription": "A structured written exercise for tracking and evaluating automatic negative thoughts, identifying cognitive distortions, and developing balanced alternative perspectives.",
+    "fullDescription": "Thought records (also called thought diaries or dysfunctional thought records) are a cornerstone tool in Cognitive Behavioral Therapy. They provide a structured format for capturing and examining the thoughts that contribute to emotional distress. By writing down the triggering situation, the automatic thoughts, the associated emotions and their intensity, the cognitive distortions involved, evidence for and against the thoughts, balanced alternative thoughts, and the resulting emotional shift, individuals develop the habit of stepping back from their thoughts and examining them objectively. This process transforms an automatic, unexamined reaction into a conscious, evaluated response. Over time, thought records help individuals recognize recurring patterns in their thinking and develop more adaptive default thought patterns. They serve as both an assessment tool (helping therapist and client understand thinking patterns) and an intervention tool (the act of completing the record often reduces emotional distress). Thought records are typically assigned as homework between therapy sessions and reviewed collaboratively.",
+    "steps": [
+      "Record the situation: What happened? Where? When? Who was involved?",
+      "Record your emotions: What did you feel? Rate intensity (0-100%)",
+      "Record your automatic thoughts: What went through your mind? What images?",
+      "Identify the 'hot thought'—the thought most connected to the strongest emotion",
+      "Identify the cognitive distortion(s) at play",
+      "Examine the evidence that supports the hot thought",
+      "Examine the evidence that does NOT support the hot thought",
+      "Develop a balanced alternative thought based on all the evidence",
+      "Re-rate the intensity of your original emotions (0-100%)"
+    ],
+    "bestFor": ["negative-thinking", "anxiety", "depression", "anger", "self-criticism"],
+    "difficulty": "intermediate",
+    "timeRequired": "15-20 minutes per entry",
+    "references": [
+      "Greenberger, D., & Padesky, C.A. (2016). Mind Over Mood (2nd ed.). Guilford Press.",
+      "Beck, J.S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). Guilford Press."
+    ]
+  },
+  {
+    "id": "values-clarification",
+    "name": "Values Clarification",
+    "approach": "act",
+    "category": "values",
+    "shortDescription": "An ACT exercise that helps individuals identify what truly matters to them across life domains, providing direction and motivation for meaningful behavior change.",
+    "fullDescription": "Values clarification is a central process in Acceptance and Commitment Therapy that helps individuals identify their core values—the qualities of action and ways of being that they find most meaningful and important. Unlike goals, which can be achieved and checked off, values are ongoing directions that guide behavior. For example, 'being a loving partner' is a value, while 'plan a date night this Friday' is a goal that serves that value. Many people have lost touch with their values due to avoidance, societal pressure, or simply never having been asked to articulate them. Values clarification exercises help individuals explore what matters across multiple life domains: relationships, work/career, family, health, spirituality, community, personal growth, leisure, and others. This process often reveals discrepancies between current behavior and stated values, which can be a powerful motivator for change. Importantly, values work in ACT is done with an acceptance orientation—there is no judgment about where one currently stands relative to values, only an invitation to move in valued directions.",
+    "steps": [
+      "Review major life domains: relationships, family, work/education, health, leisure, spirituality, community, personal growth",
+      "For each domain, ask: What kind of person do I want to be in this area? What matters most to me?",
+      "Write down your core values for each domain in your own words",
+      "Rank or prioritize your top values across all domains",
+      "Rate how consistently you are currently living each value (1-10 scale)",
+      "Identify the largest gaps between importance and current action",
+      "Set small, concrete goals that move you in the direction of your values",
+      "Commit to specific actions this week aligned with your top values",
+      "Review and revisit your values periodically—they may evolve over time"
+    ],
+    "bestFor": ["lack-of-direction", "depression", "decision-making", "life-transitions", "personal-growth"],
+    "difficulty": "beginner-to-intermediate",
+    "timeRequired": "30-60 minutes for initial exercise; brief check-ins ongoing",
+    "references": [
+      "Hayes, S.C., Strosahl, K.D., & Wilson, K.G. (2012). Acceptance and Commitment Therapy (2nd ed.). Guilford Press.",
+      "Harris, R. (2009). ACT Made Simple. New Harbinger Publications."
+    ]
+  },
+  {
+    "id": "defusion-techniques",
+    "name": "Cognitive Defusion Techniques",
+    "approach": "act",
+    "category": "cognitive",
+    "shortDescription": "ACT techniques that help individuals step back from their thoughts, viewing them as mental events rather than literal truths, reducing their impact on behavior and emotional well-being.",
+    "fullDescription": "Cognitive defusion (or 'deliteralization') is a core process in Acceptance and Commitment Therapy. While CBT aims to change the content of thoughts, defusion aims to change our relationship with thoughts—specifically, to reduce the tendency to take thoughts literally and to be dominated by them. In a state of cognitive fusion, we are 'hooked' by our thoughts—we treat them as commands to be obeyed, literal truths, or urgent threats that require immediate action. In a state of defusion, we can observe our thoughts as passing mental events, much like clouds moving across the sky. We can notice them, acknowledge them, and choose how to respond rather than reacting automatically. Defusion techniques work by creating distance between the person and their thoughts, making the thoughts less believable, less threatening, and less likely to control behavior. Common techniques include adding the prefix 'I'm having the thought that...' to thoughts, repeating a word rapidly until it loses meaning (word repetition exercise), singing thoughts to a silly tune, visualizing thoughts as leaves on a stream, and thanking the mind for its contribution. These techniques are not about dismissing or trivializing thoughts but about holding them lightly.",
+    "steps": [
+      "Notice when you are 'fused' with a thought—taking it as absolute truth or being controlled by it",
+      "Try the 'I notice' technique: preface the thought with 'I notice I'm having the thought that...'",
+      "Leaves on a stream: visualize each thought being placed on a leaf and floating downstream",
+      "Name the story: 'Ah, there's the I'm-not-good-enough story again'",
+      "Silly voice: repeat the thought in a cartoon or silly voice",
+      "Thank your mind: 'Thanks, mind, for that interesting thought'",
+      "Ask yourself: Is this thought helpful? Does holding onto it serve my values?",
+      "Choose to act based on values rather than being pushed around by the thought"
+    ],
+    "bestFor": ["rumination", "anxiety", "ocd", "self-criticism", "negative-thinking"],
+    "difficulty": "intermediate",
+    "timeRequired": "5-15 minutes per exercise",
+    "references": [
+      "Hayes, S.C., Strosahl, K.D., & Wilson, K.G. (2012). Acceptance and Commitment Therapy (2nd ed.). Guilford Press.",
+      "Harris, R. (2009). ACT Made Simple. New Harbinger Publications."
+    ]
+  },
+  {
+    "id": "distress-tolerance-tipp",
+    "name": "TIPP Skills (Distress Tolerance)",
+    "approach": "dbt",
+    "category": "distress-tolerance",
+    "shortDescription": "A set of DBT crisis survival skills that rapidly change body chemistry to reduce extreme emotional arousal: Temperature, Intense exercise, Paced breathing, and Paired muscle relaxation.",
+    "fullDescription": "TIPP is an acronym from Dialectical Behavior Therapy's distress tolerance module that provides four evidence-based strategies for rapidly reducing intense emotional arousal during a crisis. These skills work at the physiological level to change the body's chemistry, making them effective even when cognitive strategies are difficult to access due to extreme distress. The 'T' stands for Temperature—applying cold to the face (such as holding an ice pack or splashing cold water) triggers the dive reflex, which quickly lowers heart rate and calms the nervous system. The 'I' stands for Intense exercise—brief vigorous physical activity (running, jumping jacks, brisk walking) helps metabolize stress hormones and release endorphins. The first 'P' stands for Paced breathing—slowing the exhale to be longer than the inhale activates the parasympathetic nervous system. The second 'P' stands for Paired (or Progressive) muscle relaxation—systematically tensing and releasing muscle groups to reduce physical tension. TIPP skills are designed as first-aid measures for emotional crises and are most effective when practiced regularly so they can be deployed automatically when needed.",
+    "steps": [
+      "TEMPERATURE: Hold a cold pack or bag of ice to your face (especially cheeks and around eyes) for 30 seconds, or splash cold water on your face. This triggers the mammalian dive reflex and quickly lowers heart rate.",
+      "INTENSE EXERCISE: Engage in brief, intense physical activity for 10-20 minutes. Run, do jumping jacks, dance vigorously, or climb stairs. This helps burn off stress hormones and shift your physiology.",
+      "PACED BREATHING: Slow your breathing. Inhale for 4 counts, exhale for 6-8 counts. The key is making the exhale longer than the inhale to activate the parasympathetic nervous system. Continue for 5-10 minutes.",
+      "PAIRED MUSCLE RELAXATION: While breathing slowly, tense each muscle group for 5-10 seconds, then release while saying 'relax' to yourself. Notice the contrast between tension and relaxation. Work through the whole body.",
+      "Use any combination of these skills as needed—you don't have to do all four every time"
+    ],
+    "bestFor": ["emotional-crisis", "extreme-anger", "urges-to-self-harm", "panic", "overwhelming-emotions"],
+    "difficulty": "beginner",
+    "timeRequired": "5-20 minutes depending on which skills are used",
+    "references": [
+      "Linehan, M.M. (2015). DBT Skills Training Manual (2nd ed.). Guilford Press.",
+      "Linehan, M.M. (2015). DBT Skills Training Handouts and Worksheets (2nd ed.). Guilford Press."
+    ]
+  },
+  {
+    "id": "opposite-action",
+    "name": "Opposite Action",
+    "approach": "dbt",
+    "category": "emotion-regulation",
+    "shortDescription": "A DBT emotion regulation skill where individuals act opposite to the urge driven by an unjustified emotion, thereby changing the emotion itself over time.",
+    "fullDescription": "Opposite Action is a key emotion regulation skill from Dialectical Behavior Therapy based on the principle that emotions are linked to action urges—fear urges avoidance, sadness urges withdrawal, anger urges attack, shame urges hiding, and guilt urges self-punishment. When the emotion is unjustified by the facts of the situation (i.e., the emotion does not fit the facts, or acting on the emotion would not be effective), acting opposite to the emotion's action urge can change the emotion itself. For example, if you feel unjustified fear about a social situation, the opposite action is to approach rather than avoid; if you feel unjustified sadness, the opposite action is to get active rather than withdraw; if you feel unjustified anger, the opposite action is to gently avoid or be kind rather than attack. For opposite action to work, it must be done 'all the way'—meaning your body language, facial expression, posture, and tone of voice all align with the opposite action, not just your external behavior. The skill requires first checking the facts to determine whether the emotion fits the situation, as acting opposite to a justified emotion can be invalidating. When the emotion is justified, problem-solving is the more appropriate response.",
+    "steps": [
+      "Identify the emotion you are experiencing",
+      "Check the facts: Does this emotion fit the actual situation? Is acting on it effective?",
+      "If the emotion is NOT justified (or acting on it is not effective), identify its action urge",
+      "Determine the opposite action for that emotion",
+      "Fear → Approach what you fear (instead of avoiding)",
+      "Sadness → Get active, reach out to others (instead of withdrawing)",
+      "Anger → Gently avoid or be kind (instead of attacking)",
+      "Shame → Make the situation public or repeat the behavior (if shame is unjustified)",
+      "Guilt → Repair or recommit to values (if guilt is unjustified; stop apologizing)",
+      "Do the opposite action ALL THE WAY—body language, posture, facial expression, tone",
+      "Repeat as needed until the emotion shifts"
+    ],
+    "bestFor": ["emotional-dysregulation", "avoidance", "depression", "anxiety", "anger", "shame"],
+    "difficulty": "intermediate",
+    "timeRequired": "Varies; the skill is applied in the moment when emotions arise",
+    "references": [
+      "Linehan, M.M. (2015). DBT Skills Training Manual (2nd ed.). Guilford Press."
+    ]
+  },
+  {
+    "id": "interpersonal-effectiveness-dear-man",
+    "name": "DEAR MAN (Interpersonal Effectiveness)",
+    "approach": "dbt",
+    "category": "interpersonal",
+    "shortDescription": "A DBT interpersonal effectiveness skill that provides a structured approach to making requests or saying no assertively while maintaining self-respect and the relationship.",
+    "fullDescription": "DEAR MAN is an acronym from DBT's interpersonal effectiveness module that provides a step-by-step guide for effectively asking for what you want or saying no to unwanted requests. Many people struggle with assertiveness—either being too passive (not expressing needs) or too aggressive (expressing needs in ways that damage relationships). DEAR MAN teaches a balanced, assertive approach. The acronym stands for: Describe the situation factually, Express your feelings about it using 'I' statements, Assert your needs clearly by asking for what you want or saying no, Reinforce the other person by explaining the positive effects of getting what you need (or the negative effects of not), stay Mindful by keeping focus on your goals (use the 'broken record' technique if necessary and ignore attacks), Appear confident through body language and tone, and Negotiate by being willing to give to get. DEAR MAN is used when the goal of the interaction is to get your objective met. DBT also teaches GIVE (for maintaining the relationship) and FAST (for maintaining self-respect), which can be used in combination with DEAR MAN.",
+    "steps": [
+      "DESCRIBE: State the facts of the situation objectively. 'When I come home and the dishes are still in the sink...'",
+      "EXPRESS: Share your feelings using 'I' statements. 'I feel frustrated and overwhelmed because...'",
+      "ASSERT: Clearly state what you want or don't want. 'I would like us to share the dishwashing equally.'",
+      "REINFORCE: Explain why it would be positive for the other person to grant your request. 'This would help me feel less stressed, and I'd have more energy for us to spend time together.'",
+      "Stay MINDFUL: Keep focused on your objective. Don't get sidetracked by other issues. Use the broken record technique if needed.",
+      "APPEAR CONFIDENT: Maintain eye contact, keep your voice steady, stand or sit up straight. Even if you don't feel confident, act as if you do.",
+      "NEGOTIATE: Be willing to find a middle ground. Offer alternative solutions. 'Would it work if we alternated days?'"
+    ],
+    "bestFor": ["assertiveness", "relationship-conflict", "boundary-setting", "communication-skills", "self-advocacy"],
+    "difficulty": "intermediate",
+    "timeRequired": "Practice takes 10-15 minutes; real-world application is in-the-moment",
+    "references": [
+      "Linehan, M.M. (2015). DBT Skills Training Manual (2nd ed.). Guilford Press.",
+      "Linehan, M.M. (2015). DBT Skills Training Handouts and Worksheets (2nd ed.). Guilford Press."
+    ]
+  },
+  {
+    "id": "radical-acceptance",
+    "name": "Radical Acceptance",
+    "approach": "dbt",
+    "category": "distress-tolerance",
+    "shortDescription": "A DBT distress tolerance skill that involves fully accepting reality as it is in the present moment, without judgment, fighting, or attempting to change what cannot be changed.",
+    "fullDescription": "Radical Acceptance is a core distress tolerance skill in Dialectical Behavior Therapy that involves completely and totally accepting reality from deep within. It means acknowledging the facts of a situation—including painful ones—without approving of them, judging them, or trying to change what cannot be changed. The 'radical' in radical acceptance means complete and total: accepting with your mind, heart, and body. This is not the same as approval, agreement, or resignation. You can radically accept a situation AND work to change it in the future; acceptance simply means stopping the fight against present reality. Suffering, in the DBT framework, equals pain plus non-acceptance. Pain is inevitable in life—loss, disappointment, injustice—but the additional suffering that comes from refusing to accept reality (e.g., 'This shouldn't be happening,' 'It's not fair,' 'I can't stand this') is optional. Radical acceptance does not come naturally and must be practiced repeatedly. It often needs to be 'turned' again and again, as the mind naturally reverts to non-acceptance. The practice draws on mindfulness and has roots in Buddhist philosophy.",
+    "steps": [
+      "Notice that you are fighting reality or refusing to accept a situation ('This shouldn't be happening')",
+      "Remind yourself that reality is what it is, regardless of whether you accept it or not",
+      "Acknowledge the causes of the situation (events that led to this moment)",
+      "Practice accepting with your whole self: mind (acknowledge the facts), body (relax tension, adopt an accepting posture), and spirit (let go of bitterness)",
+      "Use half-smile and willing hands: turn palms up, slightly lift the corners of your mouth",
+      "Allow yourself to feel the emotions that come with acceptance—grief, sadness, anger—without pushing them away",
+      "Notice when your mind reverts to non-acceptance and gently turn back to acceptance",
+      "Repeat as many times as necessary—radical acceptance is a practice, not a one-time event",
+      "Remember: acceptance does not mean approval. You can accept what is AND work to change the future"
+    ],
+    "bestFor": ["grief", "chronic-pain", "trauma", "unchangeable-situations", "anger", "resentment"],
+    "difficulty": "advanced",
+    "timeRequired": "Ongoing practice; formal reflection 10-20 minutes",
+    "references": [
+      "Linehan, M.M. (2015). DBT Skills Training Manual (2nd ed.). Guilford Press.",
+      "Brach, T. (2003). Radical Acceptance: Embracing Your Life with the Heart of a Buddha. Bantam Books."
+    ]
+  },
+  {
+    "id": "gratitude-practice",
+    "name": "Gratitude Practice",
+    "approach": "positive-psychology",
+    "category": "positive-psychology",
+    "shortDescription": "A structured practice of intentionally noticing, appreciating, and recording things one is grateful for, which has been shown to increase well-being and reduce depressive symptoms.",
+    "fullDescription": "Gratitude practice is one of the most well-studied positive psychology interventions. It involves deliberately directing attention to the positive aspects of one's life—the things, people, experiences, and qualities for which one is thankful. This may seem simple, but research consistently demonstrates that regular gratitude practice has significant psychological benefits: increased happiness and life satisfaction, reduced symptoms of depression and anxiety, improved sleep quality, stronger relationships, greater resilience, and even physical health benefits. The human brain has a natural negativity bias—we tend to notice and remember negative events more readily than positive ones. Gratitude practice works by systematically counterbalancing this bias, training the brain to notice and savor positive experiences. The most common form is a gratitude journal, in which individuals write down three to five things they are grateful for each day or several times per week. The key is specificity and depth: rather than writing 'I'm grateful for my family,' writing 'I'm grateful for the way my daughter laughed during our game tonight' engages the emotional system more fully. Other forms include gratitude letters, mental gratitude exercises, and gratitude sharing with others.",
+    "steps": [
+      "Choose a regular time for your gratitude practice (morning or evening works well)",
+      "Write down 3-5 things you are grateful for",
+      "Be specific: describe particular moments, sensations, or details",
+      "Include a variety: people, experiences, qualities, small pleasures, opportunities",
+      "Reflect on WHY you are grateful for each item—savor the feeling",
+      "Notice how you feel after completing the practice",
+      "Consider writing a gratitude letter to someone who has impacted your life",
+      "Practice at least 3 times per week for maximum benefit",
+      "When struggling, start with the basics: a warm bed, clean water, food to eat"
+    ],
+    "bestFor": ["depression", "low-mood", "well-being", "relationship-enhancement", "sleep", "resilience"],
+    "difficulty": "beginner",
+    "timeRequired": "5-10 minutes",
+    "references": [
+      "Emmons, R.A., & McCullough, M.E. (2003). Counting blessings versus burdens: An experimental investigation of gratitude and subjective well-being in daily life. Journal of Personality and Social Psychology, 84(2), 377-389.",
+      "Seligman, M.E.P., et al. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410-421."
+    ]
+  },
+  {
+    "id": "journaling",
+    "name": "Therapeutic Journaling",
+    "approach": "general",
+    "category": "expressive",
+    "shortDescription": "The practice of writing about thoughts, feelings, and experiences as a means of emotional processing, self-reflection, and psychological healing.",
+    "fullDescription": "Therapeutic journaling (also called expressive writing) involves writing about thoughts and feelings related to stressful, traumatic, or emotionally significant experiences. The seminal research by James Pennebaker demonstrated that writing about emotional experiences for as little as 15-20 minutes over several days produces measurable improvements in physical and psychological health, including reduced anxiety and depression, improved immune function, reduced blood pressure, and fewer doctor visits. Journaling works through several mechanisms: it helps organize chaotic thoughts and emotions into a coherent narrative, promotes emotional processing and integration of difficult experiences, increases self-awareness, creates psychological distance from problems (making them more manageable), and can reveal patterns in thinking and behavior that might otherwise go unnoticed. There are many forms of therapeutic journaling: free writing (stream of consciousness), structured prompts, gratitude journals, thought records, worry journals, and narrative writing. The act of translating emotional experiences into language engages both hemispheres of the brain and can facilitate the integration of traumatic or difficult memories. Journaling is not a replacement for therapy but can be a powerful complement to it.",
+    "steps": [
+      "Set aside 15-20 minutes in a private, comfortable space",
+      "Choose your focus: a current concern, an emotional experience, or use a prompt",
+      "Write continuously without worrying about grammar, spelling, or structure",
+      "Explore your deepest thoughts and feelings about the topic",
+      "If emotions arise, allow them—this is part of the healing process",
+      "After writing, take a few moments to reflect on what you wrote and how you feel",
+      "You do not need to share or reread what you wrote (though you may choose to)",
+      "Practice regularly—3-4 times per week yields the strongest benefits",
+      "Consider different formats: gratitude entries, letters you won't send, dialogues with yourself"
+    ],
+    "bestFor": ["emotional-processing", "trauma", "stress", "self-awareness", "anxiety", "grief"],
+    "difficulty": "beginner",
+    "timeRequired": "15-20 minutes",
+    "references": [
+      "Pennebaker, J.W. (1997). Opening Up: The Healing Power of Expressing Emotions. Guilford Press.",
+      "Pennebaker, J.W., & Smyth, J.M. (2016). Opening Up by Writing It Down (3rd ed.). Guilford Press.",
+      "Baikie, K.A., & Wilhelm, K. (2005). Emotional and physical health benefits of expressive writing. Advances in Psychiatric Treatment, 11(5), 338-346."
+    ]
+  },
+  {
+    "id": "visualization",
+    "name": "Guided Visualization (Imagery)",
+    "approach": "general",
+    "category": "relaxation",
+    "shortDescription": "A technique that uses mental imagery to create calming, healing, or empowering experiences in the mind, engaging the body's relaxation response through the power of imagination.",
+    "fullDescription": "Guided visualization (also called guided imagery or mental imagery) involves using the imagination to create vivid mental scenes that promote relaxation, healing, or goal achievement. The technique is based on the principle that the brain responds to imagined experiences in ways similar to real experiences—imagining a peaceful beach scene can activate the parasympathetic nervous system and produce genuine physiological relaxation, while imagining a stressful scene can trigger a stress response. This mind-body connection makes visualization a powerful tool for both relaxation and performance enhancement. Common therapeutic applications include safe place imagery (creating a detailed mental refuge), future self visualization (imagining oneself having achieved goals), resource imagery (imagining qualities like strength or calm), and healing imagery (visualizing the body healing). Visualization is used across many therapeutic approaches, in sports psychology, in pain management, and in stress reduction programs. Research supports its effectiveness for anxiety reduction, pain management, preparation for medical procedures, and performance enhancement.",
+    "steps": [
+      "Find a comfortable position and close your eyes",
+      "Take several slow, deep breaths to relax your body",
+      "Begin to create a mental image of a peaceful, safe place (real or imagined)",
+      "Engage all senses: What do you see? Hear? Smell? Feel? Taste?",
+      "Make the image as vivid and detailed as possible",
+      "Allow yourself to fully experience the calm and safety of this place",
+      "If your mind wanders, gently return to the image",
+      "Spend 10-15 minutes in your visualization",
+      "When ready, slowly count from 5 to 1, gradually returning to awareness of the room",
+      "Open your eyes and carry the feeling of calm with you"
+    ],
+    "bestFor": ["anxiety", "stress", "pain-management", "insomnia", "performance-anxiety", "trauma"],
+    "difficulty": "beginner",
+    "timeRequired": "10-20 minutes",
+    "references": [
+      "Utay, J., & Miller, M. (2006). Guided imagery as an effective therapeutic technique: A brief review of its history and efficacy research. Journal of Instructional Psychology, 33(1), 40-43.",
+      "Menzies, V., & Jallo, N. (2011). Guided imagery as a treatment option for fatigue. Journal of Holistic Nursing, 29(2), 87-96."
+    ]
+  },
+  {
+    "id": "self-compassion-break",
+    "name": "Self-Compassion Break",
+    "approach": "general",
+    "category": "self-compassion",
+    "shortDescription": "A brief practice from Kristin Neff's self-compassion framework that combines three elements—mindfulness, common humanity, and self-kindness—to respond to personal suffering with warmth rather than self-criticism.",
+    "fullDescription": "The Self-Compassion Break is a core practice developed by Kristin Neff as part of her research-based self-compassion framework. Self-compassion involves treating yourself with the same kindness, care, and understanding that you would offer a good friend who is suffering. Many people are far harsher with themselves than they would ever be with others, engaging in relentless self-criticism that exacerbates emotional pain. Neff identifies three components of self-compassion: mindfulness (acknowledging that this is a moment of suffering, without over-identifying with the pain or suppressing it), common humanity (recognizing that suffering and imperfection are part of the shared human experience—you are not alone), and self-kindness (offering yourself warmth, understanding, and gentle words rather than harsh judgment). The Self-Compassion Break combines all three components into a brief, portable practice that can be used whenever you notice you are struggling. Research on self-compassion has shown that it is associated with reduced anxiety, depression, and stress; greater emotional resilience; improved body image; and increased motivation (contrary to the myth that self-compassion leads to complacency).",
+    "steps": [
+      "Notice that you are experiencing a moment of difficulty or suffering",
+      "Step 1 - Mindfulness: Acknowledge the suffering. Place your hand over your heart (or another soothing touch). Say to yourself: 'This is a moment of suffering' or 'This is really hard right now'",
+      "Step 2 - Common Humanity: Remind yourself that suffering is part of being human. Say: 'Suffering is part of life' or 'Other people feel this way too—I am not alone'",
+      "Step 3 - Self-Kindness: Offer yourself words of kindness. Say: 'May I be kind to myself' or 'May I give myself the compassion I need' or 'May I be patient with myself'",
+      "Sit with the feeling of warmth and care for a few moments",
+      "You can personalize the phrases to whatever feels most meaningful to you"
+    ],
+    "bestFor": ["self-criticism", "shame", "grief", "failure", "perfectionism", "low-self-esteem"],
+    "difficulty": "beginner",
+    "timeRequired": "3-5 minutes",
+    "references": [
+      "Neff, K.D. (2011). Self-Compassion: The Proven Power of Being Kind to Yourself. William Morrow.",
+      "Neff, K.D., & Germer, C.K. (2018). The Mindful Self-Compassion Workbook. Guilford Press.",
+      "Zessin, U., Dickhäuser, O., & Garbade, S. (2015). The relationship between self-compassion and well-being: A meta-analysis. Applied Psychology: Health and Well-Being, 7(3), 340-364."
+    ]
+  },
+  {
+    "id": "worry-time-scheduling",
+    "name": "Worry Time Scheduling",
+    "approach": "cbt",
+    "category": "cognitive",
+    "shortDescription": "A technique for managing chronic worry by designating a specific, limited time period each day for worry, and postponing worries that arise outside that window.",
+    "fullDescription": "Worry Time Scheduling (also called 'stimulus control for worry' or 'worry postponement') is a CBT technique specifically designed for people who experience chronic, pervasive worry, as seen in Generalized Anxiety Disorder. The technique works by breaking the pattern of constant worry that dominates the day and confining it to a designated period. When a worry arises outside of the scheduled worry time, the individual briefly acknowledges it, writes it down, and deliberately postpones it until the designated period. This simple act of postponement is surprisingly effective—by the time worry time arrives, many of the worries have resolved themselves or seem less urgent. During the actual worry period, the person reviews their list and engages actively with each worry, deciding whether to problem-solve, accept, or let go. The technique works through several mechanisms: it reduces the total time spent worrying, provides a sense of control over worry, demonstrates that worry can be postponed without negative consequences, and helps distinguish between productive problem-solving and unproductive rumination.",
+    "steps": [
+      "Designate a specific 'worry time' each day—15-30 minutes at the same time (not before bed)",
+      "Choose a specific location for worry time (not your bedroom)",
+      "Throughout the day, when a worry arises, briefly acknowledge it",
+      "Write the worry down on a list or in a note on your phone",
+      "Tell yourself: 'I'll deal with this during my worry time'",
+      "Gently redirect your attention back to what you were doing",
+      "During your designated worry time, review the list",
+      "For each worry, ask: Is this still a concern? Can I do something about it?",
+      "If actionable: problem-solve and create a concrete plan",
+      "If not actionable: practice acceptance and let it go",
+      "Stop when the worry period ends, even if you haven't addressed everything"
+    ],
+    "bestFor": ["chronic-worry", "generalized-anxiety", "rumination", "sleep-disruption-from-worry"],
+    "difficulty": "beginner-to-intermediate",
+    "timeRequired": "15-30 minutes daily (designated worry time); brief moments throughout the day",
+    "references": [
+      "Borkovec, T.D., Wilkinson, L., Folensbee, R., & Lerman, C. (1983). Stimulus control applications to the treatment of worry. Behaviour Research and Therapy, 21(3), 247-251.",
+      "Wells, A. (2009). Metacognitive Therapy for Anxiety and Depression. Guilford Press."
+    ]
+  }
+]
