@@ -1,74 +1,44 @@
-// Voice service — handles mic recording, Whisper transcription, and TTS.
-// Recording uses expo-av. TTS uses expo-speech (native Siri/Google voices).
-
 import { Audio } from 'expo-av';
 import * as Speech from 'expo-speech';
 import { Platform } from 'react-native';
 
-// ---------------------------------------------------------------------------
-// Types
-// ---------------------------------------------------------------------------
-
 export type RecordingState = 'idle' | 'recording' | 'processing';
 
 // ---------------------------------------------------------------------------
-// TTS — text-to-speech
+// TTS
 // ---------------------------------------------------------------------------
 
-const TTS_OPTIONS: Speech.SpeechOptions = {
-  language: 'en-US',
-  pitch: 1.0,
-  rate: Platform.OS === 'ios' ? 0.52 : 0.9, // iOS rate scale differs
-  // On iOS, voice 'com.apple.ttsbundle.Samantha-compact' is the Siri-like voice.
-  // Leaving voice unset lets the OS pick the best installed voice.
-};
-
-let isSpeaking = false;
-
 export function speak(text: string, onDone?: () => void): void {
-  stopSpeaking();
-  // Strip markdown-style formatting for cleaner TTS.
+  Speech.stop();
   const clean = text
     .replace(/\*\*(.*?)\*\*/g, '$1')
     .replace(/_(.*?)_/g, '$1')
     .replace(/#{1,6}\s/g, '')
-    .replace(/•\s/g, '')
+    .replace(/[-•]\s/g, '')
     .replace(/\n{2,}/g, '. ')
     .replace(/\n/g, ' ')
+    .replace(/\s{2,}/g, ' ')
     .trim();
 
-  isSpeaking = true;
   Speech.speak(clean, {
-    ...TTS_OPTIONS,
-    onDone: () => {
-      isSpeaking = false;
-      onDone?.();
-    },
-    onStopped: () => {
-      isSpeaking = false;
-    },
-    onError: () => {
-      isSpeaking = false;
-    },
+    language: 'en-US',
+    pitch: 1.0,
+    rate: Platform.OS === 'ios' ? 0.50 : 0.88,
+    onDone,
+    onStopped: onDone,
+    onError: onDone,
   });
 }
 
 export function stopSpeaking(): void {
-  if (Speech.isSpeakingAsync) {
-    Speech.stop();
-  }
-  isSpeaking = false;
-}
-
-export function getIsSpeaking(): boolean {
-  return isSpeaking;
+  Speech.stop();
 }
 
 // ---------------------------------------------------------------------------
 // Recording
 // ---------------------------------------------------------------------------
 
-let recordingRef: Audio.Recording | null = null;
+let activeRecording: Audio.Recording | null = null;
 
 export async function requestMicPermission(): Promise<boolean> {
   if (Platform.OS === 'web') return false;
@@ -77,8 +47,10 @@ export async function requestMicPermission(): Promise<boolean> {
 }
 
 export async function startRecording(): Promise<void> {
-  if (recordingRef) {
-    await stopRecording();
+  // Clean up any leftover recording.
+  if (activeRecording) {
+    try { await activeRecording.stopAndUnloadAsync(); } catch { /* ignore */ }
+    activeRecording = null;
   }
 
   await Audio.setAudioModeAsync({
@@ -86,84 +58,83 @@ export async function startRecording(): Promise<void> {
     playsInSilentModeIOS: true,
   });
 
-  const { recording } = await Audio.Recording.createAsync(
-    Audio.RecordingOptionsPresets.HIGH_QUALITY,
-  );
-  recordingRef = recording;
+  const { recording } = await Audio.Recording.createAsync({
+    android: {
+      extension: '.m4a',
+      outputFormat: Audio.AndroidOutputFormat.MPEG_4,
+      audioEncoder: Audio.AndroidAudioEncoder.AAC,
+      sampleRate: 16000,
+      numberOfChannels: 1,
+      bitRate: 64000,
+    },
+    ios: {
+      extension: '.m4a',
+      outputFormat: Audio.IOSOutputFormat.MPEG4AAC,
+      audioQuality: Audio.IOSAudioQuality.HIGH,
+      sampleRate: 16000,
+      numberOfChannels: 1,
+      bitRate: 64000,
+      linearPCMBitDepth: 16,
+      linearPCMIsBigEndian: false,
+      linearPCMIsFloat: false,
+    },
+    web: {
+      mimeType: 'audio/webm',
+      bitsPerSecond: 64000,
+    },
+  });
+
+  activeRecording = recording;
 }
 
-export async function stopRecording(): Promise<string | null> {
-  if (!recordingRef) return null;
+export async function stopAndTranscribe(): Promise<string | null> {
+  if (!activeRecording) return null;
+  const rec = activeRecording;
+  activeRecording = null;
 
   try {
-    await recordingRef.stopAndUnloadAsync();
-    const uri = recordingRef.getURI();
-    recordingRef = null;
-
+    await rec.stopAndUnloadAsync();
     await Audio.setAudioModeAsync({ allowsRecordingIOS: false });
-
+    const uri = rec.getURI();
     if (!uri) return null;
     return await transcribeWithWhisper(uri);
   } catch {
-    recordingRef = null;
+    await Audio.setAudioModeAsync({ allowsRecordingIOS: false });
     return null;
   }
 }
 
 export async function cancelRecording(): Promise<void> {
-  if (!recordingRef) return;
-  try {
-    await recordingRef.stopAndUnloadAsync();
-  } catch {
-    // ignore
-  }
-  recordingRef = null;
+  if (!activeRecording) return;
+  const rec = activeRecording;
+  activeRecording = null;
+  try { await rec.stopAndUnloadAsync(); } catch { /* ignore */ }
   await Audio.setAudioModeAsync({ allowsRecordingIOS: false });
 }
 
 // ---------------------------------------------------------------------------
-// Whisper transcription via Groq
+// Whisper via Groq
 // ---------------------------------------------------------------------------
 
 async function transcribeWithWhisper(uri: string): Promise<string | null> {
   const apiKey = process.env.EXPO_PUBLIC_GROQ_API_KEY;
   if (!apiKey) return null;
 
+  const formData = new FormData();
+  formData.append('file', { uri, name: 'recording.m4a', type: 'audio/m4a' } as any);
+  formData.append('model', 'whisper-large-v3-turbo');
+  formData.append('language', 'en');
+  formData.append('response_format', 'json');
+
   try {
-    // Fetch the audio file as a blob.
-    const response = await fetch(uri);
-    const blob = await response.blob();
-
-    // Determine file extension from URI.
-    const ext = uri.split('.').pop()?.toLowerCase() ?? 'm4a';
-    const mimeType = ext === 'wav' ? 'audio/wav' : 'audio/m4a';
-
-    const formData = new FormData();
-    // React Native FormData accepts { uri, name, type } as a file entry.
-    formData.append('file', {
-      uri,
-      name: `recording.${ext}`,
-      type: mimeType,
-    } as any);
-    formData.append('model', 'whisper-large-v3-turbo');
-    formData.append('language', 'en');
-    formData.append('response_format', 'json');
-
-    const transcribeResponse = await fetch(
-      'https://api.groq.com/openai/v1/audio/transcriptions',
-      {
-        method: 'POST',
-        headers: {
-          Authorization: `Bearer ${apiKey}`,
-        },
-        body: formData,
-      },
-    );
-
-    if (!transcribeResponse.ok) return null;
-
-    const json = await transcribeResponse.json();
-    return json?.text?.trim() ?? null;
+    const res = await fetch('https://api.groq.com/openai/v1/audio/transcriptions', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${apiKey}` },
+      body: formData,
+    });
+    if (!res.ok) return null;
+    const json = await res.json();
+    return (json?.text ?? '').trim() || null;
   } catch {
     return null;
   }
