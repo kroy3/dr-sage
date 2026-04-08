@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useMemo } from 'react';
 import {
   View,
   Text,
@@ -17,7 +17,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useChatStore } from '@/stores/useChatStore';
 import { useChat } from '@/hooks/useChat';
 import { Message } from '@/types/chat';
-import { getRelativeTime } from '@/utils/dateHelpers';
+import { useThemeColors } from '@/theme';
 import * as Haptics from 'expo-haptics';
 
 const SUGGESTED = [
@@ -26,108 +26,162 @@ const SUGGESTED = [
   'What is cognitive behavioral therapy?',
   'I need help managing stress',
   'Tell me about mindfulness',
-  'I want to understand my emotions better',
 ];
 
+// ---------------------------------------------------------------------------
+// Typing dots
+// ---------------------------------------------------------------------------
+
 function TypingDots() {
-  const anims = [useRef(new Animated.Value(0)).current, useRef(new Animated.Value(0)).current, useRef(new Animated.Value(0)).current];
+  const colors = useThemeColors();
+  const anims = useRef([
+    new Animated.Value(0),
+    new Animated.Value(0),
+    new Animated.Value(0),
+  ]).current;
+
   useEffect(() => {
     const animations = anims.map((a, i) =>
       Animated.loop(
         Animated.sequence([
           Animated.delay(i * 150),
-          Animated.timing(a, { toValue: -6, duration: 300, useNativeDriver: true }),
-          Animated.timing(a, { toValue: 0, duration: 300, useNativeDriver: true }),
-          Animated.delay(300),
-        ])
-      )
+          Animated.timing(a, { toValue: -5, duration: 280, useNativeDriver: true }),
+          Animated.timing(a, { toValue: 0, duration: 280, useNativeDriver: true }),
+          Animated.delay(280),
+        ]),
+      ),
     );
     animations.forEach((a) => a.start());
     return () => animations.forEach((a) => a.stop());
   }, []);
 
   return (
-    <View style={tdStyles.container}>
-      <View style={tdStyles.avatar}><Text style={{ fontSize: 14 }}>🧠</Text></View>
-      <View style={tdStyles.bubble}>
+    <View style={{ flexDirection: 'row', alignItems: 'flex-end', paddingHorizontal: 16, paddingVertical: 6 }}>
+      <View
+        style={{
+          flexDirection: 'row',
+          alignItems: 'center',
+          gap: 5,
+          backgroundColor: colors.surface,
+          borderRadius: 20,
+          paddingHorizontal: 16,
+          paddingVertical: 12,
+          borderWidth: StyleSheet.hairlineWidth,
+          borderColor: colors.border,
+        }}
+      >
         {anims.map((a, i) => (
-          <Animated.View key={i} style={[tdStyles.dot, { transform: [{ translateY: a }] }]} />
+          <Animated.View
+            key={i}
+            style={{
+              width: 7,
+              height: 7,
+              borderRadius: 3.5,
+              backgroundColor: colors.textTertiary,
+              transform: [{ translateY: a }],
+            }}
+          />
         ))}
       </View>
     </View>
   );
 }
 
-const tdStyles = StyleSheet.create({
-  container: { flexDirection: 'row', alignItems: 'flex-end', paddingHorizontal: 16, paddingVertical: 4 },
-  avatar: { width: 28, height: 28, borderRadius: 14, backgroundColor: '#6EC6A0', alignItems: 'center', justifyContent: 'center', marginRight: 8 },
-  bubble: { flexDirection: 'row', alignItems: 'center', gap: 5, backgroundColor: '#fff', borderRadius: 18, paddingHorizontal: 14, paddingVertical: 12, borderWidth: 1, borderColor: '#E2E8F0' },
-  dot: { width: 7, height: 7, borderRadius: 3.5, backgroundColor: '#9BA3BE' },
-});
+// ---------------------------------------------------------------------------
+// Message bubble (iMessage-style)
+// ---------------------------------------------------------------------------
 
-function MessageBubble({ message, isLast }: { message: Message; isLast: boolean }) {
+interface BubbleProps {
+  message: Message;
+  showTail: boolean;
+  showTime: boolean;
+}
+
+function MessageBubble({ message, showTail, showTime }: BubbleProps) {
+  const colors = useThemeColors();
   const isUser = message.role === 'user';
   const fadeAnim = useRef(new Animated.Value(0)).current;
-  const slideAnim = useRef(new Animated.Value(10)).current;
 
   useEffect(() => {
-    Animated.parallel([
-      Animated.timing(fadeAnim, { toValue: 1, duration: 250, useNativeDriver: true }),
-      Animated.timing(slideAnim, { toValue: 0, duration: 250, useNativeDriver: true }),
-    ]).start();
+    Animated.timing(fadeAnim, {
+      toValue: 1,
+      duration: 220,
+      useNativeDriver: true,
+    }).start();
   }, []);
 
+  const bubbleBg = isUser ? colors.primary : colors.surface;
+  const textColor = isUser ? colors.onPrimary : colors.text;
+
   return (
-    <Animated.View style={{ opacity: fadeAnim, transform: [{ translateY: slideAnim }] }}>
-      <View style={[mbStyles.row, isUser ? mbStyles.rowUser : mbStyles.rowBot]}>
-        {!isUser && (
-          <View style={mbStyles.avatar}><Text style={{ fontSize: 14 }}>🧠</Text></View>
-        )}
-        <View style={[mbStyles.bubble, isUser ? mbStyles.userBubble : mbStyles.botBubble, isUser ? mbStyles.userRadius : mbStyles.botRadius]}>
-          <Text style={[mbStyles.text, isUser ? mbStyles.userText : mbStyles.botText]}>{message.content}</Text>
+    <Animated.View style={{ opacity: fadeAnim }}>
+      <View
+        style={{
+          flexDirection: 'row',
+          paddingHorizontal: 14,
+          paddingVertical: 1.5,
+          justifyContent: isUser ? 'flex-end' : 'flex-start',
+        }}
+      >
+        <View
+          style={{
+            maxWidth: '78%',
+            backgroundColor: bubbleBg,
+            paddingHorizontal: 14,
+            paddingVertical: 9,
+            borderRadius: 22,
+            borderBottomRightRadius: isUser && showTail ? 6 : 22,
+            borderBottomLeftRadius: !isUser && showTail ? 6 : 22,
+            borderWidth: isUser ? 0 : StyleSheet.hairlineWidth,
+            borderColor: colors.border,
+          }}
+        >
+          <Text style={{ fontSize: 16, lineHeight: 22, color: textColor }}>
+            {message.content}
+          </Text>
         </View>
       </View>
-      {isLast && (
-        <Text style={[mbStyles.time, isUser ? { textAlign: 'right', marginRight: 16 } : { marginLeft: 52 }]}>
-          {getRelativeTime(message.timestamp)}
+      {showTime && (
+        <Text
+          style={{
+            fontSize: 11,
+            color: colors.textTertiary,
+            textAlign: isUser ? 'right' : 'left',
+            paddingHorizontal: 22,
+            paddingTop: 4,
+            paddingBottom: 6,
+          }}
+        >
+          {formatTime(message.timestamp)}
         </Text>
       )}
     </Animated.View>
   );
 }
 
-const mbStyles = StyleSheet.create({
-  row: { flexDirection: 'row', paddingHorizontal: 16, paddingVertical: 3, alignItems: 'flex-end' },
-  rowUser: { justifyContent: 'flex-end' },
-  rowBot: { justifyContent: 'flex-start' },
-  avatar: { width: 28, height: 28, borderRadius: 14, backgroundColor: '#6EC6A0', alignItems: 'center', justifyContent: 'center', marginRight: 8, flexShrink: 0 },
-  bubble: { maxWidth: '75%', paddingHorizontal: 14, paddingVertical: 10 },
-  userBubble: { backgroundColor: '#4A90D9' },
-  botBubble: { backgroundColor: '#fff', borderWidth: 1, borderColor: '#E2E8F0' },
-  userRadius: { borderRadius: 18, borderBottomRightRadius: 4 },
-  botRadius: { borderRadius: 18, borderBottomLeftRadius: 4 },
-  text: { fontSize: 15, lineHeight: 22 },
-  userText: { color: '#fff' },
-  botText: { color: '#1A2138' },
-  time: { fontSize: 11, color: '#9BA3BE', marginBottom: 8, marginTop: 2 },
-});
+function formatTime(ts: number): string {
+  const d = new Date(ts);
+  return d.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+}
+
+// ---------------------------------------------------------------------------
+// Main screen
+// ---------------------------------------------------------------------------
 
 export default function ChatScreen() {
+  const colors = useThemeColors();
   const { messages, isStreaming, streamingText, currentSessionId, endSession } = useChatStore();
   const { sendMessage } = useChat();
   const [input, setInput] = useState('');
   const flatRef = useRef<FlatList>(null);
-  const sendScale = useRef(new Animated.Value(0)).current;
-
-  useEffect(() => {
-    Animated.spring(sendScale, { toValue: input.length > 0 ? 1 : 0, useNativeDriver: true }).start();
-  }, [input]);
 
   const handleSend = async () => {
     const text = input.trim();
     if (!text || isStreaming) return;
     setInput('');
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    if (Platform.OS !== 'web') {
+      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    }
     await sendMessage(text);
   };
 
@@ -138,48 +192,84 @@ export default function ChatScreen() {
     ]);
   };
 
-  const allMessages = isStreaming && streamingText
-    ? [...messages, { id: 'streaming', sessionId: currentSessionId || '', role: 'assistant' as const, content: streamingText, timestamp: Date.now() }]
-    : messages;
+  // Build the list with a synthetic streaming message if needed.
+  const allMessages = useMemo(() => {
+    if (isStreaming && streamingText) {
+      return [
+        ...messages,
+        {
+          id: '__streaming__',
+          sessionId: currentSessionId || '',
+          role: 'assistant' as const,
+          content: streamingText,
+          timestamp: Date.now(),
+        },
+      ];
+    }
+    return messages;
+  }, [messages, isStreaming, streamingText, currentSessionId]);
+
+  // Decide which bubbles get a tail and a timestamp.
+  const decorated = useMemo(() => {
+    return allMessages.map((m, i) => {
+      const next = allMessages[i + 1];
+      const isLastInGroup = !next || next.role !== m.role;
+      const isLast = i === allMessages.length - 1;
+      return { msg: m, showTail: isLastInGroup, showTime: isLast };
+    });
+  }, [allMessages]);
 
   return (
-    <SafeAreaView style={styles.safe} edges={['top']}>
+    <SafeAreaView style={[styles.safe, { backgroundColor: colors.background }]} edges={['top']}>
       {/* Header */}
-      <View style={styles.header}>
+      <View style={[styles.header, { backgroundColor: colors.surface, borderBottomColor: colors.border }]}>
         <View style={styles.headerLeft}>
-          <View style={styles.avatarCircle}><Text style={{ fontSize: 18 }}>🧠</Text></View>
+          <View style={[styles.avatarCircle, { backgroundColor: colors.primaryLight }]}>
+            <Text style={{ fontSize: 20 }}>🧠</Text>
+          </View>
           <View>
-            <Text style={styles.headerName}>Dr. Sage</Text>
+            <Text style={[styles.headerName, { color: colors.text }]}>Dr. Sage</Text>
             <View style={styles.statusRow}>
-              <View style={styles.statusDot} />
-              <Text style={styles.statusText}>Online</Text>
+              <View style={[styles.statusDot, { backgroundColor: colors.success }]} />
+              <Text style={[styles.statusText, { color: colors.textSecondary }]}>
+                {isStreaming ? 'Thinking…' : 'Online'}
+              </Text>
             </View>
           </View>
         </View>
-        <TouchableOpacity style={styles.newBtn} onPress={handleNewSession}>
-          <Ionicons name="add-circle-outline" size={26} color="#4A90D9" />
+        <TouchableOpacity style={styles.newBtn} onPress={handleNewSession} hitSlop={10}>
+          <Ionicons name="create-outline" size={24} color={colors.primary} />
         </TouchableOpacity>
       </View>
 
       <KeyboardAvoidingView
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
         style={{ flex: 1 }}
-        keyboardVerticalOffset={0}
+        keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 0}
       >
-        {/* Messages or Welcome */}
-        {allMessages.length === 0 && !isStreaming ? (
+        {decorated.length === 0 && !isStreaming ? (
           <ScrollView contentContainerStyle={styles.welcomeScroll} showsVerticalScrollIndicator={false}>
             <View style={styles.welcomeContainer}>
-              <View style={styles.welcomeAvatar}><Text style={{ fontSize: 40 }}>🧠</Text></View>
-              <Text style={styles.welcomeTitle}>Hello, I'm Dr. Sage</Text>
-              <Text style={styles.welcomeText}>
-                I'm here to support your mental wellness journey with evidence-based guidance, coping strategies, and a compassionate space to explore your thoughts.
+              <View style={[styles.welcomeAvatar, { backgroundColor: colors.primaryLight }]}>
+                <Text style={{ fontSize: 44 }}>🧠</Text>
+              </View>
+              <Text style={[styles.welcomeTitle, { color: colors.text }]}>Hi, I'm Dr. Sage</Text>
+              <Text style={[styles.welcomeText, { color: colors.textSecondary }]}>
+                A calm space to talk through what's on your mind. Try one of the prompts below or message me directly.
               </Text>
-              <Text style={styles.suggestedTitle}>How can I help today?</Text>
+              <Text style={[styles.suggestedTitle, { color: colors.textTertiary }]}>SUGGESTED</Text>
               {SUGGESTED.map((s, i) => (
-                <TouchableOpacity key={i} style={styles.suggestedChip} onPress={() => { Haptics.selectionAsync(); setInput(s); }}>
-                  <Text style={styles.suggestedText}>{s}</Text>
-                  <Ionicons name="arrow-forward" size={14} color="#4A90D9" />
+                <TouchableOpacity
+                  key={i}
+                  style={[styles.suggestedChip, { backgroundColor: colors.surface, borderColor: colors.border }]}
+                  onPress={() => {
+                    if (Platform.OS !== 'web') Haptics.selectionAsync();
+                    setInput(s);
+                  }}
+                  activeOpacity={0.7}
+                >
+                  <Text style={[styles.suggestedText, { color: colors.text }]}>{s}</Text>
+                  <Ionicons name="arrow-forward" size={16} color={colors.primary} />
                 </TouchableOpacity>
               ))}
             </View>
@@ -187,40 +277,61 @@ export default function ChatScreen() {
         ) : (
           <FlatList
             ref={flatRef}
-            data={[...allMessages].reverse()}
-            keyExtractor={(item) => item.id}
-            renderItem={({ item, index }) => (
-              <MessageBubble message={item} isLast={index === 0} />
+            data={[...decorated].reverse()}
+            keyExtractor={(item) => item.msg.id}
+            renderItem={({ item }) => (
+              <MessageBubble
+                message={item.msg}
+                showTail={item.showTail}
+                showTime={item.showTime}
+              />
             )}
             inverted
             contentContainerStyle={{ paddingVertical: 12 }}
             onContentSizeChange={() => flatRef.current?.scrollToOffset({ offset: 0, animated: true })}
             ListHeaderComponent={isStreaming && !streamingText ? <TypingDots /> : null}
+            keyboardShouldPersistTaps="handled"
           />
         )}
 
-        {/* Input Bar */}
-        <View style={styles.inputBar}>
+        {/* Input bar */}
+        <View
+          style={[
+            styles.inputBar,
+            { backgroundColor: colors.surface, borderTopColor: colors.border },
+          ]}
+        >
           <TextInput
-            style={styles.input}
+            style={[
+              styles.input,
+              {
+                backgroundColor: colors.background,
+                color: colors.text,
+                borderColor: colors.border,
+              },
+            ]}
             value={input}
             onChangeText={setInput}
-            placeholder="Message Dr. Sage..."
-            placeholderTextColor="#9BA3BE"
+            placeholder="Message Dr. Sage…"
+            placeholderTextColor={colors.placeholder}
             multiline
             maxLength={1000}
             editable={!isStreaming}
-            onSubmitEditing={handleSend}
           />
-          <Animated.View style={{ transform: [{ scale: sendScale }] }}>
-            <TouchableOpacity
-              style={[styles.sendBtn, isStreaming && styles.sendBtnDisabled]}
-              onPress={handleSend}
-              disabled={isStreaming || !input.trim()}
-            >
-              <Ionicons name="arrow-up" size={18} color="#fff" />
-            </TouchableOpacity>
-          </Animated.View>
+          <TouchableOpacity
+            style={[
+              styles.sendBtn,
+              {
+                backgroundColor:
+                  input.trim() && !isStreaming ? colors.primary : colors.disabled,
+              },
+            ]}
+            onPress={handleSend}
+            disabled={isStreaming || !input.trim()}
+            activeOpacity={0.8}
+          >
+            <Ionicons name="arrow-up" size={20} color={colors.onPrimary} />
+          </TouchableOpacity>
         </View>
       </KeyboardAvoidingView>
     </SafeAreaView>
@@ -228,74 +339,89 @@ export default function ChatScreen() {
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: '#F0F4F8' },
+  safe: { flex: 1 },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 16,
     paddingVertical: 12,
-    backgroundColor: '#fff',
-    borderBottomWidth: 1,
-    borderBottomColor: '#E2E8F0',
+    borderBottomWidth: StyleSheet.hairlineWidth,
   },
-  headerLeft: { flexDirection: 'row', alignItems: 'center', gap: 10 },
-  avatarCircle: { width: 40, height: 40, borderRadius: 20, backgroundColor: '#EBF4FF', alignItems: 'center', justifyContent: 'center' },
-  headerName: { fontSize: 16, fontWeight: '700', color: '#1A2138' },
-  statusRow: { flexDirection: 'row', alignItems: 'center', gap: 5 },
-  statusDot: { width: 7, height: 7, borderRadius: 3.5, backgroundColor: '#27AE60' },
-  statusText: { fontSize: 12, color: '#27AE60', fontWeight: '500' },
-  newBtn: { padding: 4 },
+  headerLeft: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+  avatarCircle: {
+    width: 42,
+    height: 42,
+    borderRadius: 21,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  headerName: { fontSize: 17, fontWeight: '700' },
+  statusRow: { flexDirection: 'row', alignItems: 'center', gap: 5, marginTop: 2 },
+  statusDot: { width: 7, height: 7, borderRadius: 3.5 },
+  statusText: { fontSize: 12, fontWeight: '500' },
+  newBtn: { padding: 6 },
   welcomeScroll: { flexGrow: 1 },
-  welcomeContainer: { flex: 1, padding: 24, alignItems: 'center' },
-  welcomeAvatar: { width: 80, height: 80, borderRadius: 40, backgroundColor: '#EBF4FF', alignItems: 'center', justifyContent: 'center', marginBottom: 16 },
-  welcomeTitle: { fontSize: 22, fontWeight: '700', color: '#1A2138', marginBottom: 10 },
-  welcomeText: { fontSize: 15, color: '#6B7394', textAlign: 'center', lineHeight: 23, marginBottom: 28 },
-  suggestedTitle: { fontSize: 14, fontWeight: '600', color: '#6B7394', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 12, alignSelf: 'flex-start' },
+  welcomeContainer: { flex: 1, padding: 28, alignItems: 'center' },
+  welcomeAvatar: {
+    width: 88,
+    height: 88,
+    borderRadius: 44,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 20,
+    marginTop: 20,
+  },
+  welcomeTitle: { fontSize: 26, fontWeight: '700', marginBottom: 10 },
+  welcomeText: {
+    fontSize: 15,
+    textAlign: 'center',
+    lineHeight: 22,
+    marginBottom: 32,
+    paddingHorizontal: 8,
+  },
+  suggestedTitle: {
+    fontSize: 12,
+    fontWeight: '600',
+    letterSpacing: 1.2,
+    marginBottom: 12,
+    alignSelf: 'flex-start',
+  },
   suggestedChip: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    backgroundColor: '#fff',
-    borderRadius: 12,
-    paddingHorizontal: 16,
-    paddingVertical: 13,
+    borderRadius: 14,
+    paddingHorizontal: 18,
+    paddingVertical: 15,
     width: '100%',
-    marginBottom: 8,
-    borderWidth: 1,
-    borderColor: '#E2E8F0',
+    marginBottom: 10,
+    borderWidth: StyleSheet.hairlineWidth,
   },
-  suggestedText: { fontSize: 14, color: '#4A5568', flex: 1 },
+  suggestedText: { fontSize: 15, flex: 1, marginRight: 8 },
   inputBar: {
     flexDirection: 'row',
     alignItems: 'flex-end',
     paddingHorizontal: 12,
     paddingVertical: 10,
-    backgroundColor: '#fff',
-    borderTopWidth: 1,
-    borderTopColor: '#E2E8F0',
+    borderTopWidth: StyleSheet.hairlineWidth,
     gap: 8,
   },
   input: {
     flex: 1,
-    backgroundColor: '#F0F4F8',
     borderRadius: 22,
     paddingHorizontal: 16,
-    paddingTop: 10,
-    paddingBottom: 10,
-    fontSize: 15,
-    color: '#1A2138',
-    maxHeight: 100,
-    borderWidth: 1,
-    borderColor: '#E2E8F0',
+    paddingTop: 11,
+    paddingBottom: 11,
+    fontSize: 16,
+    maxHeight: 120,
+    borderWidth: StyleSheet.hairlineWidth,
   },
   sendBtn: {
-    width: 38,
-    height: 38,
-    borderRadius: 19,
-    backgroundColor: '#4A90D9',
+    width: 40,
+    height: 40,
+    borderRadius: 20,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  sendBtnDisabled: { backgroundColor: '#CBD5E0' },
 });

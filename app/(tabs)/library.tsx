@@ -116,7 +116,7 @@ export default function LibraryScreen() {
 
       <FlatList
         data={results}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => `${item.collection}:${item.id}`}
         renderItem={renderItem}
         contentContainerStyle={styles.list}
         showsVerticalScrollIndicator={false}

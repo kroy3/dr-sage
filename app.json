@@ -17,7 +17,8 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.drsage.app",
       "infoPlist": {
-        "NSUserNotificationsUsageDescription": "Dr. Sage sends gentle reminders to check in on your wellbeing."
+        "NSUserNotificationsUsageDescription": "Dr. Sage sends gentle reminders to check in on your wellbeing.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {

@@ -8,16 +8,13 @@ export { Spacing, BorderRadius } from './spacing';
 export { Shadows, type ShadowStyle } from './shadows';
 
 import { Colors, ThemeColors } from './colors';
+import { useThemeStore } from '@/stores/useThemeStore';
 
 /**
- * Hook to get the current theme colors.
- * TODO: Integrate with useThemeStore from @/stores/useThemeStore
- * once the store is implemented. For now, defaults to light theme.
+ * Hook to get the current theme colors based on the user's preference
+ * (light / dark / system).
  */
 export function useThemeColors(): ThemeColors {
-  // TODO: Read from useThemeStore to get 'light' | 'dark' preference
-  // import { useThemeStore } from '@/stores/useThemeStore';
-  // const scheme = useThemeStore((s) => s.colorScheme);
-  // return Colors[scheme];
-  return Colors.light;
+  const effectiveTheme = useThemeStore((s) => s.effectiveTheme);
+  return Colors[effectiveTheme] ?? Colors.light;
 }
