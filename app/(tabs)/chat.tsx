@@ -170,8 +170,8 @@ function formatTime(ts: number): string {
 
 export default function ChatScreen() {
   const colors = useThemeColors();
-  const { messages, isStreaming, streamingText, currentSessionId, endSession } = useChatStore();
-  const { sendMessage } = useChat();
+  const { messages, isStreaming, streamingText, currentSessionId } = useChatStore();
+  const { sendMessage, endSession } = useChat();
   const [input, setInput] = useState('');
   const flatRef = useRef<FlatList>(null);
 
@@ -188,7 +188,7 @@ export default function ChatScreen() {
   const handleNewSession = () => {
     Alert.alert('New Conversation', 'Start a new conversation with Dr. Sage?', [
       { text: 'Cancel', style: 'cancel' },
-      { text: 'New Chat', onPress: () => endSession() },
+      { text: 'New Chat', onPress: () => { endSession(); } },
     ]);
   };
 

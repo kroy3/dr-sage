@@ -1,8 +1,9 @@
-// Groq chat service. Uses Groq's OpenAI-compatible API via fetch — no SDK,
-// works on web + native + Expo Go.
+// Groq chat service — OpenAI-compatible API via fetch.
+// Works on web + native + Expo Go (no SDK, no native bindings).
 
 const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
-const MODEL = 'llama-3.3-70b-versatile';
+const MAIN_MODEL = 'llama-3.3-70b-versatile';
+const FAST_MODEL = 'llama-3.1-8b-instant'; // used for summaries only
 
 export interface ChatMessage {
   role: 'system' | 'user' | 'assistant';
@@ -26,32 +27,17 @@ export function hasGroqKey(): boolean {
   return !!k && k.length > 10;
 }
 
-/**
- * Send a chat completion to Groq and return the assistant's reply text.
- * Non-streaming for reliability across all platforms; the caller can chunk
- * the result client-side to keep the typing animation.
- */
-export async function chatCompletion(
+async function post(
+  model: string,
   messages: ChatMessage[],
-  systemPrompt: string,
+  maxTokens: number,
 ): Promise<string> {
   const apiKey = getApiKey();
   if (!apiKey) {
     throw new GroqError(
-      'No Groq API key found. Set EXPO_PUBLIC_GROQ_API_KEY in .env and restart Expo.',
+      'No Groq API key. Set EXPO_PUBLIC_GROQ_API_KEY in .env and restart Expo.',
     );
   }
-
-  const body = {
-    model: MODEL,
-    messages: [
-      { role: 'system', content: systemPrompt },
-      ...messages,
-    ],
-    temperature: 0.6,
-    max_tokens: 700,
-    stream: false,
-  };
 
   let response: Response;
   try {
@@ -61,10 +47,16 @@ export async function chatCompletion(
         'Content-Type': 'application/json',
         Authorization: `Bearer ${apiKey}`,
       },
-      body: JSON.stringify(body),
+      body: JSON.stringify({
+        model,
+        messages,
+        temperature: 0.65,
+        max_tokens: maxTokens,
+        stream: false,
+      }),
     });
-  } catch (err) {
-    throw new GroqError('Network error reaching Groq. Check your internet connection.');
+  } catch {
+    throw new GroqError('Network error. Check your internet connection.');
   }
 
   if (!response.ok) {
@@ -75,35 +67,66 @@ export async function chatCompletion(
     } catch {
       // ignore
     }
-    if (response.status === 401) {
-      throw new GroqError('Invalid Groq API key. Update EXPO_PUBLIC_GROQ_API_KEY.', 401);
-    }
-    if (response.status === 429) {
-      throw new GroqError('Groq rate limit reached. Please wait a moment.', 429);
-    }
+    if (response.status === 401) throw new GroqError('Invalid Groq API key.', 401);
+    if (response.status === 429) throw new GroqError('Rate limit reached. Please wait a moment.', 429);
     throw new GroqError(`Groq error (${response.status}): ${detail}`, response.status);
   }
 
   const json = await response.json();
-  const text = json?.choices?.[0]?.message?.content ?? '';
-  return text;
+  return json?.choices?.[0]?.message?.content ?? '';
 }
 
 /**
- * Convenience wrapper that streams the reply word-by-word to `onChunk` so the
- * UI's typing animation still feels alive.
+ * Main chat completion — full 70B model for quality replies.
+ * Streams word-by-word to keep the typing animation alive.
  */
 export async function streamChatCompletion(
   messages: ChatMessage[],
   systemPrompt: string,
   onChunk: (text: string) => void,
 ): Promise<string> {
-  const fullText = await chatCompletion(messages, systemPrompt);
+  const allMessages: ChatMessage[] = [
+    { role: 'system', content: systemPrompt },
+    ...messages,
+  ];
+  const fullText = await post(MAIN_MODEL, allMessages, 600);
 
   const words = fullText.split(/(\s+)/);
   for (let i = 0; i < words.length; i += 4) {
     onChunk(words.slice(i, i + 4).join(''));
-    await new Promise((r) => setTimeout(r, 22));
+    await new Promise((r) => setTimeout(r, 20));
   }
   return fullText;
+}
+
+/**
+ * Generate a concise session summary for cross-session memory.
+ * Uses the smaller/faster model — quality not critical here.
+ */
+export async function generateSessionSummary(
+  messages: ChatMessage[],
+): Promise<string> {
+  if (messages.length < 2) return '';
+
+  const transcript = messages
+    .map((m) => `${m.role === 'user' ? 'User' : 'Dr. Sage'}: ${m.content}`)
+    .join('\n');
+
+  const summaryMessages: ChatMessage[] = [
+    {
+      role: 'system',
+      content:
+        'You are a clinical notes assistant. Summarise the following therapy session in 3-5 bullet points. ' +
+        'Focus on: the user\'s main concern, key emotions expressed, any decisions or situations discussed, ' +
+        'progress or insights noted, and anything Dr. Sage should remember for next time. ' +
+        'Be specific and factual. Do not interpret. Use plain language. No intro sentence.',
+    },
+    { role: 'user', content: transcript },
+  ];
+
+  try {
+    return await post(FAST_MODEL, summaryMessages, 300);
+  } catch {
+    return '';
+  }
 }
