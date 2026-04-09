@@ -2,7 +2,15 @@
   "expo": {
     "name": "Dr. Sage",
     "slug": "dr-sage",
-    "version": "1.0.1",
+    "version": "1.1.0",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/38689a03-40d7-48b8-9966-a273ccdf9e7f",
+      "enabled": true,
+      "fallbackToCacheTimeout": 0
+    },
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "dr-sage",
