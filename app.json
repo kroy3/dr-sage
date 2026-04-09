@@ -46,7 +46,7 @@
       "expo-notifications",
       "expo-sqlite",
       "expo-font",
-      "expo-av"
+      "expo-audio"
     ],
     "experiments": {
       "typedRoutes": true
